@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var browserSync = require("browser-sync").create();
+const cleanCSS = require("gulp-clean-css");
 
 gulp.task("hello", function(done) {
   console.log("Hello World!");
@@ -15,7 +16,10 @@ gulp.task('browser-sync', function() {
   });
 
   gulp.watch("./*.html").on('change', browserSync.reload);
-  
-  gulp.watch("./css/*.css").on('change', browserSync.reload);
 
+});
+
+gulp.task("minify-css", function(done) {
+  return gulp.src("./css/*.css")
+  done();
 });
