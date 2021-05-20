@@ -1,3 +1,4 @@
-body {
-  background-color: pink;
-}
+@import "./_normilize.scss";
+@import "./_variables.scss";
+@import "./_grid.scss";
+@import "./tamplates/_header.scss";
