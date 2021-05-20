@@ -11,7 +11,7 @@ gulp.task("hello", function(done) {
   done();
 })
 
-gulp.task('browser-sync', function() {
+gulp.task('web-on', function() {
   browserSync.init({
       server: {
           baseDir: "./"
