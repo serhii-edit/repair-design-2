@@ -1,0 +1,11 @@
+.button {
+  border-radius: 2px;
+  color: $white;
+  &--primary {
+    background-color: $primary;
+  }
+}
+
+.contacts__button {
+  padding: 14px 20px;
+}

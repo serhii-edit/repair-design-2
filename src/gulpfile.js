@@ -16,6 +16,9 @@ function bs() {
 
   watch("./*.html").on('change', browserSync.reload);
   watch("./sass/**/*.scss", serveSass);
+  
+  watch("./sass/**/*.scss").on('change', browserSync.reload);
+  
   watch("./js/*.js").on('change', browserSync.reload);
 
 
@@ -26,7 +29,7 @@ function serveSass() {
   return src("./sass/*.scss")
       .pipe(sass())
       .pipe(dest("./css/"))
-      .pipe(browserSync.stream());
+      .pipe(browserSync.stream())
 };
 
 exports.serve = bs;
