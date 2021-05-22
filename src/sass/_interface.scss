@@ -8,13 +8,25 @@
 }
 
 .button {
+  border: none;
+  font-family: "Futura Demi", italic;
   border-radius: 2px;
   color: $white;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
   &--primary {
     background-color: $primary;
+    color: $white;
+  }
+  &--outline {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
   }
 }
 
 .contacts__button {
   padding: 14px 20px;
+  text-align: center;
 }

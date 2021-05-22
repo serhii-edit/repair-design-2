@@ -401,15 +401,27 @@ button {
 }
 
 .button {
+  border: none;
+  font-family: "Futura Demi", italic;
   border-radius: 2px;
   color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 .button--primary {
   background-color: #E3B873;
+  color: #ffffff;
+}
+.button--outline {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .contacts__button {
   padding: 14px 20px;
+  text-align: center;
 }
 
 .header {
@@ -452,7 +464,7 @@ button {
 }
 
 .hero {
-  padding-top: 92px;
+  padding-top: 88px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -479,6 +491,22 @@ button {
 .hero__title {
   font-size: 40px;
   text-transform: uppercase;
+  max-width: 440px;
+  margin-bottom: 20px;
+  line-height: 53px;
+}
+.hero__text {
+  max-width: 505px;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.hero__button {
+  padding: 20px 24px;
+}
+.hero__button-a {
+  border: 1px solid #E3B873;
+  margin-right: 17px;
 }
 
 .instagram-block {
