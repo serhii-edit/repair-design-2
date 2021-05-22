@@ -16,10 +16,20 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  &__title {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
 }
 
 .instagram-block {
-  display: flex;
+  display: flex;   
   justify-content: center;
   align-items: center;
   background-color: $dark;
@@ -38,12 +48,28 @@
   color: $primary;
   text-transform: uppercase;
   transform: rotate(90deg);
-  padding-right: 10px;
 }
 
 .hero__scroll-btn {
   position: absolute;
   bottom: 0;
   left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark;
+
+  min-width: 247px;
+  min-height: 97px;
+}
+
+.scroll-down {
+  font-family: "Yeseva One", cursive;
+  font-size: 12px;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
 }
 

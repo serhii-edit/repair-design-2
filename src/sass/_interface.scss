@@ -1,3 +1,12 @@
+
+.title {
+  font-family: "Yeseva One", cursive;
+  font-size: 23px;
+  &--primary {
+    color: $primary;
+  }
+}
+
 .button {
   border-radius: 2px;
   color: $white;
