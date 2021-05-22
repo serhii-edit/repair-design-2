@@ -35,4 +35,6 @@
   margin-right: 45px;
 }
 
-// test
+.hero__title {
+  @extend %massage-shared;
+}

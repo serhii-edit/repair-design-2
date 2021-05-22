@@ -2,6 +2,7 @@ var {src, dest, watch} = require("gulp");
 var sass = require('gulp-dart-sass');
 var browserSync = require("browser-sync").create();
 
+const autoprefixer = require('gulp-autoprefixer');
 // var cssmin = require("gulp-cssmin");
 // var rename = require('gulp-rename');
 
@@ -26,8 +27,13 @@ function bs() {
 
 // Compile sass into CSS & auto-inject into browsers
 function serveSass() {
-  return src("./sass/*.scss")
+  return src("./sass/**/*.scss")
       .pipe(sass())
+
+      .pipe(autoprefixer({
+        cascade: false
+    }))
+
       .pipe(dest("./css/"))
       .pipe(browserSync.stream())
 };

@@ -81,6 +81,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -342,7 +343,7 @@ template {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Futura Book", sans-serif;
   font-size: 14px;
 }
 
@@ -351,6 +352,28 @@ button {
   text-decoration: none;
   cursor: pointer;
   outline: none;
+}
+
+@font-face {
+  font-family: "Futura Book";
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura Demi";
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.hero__title {
+  font-size: 35px;
+  color: red;
+  background-color: #aeaeae;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .container {
