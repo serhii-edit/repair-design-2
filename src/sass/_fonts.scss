@@ -1,3 +1,4 @@
+// Futura Start
 @font-face {
 font-family: 'Futura Book';
 src: 
@@ -16,3 +17,24 @@ font-weight: normal;
 font-style: normal;
 font-display: swap;
 }
+// Futura End
+
+// YesevaOne Start
+@font-face {
+font-family: 'Yeseva One';
+src: url('../fonts/futura/FuturaDemiC.woff') format('woff'),
+url('../fonts/futura/FuturaDemiC.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+// font-family: 'Yeseva One', cursive;
+@font-face {
+font-family: 'Yeseva One';
+src: url('../fonts/yesevaone/yesevaone.woff') format('woff'),
+url('../fonts/yesevaone/yesevaone.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+// YesevaOne End

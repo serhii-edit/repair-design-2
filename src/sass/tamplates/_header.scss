@@ -1,4 +1,8 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
   background-color: $dark;
   padding: 24px 0;
   width: 100%;
@@ -33,8 +37,4 @@
 
 .contacts__phone {
   margin-right: 45px;
-}
-
-.hero__title {
-  @extend %massage-shared;
 }
