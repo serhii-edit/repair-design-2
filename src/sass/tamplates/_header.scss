@@ -24,6 +24,11 @@
   &__link {
     text-decoration: none;
     color: $white;
+
+    transition: color 0.3s;
+    &:hover {
+      color: $primary;
+    }
   }
   &__link + &__link {
     margin-left: 40px;
