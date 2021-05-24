@@ -3,8 +3,11 @@
   top: 0;
   left: 0;
   z-index: 2;
+  display: flex;
+  align-items: center;
   background-color: $dark;
-  padding: 24px 0;
+  // padding: 24px 0;
+  min-height: 83px;
   width: 100%;
 }
 
@@ -31,7 +34,7 @@
     }
   }
   &__link + &__link {
-    margin-left: 40px;
+    margin-left: 2.857rem;
   }
 }
 
@@ -40,6 +43,10 @@
   text-transform: uppercase;
 }
 
-.contacts__phone {
-  margin-right: 45px;
+// .contacts__phone {
+//   margin-right: 45px;
+// }
+
+.contacts__button {
+  margin-left: 45px;
 }

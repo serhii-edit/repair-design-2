@@ -1,0 +1,95 @@
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1445px) {
+  .hero {
+    &__container {
+        margin-left: 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+  .instagram {
+    &-block {
+      display: none;
+    }
+  }
+  .hero {
+    &__container {
+      margin-left: auto;
+  
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .contacts {
+    &__phone {
+      color: $white;
+      text-decoration: none;
+    }
+    &__button {
+      display: none;
+    }
+  }
+  .title {
+    font-size: 1.916rem;
+  }
+  .hero {
+    &__title {
+      max-width: 20.833rem;
+      margin-bottom: 1.25rem;
+      line-height: 30px;
+    }
+    &__text {
+      font-size: 1.5rem;
+      max-width: 26.66rem;
+      margin-bottom: 2.75rem;
+      line-height: 30px;
+    }
+    &__button {
+      display: block;
+      width: 100%;
+      max-width: 338px;
+      font-size: 1.083rem;
+    }
+    &__button:first-child {
+      margin-bottom: 2.166rem;
+    }
+    &__scroll-btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-height: 595px) {
+  .hero__scroll-btn {
+    min-width: 200px;
+    min-height: 65px;
+
+  }
+}
+
+@media screen and (max-height: 545px) {
+  .hero__scroll-btn {
+    min-height: 40px;
+    min-width: 180px;
+  }
+  .scroll-down::after {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 491px) {
+  .hero__scroll-btn {
+    min-height: 40px;
+    min-width: 130px;
+  }
+}
