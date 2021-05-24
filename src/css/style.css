@@ -459,7 +459,7 @@ button {
 }
 
 .contacts__button {
-  padding: 14px 20px;
+  padding: 11px 20px;
   text-align: center;
 }
 
@@ -483,12 +483,16 @@ button {
 }
 
 .logo {
+  font-family: "Futura Demi", sans-serif;
   text-transform: uppercase;
   color: #E3B873;
+  font-size: 1rem;
 }
 
 .nav__link {
+  font-size: 1rem;
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffffff;
   transition: color 0.3s;
 }
@@ -500,8 +504,10 @@ button {
 }
 
 .phone {
+  font-family: "Futura Demi", sans-serif;
   color: #E3B873;
   text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .contacts__button {
@@ -548,20 +554,22 @@ button {
   height: 100%;
 }
 .hero__title {
-  font-size: 2.857rem;
+  font-size: 2.757rem;
   text-transform: uppercase;
   max-width: 31.428rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   line-height: 53px;
 }
 .hero__text {
   max-width: 36.071rem;
   font-size: 1.571rem;
   line-height: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 }
 .hero__button {
-  padding: 20px 24px;
+  padding: 18px 24px;
+  width: 100%;
+  max-width: 207px;
 }
 .hero__button-a {
   border: 1px solid #E3B873;
@@ -624,8 +632,8 @@ button {
   display: inline-block;
   vertical-align: middle;
   background-image: url("../img/hero-scroll-down.svg");
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   margin-left: 15px;
   background-position: center center;
   background-repeat: no-repeat;

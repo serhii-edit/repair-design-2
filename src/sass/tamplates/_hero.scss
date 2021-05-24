@@ -37,20 +37,22 @@
     height: 100%;
   }
   &__title {
-    font-size: 2.857rem;
+    font-size: 2.757rem;
     text-transform: uppercase;
     max-width: 31.428rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 53px;
   }
   &__text {
     max-width: 36.071rem;
     font-size: 1.571rem;
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
   }
   &__button {
-    padding: 20px 24px;
+    padding: 18px 24px;
+    width: 100%;
+    max-width: 207px;
     &-a {
       border: 1px solid $primary;
       margin-right: 17px;
@@ -117,8 +119,8 @@
     display: inline-block;
     vertical-align: middle;
     background-image: url("../img/hero-scroll-down.svg");
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     margin-left: 15px;
     background-position: center center;
     // background-size: contain;
