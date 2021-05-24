@@ -30,6 +30,12 @@
 }
 
 @media screen and (max-width: 570px) {
+  .header {
+    min-height: 57px;
+  }
+  .hero {
+    padding-top: 55px;
+  }
   .contacts {
     &__phone {
       color: $white;
@@ -47,12 +53,13 @@
       max-width: 20.833rem;
       margin-bottom: 1.25rem;
       line-height: 30px;
+      font-size: 1.716rem;
     }
     &__text {
       font-size: 1.5rem;
       max-width: 26.66rem;
-      margin-bottom: 2.75rem;
-      line-height: 30px;
+      margin-bottom: 2.25rem;
+      line-height: 25px;
     }
     &__button {
       display: block;
