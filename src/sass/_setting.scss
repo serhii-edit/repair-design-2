@@ -22,15 +22,12 @@ button {
   outline: none;
 }
 
-.section-heading {
-  text-align: center;
-  &__title {
-    font-family: "Yeseva One", cursive;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 20px;
-    // color: $white;
-  }
+
+
+
+
+
+
   // &__block-img {
   //   display: inline-block;
   //   &::before, &::after {
@@ -43,10 +40,13 @@ button {
   //     vertical-align: middle;
   //   }
   // }
-  &__img {
-    vertical-align: middle;
-    width: 33px;
-    margin-left: 9px;
-    margin-right: 9px;
-  }
-}
+
+// .section-heading {
+//   text-align: center;
+//   &-img {
+//     vertical-align: middle;
+//     width: 28px;
+//     margin-left: 9px;
+//     margin-right: 9px;
+//   }
+// }

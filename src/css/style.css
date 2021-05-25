@@ -391,22 +391,6 @@ button {
   outline: none;
 }
 
-.section-heading {
-  text-align: center;
-}
-.section-heading__title {
-  font-family: "Yeseva One", cursive;
-  text-transform: uppercase;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.section-heading__img {
-  vertical-align: middle;
-  width: 33px;
-  margin-left: 9px;
-  margin-right: 9px;
-}
-
 .container {
   max-width: 1256px;
   width: 90%;
@@ -422,6 +406,7 @@ button {
 
 .button {
   font-family: "Futura Demi", italic;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   font-size: 0.928rem;
@@ -451,10 +436,30 @@ button {
   text-align: center;
 }
 
-.section-heading__block-img {
+.section {
+  padding: 60px 0;
+}
+.section-heading {
+  text-align: center;
+}
+.section-heading-title {
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.section-heading-img {
+  vertical-align: middle;
+  width: 28px;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.section-heading-block-img {
   display: inline-block;
 }
-.section-heading__block-img::before, .section-heading__block-img::after {
+.section-heading-block-img::before, .section-heading-block-img::after {
   display: inline-block;
   content: "";
   width: 32px;
@@ -563,12 +568,16 @@ button {
   max-width: 31.428rem;
   margin-bottom: 15px;
   line-height: 53px;
+  font-style: normal;
+  font-weight: normal;
 }
 .hero__text {
   max-width: 36.071rem;
   font-size: 1.571rem;
   line-height: 30px;
   margin-bottom: 47px;
+  font-style: normal;
+  font-weight: normal;
 }
 .hero__button {
   padding: 18px 24px;
@@ -625,8 +634,10 @@ button {
   display: inline-block;
   font-family: "Yeseva One", cursive;
   font-size: 12px;
-  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
   color: #ffffff;
+  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
 }
@@ -642,6 +653,73 @@ button {
   background-repeat: no-repeat;
   border: 2px solid #E3B873;
   border-radius: 50%;
+}
+
+.control__heading-title {
+  margin-bottom: 15px;
+}
+.control__heading-img {
+  width: 33px;
+}
+
+.types__heading {
+  margin-bottom: 30px;
+}
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-col {
+  flex-basis: 32%;
+}
+
+.card__img {
+  width: 100%;
+  max-width: 392px;
+}
+.card__text {
+  position: relative;
+  max-width: 330px;
+  margin: 0 auto;
+  margin-top: -9.271rem;
+  padding: 24px 0 59px 34px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.03);
+}
+.card__title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.285rem;
+  margin-bottom: 9px;
+}
+.card__list {
+  list-style-position: inside;
+}
+.card__items {
+  font-size: 1.071rem;
+  font-family: "Futura Book";
+  color: #959595;
+  line-height: 25px;
+}
+.card__price-tag {
+  position: absolute;
+  left: 0;
+  bottom: -1.982rem;
+  min-height: 54px;
+  padding: 15px 25px;
+  background-color: #E3B873;
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-size: 1.285rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1200px) {
