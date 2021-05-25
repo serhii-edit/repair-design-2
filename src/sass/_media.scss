@@ -69,6 +69,7 @@
     }
     &__button:first-child {
       margin-bottom: 2.166rem;
+      margin-right: 0;
     }
     &__scroll-btn {
       display: none;
@@ -98,5 +99,11 @@
   .hero__scroll-btn {
     min-height: 40px;
     min-width: 130px;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  html {
+    font-size: 10px;
   }
 }

@@ -31,18 +31,18 @@ button {
     margin-bottom: 20px;
     // color: $white;
   }
-  &__block-img {
-    display: inline-block;
-    &::before, &::after {
-      display: inline-block;
-      content: "";
-      width: 32px;
-      height: 2px;
-      background-color: $primary;
-      border-radius: 30px;
-      vertical-align: middle;
-    }
-  }
+  // &__block-img {
+  //   display: inline-block;
+  //   &::before, &::after {
+  //     display: inline-block;
+  //     content: "";
+  //     width: 32px;
+  //     height: 2px;
+  //     background-color: $primary;
+  //     border-radius: 30px;
+  //     vertical-align: middle;
+  //   }
+  // }
   &__img {
     vertical-align: middle;
     width: 33px;

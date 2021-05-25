@@ -38,3 +38,18 @@
   padding: 11px 20px;
   text-align: center;
 }
+
+.section-heading {
+  &__block-img {
+    display: inline-block;
+    &::before, &::after {
+      display: inline-block;
+      content: "";
+      width: 32px;
+      height: 1.5px;
+      background-color: $primary;
+      border-radius: 30px;
+      vertical-align: middle;
+    }
+  }
+}

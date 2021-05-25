@@ -400,18 +400,6 @@ button {
   font-size: 20px;
   margin-bottom: 20px;
 }
-.section-heading__block-img {
-  display: inline-block;
-}
-.section-heading__block-img::before, .section-heading__block-img::after {
-  display: inline-block;
-  content: "";
-  width: 32px;
-  height: 2px;
-  background-color: #E3B873;
-  border-radius: 30px;
-  vertical-align: middle;
-}
 .section-heading__img {
   vertical-align: middle;
   width: 33px;
@@ -461,6 +449,19 @@ button {
 .contacts__button {
   padding: 11px 20px;
   text-align: center;
+}
+
+.section-heading__block-img {
+  display: inline-block;
+}
+.section-heading__block-img::before, .section-heading__block-img::after {
+  display: inline-block;
+  content: "";
+  width: 32px;
+  height: 1.5px;
+  background-color: #E3B873;
+  border-radius: 30px;
+  vertical-align: middle;
 }
 
 .header {
@@ -574,8 +575,7 @@ button {
   width: 100%;
   max-width: 207px;
 }
-.hero__button-a {
-  border: 1px solid #E3B873;
+.hero__button:first-child {
   margin-right: 17px;
 }
 
@@ -708,6 +708,7 @@ button {
   }
   .hero__button:first-child {
     margin-bottom: 2.166rem;
+    margin-right: 0;
   }
   .hero__scroll-btn {
     display: none;
@@ -733,5 +734,10 @@ button {
   .hero__scroll-btn {
     min-height: 40px;
     min-width: 130px;
+  }
+}
+@media screen and (max-width: 265px) {
+  html {
+    font-size: 10px;
   }
 }
