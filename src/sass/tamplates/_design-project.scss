@@ -1,0 +1,35 @@
+.d-project {
+  &__heading {
+    &-block {
+      &-img {
+        margin-bottom: 20px;
+      }
+    }
+    &-title {
+      margin-bottom: 16px;
+    }
+    &-text {
+      max-width: 740px;
+      margin: 0 auto;
+      margin-bottom: 45px;
+      
+      font-size: 1.428rem;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 27px;
+      text-align: center;
+      color: $dark;
+      // background-color: $white;
+
+    }
+  }
+  &__card {
+    &-price-tag {
+      padding: 16px 81px 16px 33px;
+      bottom: -1.982rem;
+      text-align: left;
+    }
+  }
+}
+
+// d-project__card-price-tag
