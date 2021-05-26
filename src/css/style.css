@@ -819,3 +819,45 @@ button {
     font-size: 10px;
   }
 }
+@media screen and (max-width: 880px) {
+  .section-row {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .section .types__card {
+    margin-bottom: 82px;
+  }
+  .section-col {
+    flex-basis: none;
+  }
+
+  .card__img {
+    max-width: 340px;
+  }
+  .card__text {
+    max-width: 270px;
+    margin-top: -142px;
+    padding: 21px 0 40px 30px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 385px) {
+  .card__title {
+    font-size: 15px;
+    margin-bottom: 9px;
+  }
+  .card__items {
+    line-height: 22px;
+    font-size: 13px;
+  }
+  .card__price-tag {
+    min-height: 41px;
+    padding: 8px 18px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .card__text {
+    margin-top: 0;
+  }
+}

@@ -107,3 +107,64 @@
     font-size: 10px;
   }
 }
+
+
+// Section Types Repair (START)
+// Section Types Repair (START)
+@media screen and (max-width: 880px) {
+  .section {
+    &-row {
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+    }
+    .types {
+      &__card {
+        // margin-bottom: 60px;
+        margin-bottom: 82px;
+      }
+    }
+    &-col {
+      flex-basis: none;
+    }
+    
+  }
+  .card {
+    &__img {
+      max-width: 340px;
+      }
+    &__text {
+      max-width: 270px;
+      margin-top: -142px;
+      
+      padding: 21px 0 40px 30px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .card {
+    &__title {
+      font-size: 15px;
+      margin-bottom: 9px;
+    }
+    &__items {
+      line-height: 22px;
+  
+      font-size: 13px;
+    }
+    &__price-tag {
+      min-height: 41px;
+      padding: 8px 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .card__text {
+    margin-top: 0;
+  }
+}
+// Section Types Repair (END)
+// Section Types Repair (END)
