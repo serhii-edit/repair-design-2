@@ -118,16 +118,15 @@
       justify-content: none;
       align-items: center;
     }
-    .types {
-      &__card {
-        // margin-bottom: 60px;
-        margin-bottom: 82px;
-      }
-    }
     &-col {
       flex-basis: none;
     }
-    
+  }
+  .types {
+    &__card {
+      // margin-bottom: 60px;
+      margin-bottom: 82px;
+    }
   }
   .card {
     &__img {
@@ -168,3 +167,38 @@
 }
 // Section Types Repair (END)
 // Section Types Repair (END)
+
+
+// Section Design Project (START)
+// Section Design Project (START)
+@media screen and (max-width: 880px) {
+  .d-project {
+    &__card {
+      margin-bottom: 82px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .d-project {
+    &__heading-text {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 39px;
+    }
+    &__card {
+      // &-text:first-child {
+      //   height: 176px !important;
+      //   min-height: 177px !important;
+      // }
+      &-items:nth-child(n+8) {
+        display: none;
+      }
+    }
+    &__card {
+      &-price-tag {
+        padding: 16px 20px;
+      }
+    }
+  }
+}

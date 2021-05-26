@@ -23,6 +23,9 @@
 
     }
   }
+  &__block-img {
+    text-align: center;
+  }
   &__card {
     &-price-tag {
       padding: 16px 81px 16px 33px;
@@ -31,5 +34,3 @@
     }
   }
 }
-
-// d-project__card-price-tag

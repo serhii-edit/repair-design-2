@@ -744,6 +744,9 @@ button {
   text-align: center;
   color: #131313;
 }
+.d-project__block-img {
+  text-align: center;
+}
 .d-project__card-price-tag {
   padding: 16px 81px 16px 33px;
   bottom: -1.982rem;
@@ -853,11 +856,12 @@ button {
     justify-content: none;
     align-items: center;
   }
-  .section .types__card {
-    margin-bottom: 82px;
-  }
   .section-col {
     flex-basis: none;
+  }
+
+  .types__card {
+    margin-bottom: 82px;
   }
 
   .card__img {
@@ -887,5 +891,23 @@ button {
 @media screen and (max-width: 305px) {
   .card__text {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 880px) {
+  .d-project__card {
+    margin-bottom: 82px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .d-project__heading-text {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 39px;
+  }
+  .d-project__card-items:nth-child(n+8) {
+    display: none;
+  }
+  .d-project__card-price-tag {
+    padding: 16px 20px;
   }
 }
