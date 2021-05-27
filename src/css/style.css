@@ -522,6 +522,10 @@ button {
   text-transform: uppercase;
 }
 
+.card-text-dots {
+  display: none;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -860,18 +864,28 @@ button {
     flex-basis: none;
   }
 
-  .types__card {
-    margin-bottom: 82px;
-  }
-
   .card__img {
     max-width: 340px;
   }
   .card__text {
     max-width: 270px;
-    margin-top: -142px;
+    margin-top: -145px;
     padding: 21px 0 40px 30px;
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .card__title {
+    margin-bottom: 7px;
+  }
+  .card__items {
+    line-height: 23px;
+  }
+  .card__price-tag {
+    font-size: 15px;
+  }
+  .card-text-dots {
+    display: inline;
   }
 }
 @media screen and (max-width: 385px) {
@@ -894,8 +908,23 @@ button {
   }
 }
 @media screen and (max-width: 880px) {
+  .types__heading {
+    margin-bottom: 40px;
+  }
+  .types__card {
+    margin-bottom: 77px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .types__card-price-tag {
+    bottom: -1.482rem;
+    min-height: 0 !important;
+    padding: 7px 20px;
+  }
+}
+@media screen and (max-width: 880px) {
   .d-project__card {
-    margin-bottom: 82px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -903,11 +932,18 @@ button {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 39px;
+    max-width: 305px;
+  }
+  .d-project__heading-title {
+    font-size: 22px;
   }
   .d-project__card-items:nth-child(n+8) {
     display: none;
   }
   .d-project__card-price-tag {
-    padding: 16px 20px;
+    min-height: 0;
+    padding: 8px 44px;
+    bottom: -1.682rem;
+    text-align: center;
   }
 }
