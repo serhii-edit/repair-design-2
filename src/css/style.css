@@ -478,6 +478,7 @@ button {
 
 .card__img {
   width: 100%;
+  max-height: 421px;
 }
 .card__text {
   position: relative;
@@ -494,6 +495,7 @@ button {
   font-weight: normal;
   font-size: 1.285rem;
   margin-bottom: 9px;
+  color: #131313;
 }
 .card__list {
   list-style-position: inside;
@@ -759,7 +761,7 @@ button {
   left: 0;
   background: rgba(19, 19, 19, 0.3);
   width: 100%;
-  height: 100%;
+  height: 99%;
 }
 .d-project__card-price-tag {
   padding: 16px 81px 16px 33px;
@@ -899,7 +901,7 @@ button {
   .card__text {
     max-width: 270px;
     margin-top: -145px;
-    padding: 21px 0 40px 30px;
+    padding: 21px 0 44px 30px;
     margin-left: 0;
   }
 }
