@@ -81,7 +81,6 @@
   .hero__scroll-btn {
     min-width: 200px;
     min-height: 65px;
-
   }
 }
 
@@ -99,6 +98,9 @@
   .hero__scroll-btn {
     min-height: 40px;
     min-width: 130px;
+  }
+  .scroll-down::after {
+    display: inline-block;
   }
 }
 
@@ -207,6 +209,16 @@
 // Section Design Project (START)
 @media screen and (max-width: 880px) {
   .d-project {
+    background-color: $dark;
+    &__container {
+      color: $white;
+    }
+    &__heading {
+      &-text {
+        max-width: 605px;
+        color: $white;
+      }
+    }
     &__card {
       margin-bottom: 80px;
     }

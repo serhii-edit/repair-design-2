@@ -848,6 +848,10 @@ button {
     min-height: 40px;
     min-width: 130px;
   }
+
+  .scroll-down::after {
+    display: inline-block;
+  }
 }
 @media screen and (max-width: 265px) {
   html {
@@ -923,6 +927,16 @@ button {
   }
 }
 @media screen and (max-width: 880px) {
+  .d-project {
+    background-color: #131313;
+  }
+  .d-project__container {
+    color: #ffffff;
+  }
+  .d-project__heading-text {
+    max-width: 605px;
+    color: #ffffff;
+  }
   .d-project__card {
     margin-bottom: 80px;
   }
