@@ -527,6 +527,147 @@ button {
   display: none;
 }
 
+.label {
+  font-family: "FuturaBook", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.071rem;
+}
+.label--primary {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.285rem;
+  padding: 0;
+  padding: 8px 0;
+}
+.input::-moz-placeholder {
+  color: #ffffff;
+}
+.input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.input::placeholder {
+  color: #ffffff;
+}
+
+.input:focus, input:active {
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: rgba(19, 19, 19, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__dialog {
+  position: relative;
+  color: #ffffff;
+  background-color: #131313;
+  padding: 33px 50px 27px 50px;
+  max-width: 506px;
+  background-image: url("../img/modal-bg.svg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.modal__close {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  background-image: url("../img/modal-x.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+}
+.modal__title {
+  font-family: "Yeseva One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.357rem;
+  line-height: 1.857rem;
+  text-align: center;
+}
+.modal__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.modal__block-input, .modal__input {
+  width: 100%;
+}
+.modal__block-input + .modal__block-input {
+  margin-top: 48px;
+}
+.modal__block-input + .modal__block-input + .modal__block-input {
+  margin-bottom: 16px;
+}
+.modal__label {
+  display: block;
+}
+.modal__policy {
+  margin-bottom: 2.714rem;
+}
+.modal__block-button {
+  align-self: flex-end;
+}
+.modal__button {
+  padding: 19px 21px;
+}
+
+.policy__checkbox {
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.policy__checkbox:checked + .policy__label::before {
+  background-color: #E3B873;
+  background-image: url("../img/check.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 8.31px;
+  cursor: pointer;
+}
+.policy__label {
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 1.14rem;
+}
+.policy__label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -935,7 +1076,7 @@ button {
 }
 @media screen and (max-width: 305px) {
   .card__text {
-    margin-top: 0;
+    margin-top: -3;
   }
 }
 @media screen and (max-width: 880px) {

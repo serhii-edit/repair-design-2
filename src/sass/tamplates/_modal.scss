@@ -1,0 +1,113 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: rgba($dark, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__dialog {
+    position: relative;
+    color: $white;
+    background-color: $dark;
+    padding: 33px 50px 27px 50px;
+    max-width: 506px;
+
+    background-image: url("../img/modal-bg.svg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &__close {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    background-image: url("../img/modal-x.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    border: none;
+    box-shadow: none;
+  }
+  &__title {
+    font-family: "Yeseva One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.357rem;
+    line-height: 1.857rem;   text-align: center;
+  }
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+  }
+  &__block-input, &__input {
+    width: 100%;
+  }
+  &__block-input + &__block-input {
+    margin-top: 48px;
+  }
+  &__block-input + &__block-input + &__block-input{
+    margin-bottom: 16px;
+  }
+  &__label {
+    display: block;
+  }
+  &__policy {
+    margin-bottom: 2.714rem;
+  }
+  &__block-button {
+    align-self: flex-end;
+  }
+  &__button {
+    padding: 19px 21px;
+  }
+}
+.policy {
+  &__checkbox {
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    &:checked + {
+      .policy__label {
+        &::before {
+          background-color: $primary;
+          background-image: url("../img/check.svg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 8.31px;
+          cursor: pointer;
+          // width: 8.31px;
+        }
+      }
+    }
+  }
+  &__label {
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 1.14rem;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid $primary;
+      border-radius: 1px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+}
+
+
