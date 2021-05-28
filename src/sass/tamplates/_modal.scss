@@ -1,4 +1,5 @@
 .modal {
+  visibility: hidden;
   position: fixed;
   left: 0;
   right: 0;
@@ -11,6 +12,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &--visible {
+    visibility: visible;
+  }
   &__dialog {
     position: relative;
     color: $white;
@@ -43,7 +47,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 1.357rem;
-    line-height: 1.857rem;   text-align: center;
+    line-height: 1.857rem;
+    text-align: center;
   }
   &__form {
     position: relative;
@@ -57,7 +62,7 @@
   &__block-input + &__block-input {
     margin-top: 48px;
   }
-  &__block-input + &__block-input + &__block-input{
+  &__block-input + &__block-input + &__block-input {
     margin-bottom: 16px;
   }
   &__label {
@@ -74,25 +79,6 @@
   }
 }
 .policy {
-  &__checkbox {
-    display: inline-block;
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-    &:checked + {
-      .policy__label {
-        &::before {
-          background-color: $primary;
-          background-image: url("../img/check.svg");
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-size: 8.31px;
-          cursor: pointer;
-          // width: 8.31px;
-        }
-      }
-    }
-  }
   &__label {
     vertical-align: middle;
     cursor: pointer;
@@ -108,6 +94,41 @@
       margin-right: 8px;
     }
   }
+  &__checkbox {
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    &:checked + {
+      .policy__label {
+        &::before {
+          content: "";
+          background-color: $primary;
+          background-image: url("../img/check.svg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 8.31px;
+          cursor: pointer;
+          // width: 8.31px;
+        }
+      }
+    }
+  }
+  // &__label {
+  //   vertical-align: middle;
+  //   cursor: pointer;
+  //   font-size: 1.14rem;
+  //   &::before {
+  //     content: "";
+  //     display: inline-block;
+  //     width: 18px;
+  //     height: 18px;
+  //     border: 1px solid $primary;
+  //     border-radius: 1px;
+  //     vertical-align: middle;
+  //     margin-right: 8px;
+  //   }
+  // }
 }
 
 

@@ -153,6 +153,8 @@
   display: none;
 }
 
+
+// Modal Window
 .label {
   font-family: "FuturaBook", sans-serif;
   font-style: normal;
@@ -181,7 +183,7 @@
 }
 .input:focus, input:active {
   outline: none;
-  border-bottom: 1px solid $white;
-  border-right: 1px solid rgba($white, 0.8);
+  border-bottom: 1px solid $primary;
   // border-right: 1px solid $white;
 }
+// Modal Window (END)

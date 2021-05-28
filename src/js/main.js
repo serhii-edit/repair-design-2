@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", function(event){
+  const modal = document.querySelector(".modal");
+  const modalBtn = document.querySelectorAll("[data-toggle=modal]");
+  const closeBtn = document.querySelector(".modal__close");
+
+  var switchModal = () => {
+    modal.classList.toggle("modal--visible");
+  };
+
+  modalBtn.forEach(element => {
+    element.addEventListener("click", switchModal);
+  });
+  closeBtn.addEventListener("click", switchModal);
+});
+
 // var name = "Serhii!";
 // var age = 17;
 
