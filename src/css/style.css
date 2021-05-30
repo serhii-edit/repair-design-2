@@ -406,7 +406,7 @@ button {
   position: fixed;
   bottom: 25px;
   right: 0px;
-  z-index: 11;
+  z-index: 5;
   cursor: pointer;
   text-align: center;
   opacity: 0.5;
