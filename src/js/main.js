@@ -1,31 +1,57 @@
-document.addEventListener("DOMContentLoaded", function(event){
+// document.addEventListener("DOMContentLoaded", function(event){
   const modal = document.querySelector(".modal");
-  const modalBtn = document.querySelectorAll("[data-toggle=modal]");
-  const closeBtn = document.querySelector(".modal__close");
+  // const modalBtn = document.querySelectorAll("[data-toggle=modal]");
+  // const closeBtn = document.querySelector(".modal__close");
 
-  var switchModal = () => {
+//   var switchModal = () => {
+//     modal.classList.toggle("modal--visible");
+//   };
+
+//   modalBtn.forEach(element => {
+//     element.addEventListener("click", switchModal);
+//   });
+
+//   closeBtn.addEventListener("click", switchModal);
+//   window.onclick = function (e) {
+//     if(e.target == modal) {
+//       modal.classList.toggle("modal--visible");
+//     };
+//   };
+
+//   window.addEventListener("keydown", function (event) {
+//     if(event.key == 'Escape') {
+//       modal.classList.remove("modal--visible");
+//     };
+//   });
+
+// });
+
+// ES5 > ES6, use of babel
+window.onclick = function (e) {
+  if(e.target == modal) {
     modal.classList.toggle("modal--visible");
   };
+};
 
-  modalBtn.forEach(element => {
-    element.addEventListener("click", switchModal);
-  });
-
-  closeBtn.addEventListener("click", switchModal);
-  window.onclick = function (e) {
-    if(e.target == modal) {
-      modal.classList.toggle("modal--visible");
-    };
+window.addEventListener("keydown", function (event) {
+  if(event.key == 'Escape') {
+    modal.classList.remove("modal--visible");
   };
-
-  window.addEventListener("keydown", function (event) {
-    if(event.key == 'Escape') {
-      modal.classList.remove("modal--visible");
-    };
-  });
-
 });
 
+
+$(document).ready(function () {
+  var modal = $(".modal");
+  var modalBtn = $("[data-toggle=modal]");
+  var closeBtn = $(".modal__close");
+
+  modalBtn.on("click", function () {
+    modal.toggleClass("modal--visible");
+  });
+  closeBtn.on("click", function () {
+    modal.toggleClass("modal--visible");
+  });
+});
 
 
 // var name = "Serhii!";
