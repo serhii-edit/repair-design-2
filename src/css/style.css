@@ -375,6 +375,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 14px;
 }
@@ -395,6 +399,35 @@ button {
   max-width: 1256px;
   width: 90%;
   margin: 0 auto 0 auto;
+}
+
+.arrow-top {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 0px;
+  z-index: 11;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.arrow-top__link {
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  background-color: #E3B873;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+}
+.arrow-top:hover {
+  opacity: 1;
+}
+.arrow-top:active {
+  opacity: 1;
+}
+.arrow-top {
+  opacity: 0.5;
 }
 
 .title {
