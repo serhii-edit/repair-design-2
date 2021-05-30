@@ -10,8 +10,23 @@ document.addEventListener("DOMContentLoaded", function(event){
   modalBtn.forEach(element => {
     element.addEventListener("click", switchModal);
   });
+
   closeBtn.addEventListener("click", switchModal);
+  window.onclick = function (e) {
+    if(e.target == modal) {
+      modal.classList.toggle("modal--visible");
+    };
+  };
+
+  window.addEventListener("keydown", function (event) {
+    if(event.key == 'Escape') {
+      modal.classList.remove("modal--visible");
+    };
+  });
+
 });
+
+
 
 // var name = "Serhii!";
 // var age = 17;
