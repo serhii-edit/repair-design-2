@@ -8,6 +8,22 @@
   color: $white;
 
   padding-top: 80px;
+  // &::after {
+  //   content: "";
+  //   // display: inline-block;
+  //   width: 100%;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   background-color: $dark;
+  //   height: 48.5px;
+  //   z-index: 1;
+    
+  //   background-image: url("../img/primary-bg-lines.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   background-size: cover;
+  // }
 
   &__content {
     position: relative;
@@ -113,6 +129,7 @@
 
   min-width: 247px;
   min-height: 97px;
+  z-index: 2;
 }
 
 .scroll-down {

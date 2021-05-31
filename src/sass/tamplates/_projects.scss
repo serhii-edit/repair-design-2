@@ -1,0 +1,43 @@
+.projects {
+  position: relative;
+  top: -48.5px;
+  padding-top: 175px;
+  z-index: 1;
+  color: $white;
+
+  width: 100%;
+  background-image: url("../img/projects-bg-lines.svg");
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover;
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 2.642rem;
+    &--line {
+      display: block;
+      &::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 2.285rem;
+        width: 92px;
+        height: 1px;
+        background-color: $primary;
+        z-index: 1;
+      }
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.285rem;
+    line-height: 2.071rem;
+    max-width: 442px;
+  }
+  &__slide {
+    
+  }
+}
+

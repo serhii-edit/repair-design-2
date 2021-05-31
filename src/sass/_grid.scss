@@ -3,3 +3,22 @@
   width: 90%;
   margin: 0 auto 0 auto;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-col {
+  flex-basis: 32%;
+}
