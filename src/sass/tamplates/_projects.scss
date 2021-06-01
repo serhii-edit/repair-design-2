@@ -1,7 +1,12 @@
+.swiper-container {
+  width: 100%;
+}
+
 .projects {
   position: relative;
   top: -48.5px;
   padding-top: 175px;
+  padding-bottom: 60px;
   z-index: 1;
   color: $white;
 
@@ -35,9 +40,56 @@
     font-size: 1.285rem;
     line-height: 2.071rem;
     max-width: 442px;
+    margin-bottom: 42px;
   }
   &__slide {
-    
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // width: auto !important;
+    &-title {
+      font-family: "Yeseva One", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.285rem;
+      // line-height: 25px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    &-text {
+      font-family:  "Futura Book";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.07rem;
+    }
+    &-block {
+      // width: 100%;
+      margin-bottom: 30px;
+      display: block;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: flex-start;
+    }
+    &-inline {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      min-width: 175px;
+      // margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
+.swiper-pagination-bullet {
+  background: rgba($white, 0.3);
+  width: 10px;
+  height: 10px;
+}
+.swiper-pagination-bullet-active {
+  background-color: $white;
+  width: 10px;
+  height: 10px;
+}
