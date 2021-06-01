@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     direction: 'horizontal',
     // loop: true,
     slidesPerView: 1,
+    allowTouchMove: false,
 
     pagination: {
       el: '.swiper-pagination',
@@ -99,6 +100,12 @@ $(document).ready(function () {
     return false;
   });
 
+  var next = $(".swiper-button-next");
+  var prev = $(".swiper-button-prev");
+  var bullets = $(".swiper-pagination");
+  
+  next.css("left", prev.width() + 10 + bullets.width() + 10);
+  bullets.css("left", prev.width() + 10);
 
 });
 

@@ -951,7 +951,7 @@ button {
 }
 
 .swiper-container {
-  width: 100%;
+  width: auto;
 }
 
 .projects {
@@ -994,6 +994,16 @@ button {
   max-width: 442px;
   margin-bottom: 42px;
 }
+.projects__slide {
+  width: 100% !important;
+}
+.projects__slide-img {
+  overflow: hidden;
+}
+.projects__slide-img img {
+  max-width: 679px;
+  overflow: hidden;
+}
 .projects__slide-title {
   font-family: "Yeseva One", cursive;
   font-style: normal;
@@ -1022,16 +1032,48 @@ button {
   margin-right: 0;
 }
 
+.swiper-pagination {
+  width: auto !important;
+  left: auto;
+  bottom: -2px !important;
+}
 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.3);
   width: 10px;
   height: 10px;
 }
-
 .swiper-pagination-bullet-active {
   background-color: #ffffff;
-  width: 10px;
-  height: 10px;
+}
+.swiper-button-prev {
+  background-image: url("../img/arrow-prev.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 42px;
+  height: 14px;
+  top: auto !important;
+  bottom: 0 !important;
+  left: 0;
+  right: auto;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next {
+  background-image: url("../img/arrow-next.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 42px;
+  height: 14px;
+  top: auto !important;
+  bottom: 0 !important;
+  left: 0;
+  right: auto;
+}
+.swiper-button-next::after {
+  display: none;
 }
 
 .control__heading-title {

@@ -1,5 +1,5 @@
 .swiper-container {
-  width: 100%;
+  width: auto;
 }
 
 .projects {
@@ -47,6 +47,17 @@
     // flex-direction: row;
     // flex-wrap: wrap;
     // width: auto !important;
+    width: 100% !important;
+    &-img {
+      overflow: hidden;
+      // max-width: 679px; 
+      & img {
+        // width: 100%;
+        max-width: 679px;
+        overflow: hidden;
+
+     }
+    }
     &-title {
       font-family: "Yeseva One", cursive;
       font-style: normal;
@@ -83,13 +94,52 @@
   }
 }
 
-.swiper-pagination-bullet {
-  background: rgba($white, 0.3);
-  width: 10px;
-  height: 10px;
-}
-.swiper-pagination-bullet-active {
-  background-color: $white;
-  width: 10px;
-  height: 10px;
+.swiper {
+  &-pagination {
+    width: auto !important;
+    left: auto;
+    bottom: -2px !important;
+    // bottom: auto !important;
+    &-bullet {
+      background: rgba($white, 0.3);
+      width: 10px;
+      height: 10px;
+      &-active {
+        background-color: $white;
+      }
+    }
+  }
+  &-button {
+    &-prev {
+      // background: url("../img/arrow-prev.svg");
+      background-image: url("../img/arrow-prev.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 42px;
+      height: 14px;
+      top: auto !important;
+      bottom: 0 !important;
+      left: 0;
+      right: auto;
+      &::after {
+        display: none;
+      } 
+    }
+    &-next {
+      background-image: url("../img/arrow-next.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 42px;
+      height: 14px;
+      top: auto !important;
+      bottom: 0 !important;
+      left: 0;
+      right: auto;
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
