@@ -47,12 +47,17 @@ document.addEventListener("DOMContentLoaded", function(event){
   }
 
   // Swiper START
-  const swiper = new Swiper('.swiper-container', {
+  const swiper = new Swiper('.swiper-p-container', {
     // Optional parameters
     direction: 'horizontal',
     // loop: true,
     slidesPerView: 1,
-    allowTouchMove: false,
+    slidesPerGroup: 1,
+    // cssMode: true,
+    grabCursor: true,
+    effect: "flip",
+
+    // allowTouchMove: false,
 
     pagination: {
       el: '.swiper-pagination',
@@ -67,7 +72,18 @@ document.addEventListener("DOMContentLoaded", function(event){
   
   });
   // Swiper END
-
+  var mySwiperImage = new Swiper(".swiper-projects-image", {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    grabCursor: true,
+    effect: "cube",
+    cubeEffect: {
+      slideShadows: false,
+    },
+  });
+  mySwiperImage.controller.control = swiper;
+  swiper.controller.control = mySwiperImage;
 });
 
 

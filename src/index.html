@@ -171,9 +171,8 @@
               <!-- /.section-heading-text -->
             </div>
             <!-- /.section-heading -->
-
             <!-- Slider main container -->
-            <div class="swiper-container">
+            <div class="swiper-container swiper-p-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <div class="swiper-slide projects__slide">
@@ -315,37 +314,36 @@
               <!-- /.swiper-wrapper -->
               
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
+              <div class="projects-button-prev swiper-button-prev"></div>
+              <div class="projects-padination swiper-pagination"></div>
+              <div class="projects-button-next swiper-button-next"></div>
             </div>
             <!-- /.swiper-container -->
-<!-- -------------------------------- -->
           </div>
-          <!-- /.col -->
+          <!-- /.col-50 -->
+          
           <div class="col-50">
-            
             <!-- Slider main container -->
-            <div class="swiper-container">
+            <div class="swiper-container swiper-projects-image">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide projects__slide-img">
+                <div class="swiper-slide swiper-p-img">
                   <img src="./img/projects-1.jpg" alt="">
                 </div>
-                <div class="swiper-slide projects__slide-img">
+                <div class="swiper-slide swiper-p-img">
                   <img src="./img/projects-2.jpg" alt="">
                 </div>
-                <div class="swiper-slide projects__slide-img">
+                <div class="swiper-slide swiper-p-img">
                   <img src="./img/projects-3.jpg" alt="">
                 </div>
               </div>
-            
+              <!-- /.swiper-wrapper -->
+            </div>
+            <!-- /.swiper-container -->
           </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
+          <!-- /.col-50 -->
 
+        <!-- /.row -->
       </div>
       <!-- /.container -->
     </section>
@@ -733,9 +731,57 @@
 
   </main>
   <!-- /.main -->
+
+  
   
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
+
+<div class="swiper-slide projects__slide">
+  <div class="projects__slide-block">
+    <div class="projects__slide-inline">
+      <h4 class="projects__slide-title color--primary">
+        Город:
+      </h4>
+      <span class="projects__slide-text">
+        Ростов-на-Дону <span class="span--block">ЖК Адмирал</span>
+      </span>
+    </div>
+    <!-- /.projects__slide-inline -->
+    <div class="projects__slide-inline">
+      <h4 class="projects__slide-title color--primary">
+        Площадь:
+      </h4>
+      <span class="projects__slide-text">
+        81 m<sup>2</sup>
+      </span>
+    </div>
+    <!-- /.projects__slide-inline -->
+  </div>
+  <!-- /.projects__slide-block -->
+  <div class="projects__slide-block">
+    <div class="projects__slide-inline">
+      <h4 class="projects__slide-title color--primary">
+        СРОК РЕМОНТА:
+      </h4>
+      <span class="projects__slide-text">
+        3,5 месяца
+      </span>
+    </div>
+    <!-- /.projects__slide-inline -->
+    <div class="projects__slide-inline">
+      <h4 class="projects__slide-title color--primary">
+        СТОИМОСТЬ:
+      </h4>
+      <span class="projects__slide-text">
+        По запросу
+      </span>
+    </div>
+    <!-- /.projects__slide-inline -->
+  </div>
+  <!-- /.projects__slide-block -->
+</div>
+<!-- /.swiper-slide + .projects__slide -->

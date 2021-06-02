@@ -404,14 +404,16 @@ button {
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .col-50 {
-  width: 50%;
+  height: auto;
 }
 
 .col {
   width: auto;
+  height: auto;
 }
 
 .section-row {
@@ -950,8 +952,9 @@ button {
   border-radius: 50%;
 }
 
-.swiper-container {
-  width: auto;
+.swiper-p-container {
+  max-width: 445px !important;
+  height: auto;
 }
 
 .projects {
@@ -971,7 +974,9 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 27px;
+  letter-spacing: -2px;
   line-height: 2.642rem;
+  margin-bottom: 21px;
 }
 .projects__title--line {
   display: block;
@@ -992,17 +997,10 @@ button {
   font-size: 1.285rem;
   line-height: 2.071rem;
   max-width: 442px;
-  margin-bottom: 42px;
+  margin-bottom: 49px;
 }
 .projects__slide {
   width: 100% !important;
-}
-.projects__slide-img {
-  overflow: hidden;
-}
-.projects__slide-img img {
-  max-width: 679px;
-  overflow: hidden;
 }
 .projects__slide-title {
   font-family: "Yeseva One", cursive;
@@ -1019,17 +1017,18 @@ button {
   font-size: 1.07rem;
 }
 .projects__slide-block {
-  margin-bottom: 30px;
+  margin-bottom: 42px;
   display: block;
 }
 .projects__slide-inline {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  min-width: 175px;
+  min-width: 187px;
 }
 .projects__slide-inline:last-child {
   margin-right: 0;
+  min-width: auto;
 }
 
 .swiper-pagination {
@@ -1045,7 +1044,8 @@ button {
 .swiper-pagination-bullet-active {
   background-color: #ffffff;
 }
-.swiper-button-prev {
+
+.projects-button-prev {
   background-image: url("../img/arrow-prev.svg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1057,10 +1057,11 @@ button {
   left: 0;
   right: auto;
 }
-.swiper-button-prev::after {
+.projects-button-prev::after {
   display: none;
 }
-.swiper-button-next {
+
+.projects-button-next {
   background-image: url("../img/arrow-next.svg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1072,8 +1073,21 @@ button {
   left: 0;
   right: auto;
 }
-.swiper-button-next::after {
+.projects-button-next::after {
   display: none;
+}
+
+.swiper-projects-image {
+  max-width: 680px;
+  height: auto;
+}
+
+.swiper-p-img img {
+  max-width: 679px;
+}
+
+.swiper-p-img {
+  width: 100%;
 }
 
 .control__heading-title {

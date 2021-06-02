@@ -7,14 +7,16 @@
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .col-50 {
-  width: 50%;
+  height: auto;
 }
 
 .col {
   width: auto;
+  height: auto;
 }
 
 .section-row {
