@@ -1171,6 +1171,50 @@ button {
     max-width: 679px !important;
   }
 }
+@media screen and (max-width: 570px) {
+  .projects {
+    padding-top: 35px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .projects__col-1 {
+    width: 100%;
+  }
+  .projects__title {
+    font-size: 1.83rem;
+    margin-bottom: 20px;
+  }
+  .projects__text {
+    max-width: 290px;
+    font-size: 1.185rem;
+    line-height: 1.971rem;
+    margin-bottom: 37px;
+  }
+  .projects__nav {
+    margin-top: 55px;
+  }
+  .projects__slide-block {
+    margin-bottom: 29px;
+  }
+  .projects__slide-block:last-child {
+    margin-bottom: 0;
+  }
+  .projects__slide-inline {
+    min-width: 156px;
+  }
+  .projects__slide-title {
+    font-size: 1.185rem;
+    margin-bottom: 12px;
+  }
+  .projects__slide-text {
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .projects__slide-inline {
+    min-width: 130px;
+  }
+}
 .control__heading-title {
   margin-bottom: 15px;
 }
