@@ -120,8 +120,8 @@ $(document).ready(function () {
   var prev = $(".projects-button-prev");
   var bullets = $(".projects-pagination");
   
-  next.css("margin-left", prev.width() + 10 + bullets.width() + 10);
-  bullets.css("margin-left", prev.width() + 10);
+  next.css("margin-left", prev.width() + bullets.width() + 58);
+  bullets.css("margin-left", prev.width() + 29);
 
 });
 

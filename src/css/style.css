@@ -399,6 +399,7 @@ button {
   max-width: 1256px;
   width: 90%;
   margin: 0 auto 0 auto;
+  border: 1px solid red;
 }
 
 .row {
@@ -957,6 +958,10 @@ button {
   height: auto;
 }
 
+.projects--relatieve {
+  position: relative;
+}
+
 .projects {
   position: relative;
   top: -48.5px;
@@ -969,6 +974,9 @@ button {
   background-repeat: repeat-y;
   background-position: center center;
   background-size: cover;
+}
+.projects__heading {
+  width: 100%;
 }
 .projects__title {
   font-style: normal;
@@ -1015,10 +1023,14 @@ button {
   font-style: normal;
   font-weight: normal;
   font-size: 1.07rem;
+  text-align: left;
 }
 .projects__slide-block {
-  margin-bottom: 42px;
   display: block;
+  margin-bottom: 42px;
+}
+.projects__slide-block:nth-child(2) {
+  margin-bottom: 0 !important;
 }
 .projects__slide-inline {
   display: inline-block;
@@ -1046,15 +1058,15 @@ button {
 }
 
 .projects__nav {
-  position: absolute;
+  display: block;
   left: 0;
-  bottom: -60px;
+  bottom: 0;
   width: auto;
   height: auto;
 }
 
 .projects-pagination {
-  position: initial;
+  position: absolute;
   vertical-align: middle;
   display: inline-block;
   width: auto;
@@ -1075,6 +1087,7 @@ button {
 
 .projects-button-prev, .projects-button-next {
   display: inline-block;
+  vertical-align: middle;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1095,23 +1108,70 @@ button {
 
 .projects-button-next {
   background-image: url("../img/arrow-next.svg");
-  left: auto !important;
+  left: 0 !important;
   right: auto !important;
 }
 
 .swiper-projects-image {
+  position: relative;
   max-width: 680px;
   height: auto;
+  overflow: hidden;
 }
 
+.swiper-p-img {
+  position: initial;
+  width: 100% !important;
+}
 .swiper-p-img img {
-  max-width: 679px;
+  width: 100%;
 }
 
 .swiper-p-img {
   width: 100%;
 }
 
+@media screen and (max-width: 1250px) {
+  .swiper-p-container {
+    margin: 0 !important;
+  }
+
+  .projects__col-1 {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .projects__col-2 {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects__nav {
+    margin-top: 42px;
+  }
+}
+@media screen and (max-width: 945px) {
+  .projects--column {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__col-1 {
+    width: 100%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+  }
+  .projects__col-2 {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .swiper-p-img {
+    max-width: 679px !important;
+  }
+}
 .control__heading-title {
   margin-bottom: 15px;
 }
