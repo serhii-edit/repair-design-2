@@ -1,6 +1,11 @@
-.swiper-p-container {
-  max-width: 445px !important;
-  height: auto;
+.swiper {
+  &-p-container {
+    max-width: 445px !important;
+    height: auto;
+  }
+  &-p-wrapper {
+    // overflow: hidden;
+  }
 }
 .projects--relatieve {
   position: relative;

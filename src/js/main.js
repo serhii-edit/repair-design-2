@@ -55,7 +55,11 @@ document.addEventListener("DOMContentLoaded", function(event){
     slidesPerGroup: 1,
     // cssMode: true,
     grabCursor: true,
-    effect: "flip",
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 50,
+      slideShadows: false,
+    },
 
     // allowTouchMove: false,
 
@@ -77,10 +81,23 @@ document.addEventListener("DOMContentLoaded", function(event){
     slidesPerView: 1,
     slidesPerGroup: 1,
     grabCursor: true,
-    effect: "cube",
-    cubeEffect: {
+    // effect: "cube",
+    // cubeEffect: {
+    //   slideShadows: false,
+    // },
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 50,
       slideShadows: false,
     },
+    autoplay: {
+      delay: 6500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    // mousewheel: {
+    //   invert: true,
+    // },
   });
   mySwiperImage.controller.control = swiper;
   swiper.controller.control = mySwiperImage;
