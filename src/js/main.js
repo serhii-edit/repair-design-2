@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     // allowTouchMove: false,
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.projects-pagination',
       type: 'bullets',
     },
   
@@ -116,12 +116,12 @@ $(document).ready(function () {
     return false;
   });
 
-  var next = $(".swiper-button-next");
-  var prev = $(".swiper-button-prev");
-  var bullets = $(".swiper-pagination");
+  var next = $(".projects-button-next");
+  var prev = $(".projects-button-prev");
+  var bullets = $(".projects-pagination");
   
-  next.css("left", prev.width() + 10 + bullets.width() + 10);
-  bullets.css("left", prev.width() + 10);
+  next.css("margin-left", prev.width() + 10 + bullets.width() + 10);
+  bullets.css("margin-left", prev.width() + 10);
 
 });
 
