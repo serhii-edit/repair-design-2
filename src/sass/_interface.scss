@@ -94,6 +94,16 @@
   text-align: center;
 }
 
+.text--line {
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: $primary;
+    z-index: 1;
+  }
+}
+
 .section {
   width: 100%;
   &--dark {
@@ -256,3 +266,54 @@
   // border-right: 1px solid $white;
 }
 // Modal Window (END)
+
+// Swiper setting nav (START)
+.projects-pagination, .own-padination {
+  position: absolute;
+  // bottom: 0;
+  vertical-align: middle;
+  display: inline-block;
+  width: auto;
+  .swiper-pagination-bullet {
+    background: rgba($white, 0.3);
+    width: 10px;
+    height: 10px; 
+    vertical-align: middle;
+    display: inline-block !important;
+  }
+  .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 17px;
+  }
+  .swiper-pagination-bullet-active {
+    background: $white;
+  }
+}
+
+.projects-button-prev, .projects-button-next, .own-button-prev, .own-button-next {
+  display: inline-block;
+  vertical-align: middle;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 42px;
+  height: 14px;
+  top: auto !important;
+  bottom: 0 !important;
+  &::after {
+    display: none;
+  } 
+}
+
+.projects-button-prev, .own-button-prev {
+    background-image: url("../img/arrow-prev.svg");
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  .projects-button-next, .own-button-next {
+    background-image: url("../img/arrow-next.svg");
+    left: 0 !important;
+    right: auto !important;
+  }
+
+// Setting swiper nav (END)

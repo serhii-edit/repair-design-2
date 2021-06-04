@@ -517,6 +517,14 @@ button {
   text-align: center;
 }
 
+.text--line::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #E3B873;
+  z-index: 1;
+}
+
 .section {
   width: 100%;
 }
@@ -654,6 +662,53 @@ button {
 .input:focus, input:active {
   outline: none;
   border-bottom: 1px solid #E3B873;
+}
+
+.projects-pagination, .own-padination {
+  position: absolute;
+  vertical-align: middle;
+  display: inline-block;
+  width: auto;
+}
+.projects-pagination .swiper-pagination-bullet, .own-padination .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3);
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  display: inline-block !important;
+}
+.projects-pagination .swiper-pagination-bullet + .swiper-pagination-bullet, .own-padination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 17px;
+}
+.projects-pagination .swiper-pagination-bullet-active, .own-padination .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.projects-button-prev, .projects-button-next, .own-button-prev, .own-button-next {
+  display: inline-block;
+  vertical-align: middle;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 42px;
+  height: 14px;
+  top: auto !important;
+  bottom: 0 !important;
+}
+.projects-button-prev::after, .projects-button-next::after, .own-button-prev::after, .own-button-next::after {
+  display: none;
+}
+
+.projects-button-prev, .own-button-prev {
+  background-image: url("../img/arrow-prev.svg");
+  left: 0 !important;
+  right: auto !important;
+}
+
+.projects-button-next, .own-button-next {
+  background-image: url("../img/arrow-next.svg");
+  left: 0 !important;
+  right: auto !important;
 }
 
 .modal {
@@ -1233,6 +1288,10 @@ button {
   padding: 15px 25px;
 }
 
+.d-project {
+  position: relative;
+  z-index: 2;
+}
 .d-project__heading-block-img {
   margin-bottom: 20px;
 }
@@ -1285,6 +1344,37 @@ button {
       height: 100%;
     }
 */
+.steps {
+  margin-top: -428px;
+  padding-top: 428px;
+  padding-bottom: 576px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #131313;
+  z-index: 1;
+}
+.steps__pre-title {
+  display: inline-block;
+  margin-bottom: 17px;
+  font-family: "Futura Demic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.steps__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+}
+.steps__text--line::after {
+  width: 92px;
+  height: 1.5px;
+  margin-left: 85px;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px;

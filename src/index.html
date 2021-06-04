@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Repair Design Project</title>
 
+  <link rel="stylesheet" href="./css/animate.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,7 +16,7 @@
   <header class="header">
     <div class="container header__container">
       <div class="menu header__menu ">
-        <div class="logo menu__logo">
+        <div class="logo menu__logo animate__animated animate__fadeInLeft">
           Repair Design Project
         </div>
         <!-- /.logo -->
@@ -176,7 +177,7 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-p-wrapper">
                 <div class="swiper-slide projects__slide">
-                  <div class="projects__slide-block">
+                  <div class="projects__slide-block animate__animated animate__fadeIn wow">
                     <div class="projects__slide-inline">
                       <h4 class="projects__slide-title color--primary">
                         Город:
@@ -197,7 +198,7 @@
                     <!-- /.projects__slide-inline -->
                   </div>
                   <!-- /.projects__slide-block -->
-                  <div class="projects__slide-block">
+                  <div class="projects__slide-block animate__animated animate__fadeIn animate__delay-1s wow">
                     <div class="projects__slide-inline">
                       <h4 class="projects__slide-title color--primary">
                         СРОК РЕМОНТА:
@@ -738,6 +739,63 @@
     </section>
     <!-- /.d-project section -->
 
+    <section class="section steps section--dark">
+      <div class="container">
+        
+        <div class="steps__heading">
+          <span class="steps__pre-title">
+            Как Мы Работаем
+          </span>
+          <!-- /.steps__pre-title -->
+          <h4 class="section-heading-title section-heading--left color--primary steps__title">
+            6 Шагов <span class="text--line span--block steps__text--line">
+              До Цели
+            </span>
+          </h4>
+
+        </div>
+        <!-- /.steps__heading -->
+
+        <div class="row steps__row">
+          <div class="col">
+
+            <div class="swiper-container swiper-c-steps">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+              </div>
+              <div class="steps__nav">
+                <div class="swiper-button-prev own-button-prev"></div>
+                <div class="swiper-pagination own-padination"></div>
+                <div class="swiper-button-next own-button-next"></div>
+              </div>
+              <!-- /.steps__nav -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <!-- /.swiper-container swiper-c-steps -->
+          </div>
+          <!-- /.col -->
+
+          <div class="col">
+
+            <div class="swiper-container swiper-c-steps-image">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+              </div>
+            </div>
+            <!-- /.swiper-container swiper-c-steps-image -->
+
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row steps__row -->
+
+      </div>
+      <!-- /.container -->
+    </section>    
 
   </main>
   <!-- /.main -->
@@ -745,7 +803,11 @@
   
   
   <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
 .d-project {
+  position: relative;
+  z-index: 2;
   &__heading {
     &-block {
       &-img {

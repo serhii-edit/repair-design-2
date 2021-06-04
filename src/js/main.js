@@ -101,6 +101,18 @@ document.addEventListener("DOMContentLoaded", function(event){
   });
   mySwiperImage.controller.control = swiper;
   swiper.controller.control = mySwiperImage;
+
+  var swiperTarget = new Swiper(".swiper-c-steps", {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  });
+
 });
 
 
@@ -133,9 +145,9 @@ $(document).ready(function () {
     return false;
   });
 
-  var next = $(".projects-button-next");
-  var prev = $(".projects-button-prev");
-  var bullets = $(".projects-pagination");
+  var next = $(".projects-button-next, .own-button-next");
+  var prev = $(".projects-button-prev, .own-button-prev");
+  var bullets = $(".projects-pagination, .own-pagination");
   
   next.css("margin-left", prev.width() + bullets.width() + 58);
   bullets.css("margin-left", prev.width() + 29);
