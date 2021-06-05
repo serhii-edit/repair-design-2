@@ -147,10 +147,14 @@ $(document).ready(function () {
 
   var next = $(".projects-button-next, .own-button-next");
   var prev = $(".projects-button-prev, .own-button-prev");
-  var bullets = $(".projects-pagination, .own-pagination");
+  var bullets = $(".projects-pagination, .own-padination");
+
+  // var prevB = $(".own-button-prev");
+  // var bulletsB = $(".own-padination");
   
   next.css("margin-left", prev.width() + bullets.width() + 58);
   bullets.css("margin-left", prev.width() + 29);
 
+  // bulletsB.css("margin-left", prevB.width() + 29);
 });
 

@@ -274,7 +274,7 @@
   vertical-align: middle;
   display: inline-block;
   width: auto;
-  .swiper-pagination-bullet {
+  .swiper-pagination-bullet, .own-padination {
     background: rgba($white, 0.3);
     width: 10px;
     height: 10px; 
@@ -287,6 +287,10 @@
   .swiper-pagination-bullet-active {
     background: $white;
   }
+}
+
+.own-padination {
+  position: relative;
 }
 
 .projects-button-prev, .projects-button-next, .own-button-prev, .own-button-next {

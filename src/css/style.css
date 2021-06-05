@@ -670,7 +670,7 @@ button {
   display: inline-block;
   width: auto;
 }
-.projects-pagination .swiper-pagination-bullet, .own-padination .swiper-pagination-bullet {
+.projects-pagination .swiper-pagination-bullet, .projects-pagination .own-padination, .own-padination .swiper-pagination-bullet, .own-padination .own-padination {
   background: rgba(255, 255, 255, 0.3);
   width: 10px;
   height: 10px;
@@ -682,6 +682,10 @@ button {
 }
 .projects-pagination .swiper-pagination-bullet-active, .own-padination .swiper-pagination-bullet-active {
   background: #ffffff;
+}
+
+.own-padination {
+  position: relative;
 }
 
 .projects-button-prev, .projects-button-next, .own-button-prev, .own-button-next {
