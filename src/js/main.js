@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   }
 
   // Swiper START
-  const swiper = new Swiper('.swiper-p-container', {
+  const swiperA = new Swiper('.swiper-p-container', {
     // Optional parameters
     direction: 'horizontal',
     // loop: true,
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     // allowTouchMove: false,
 
     pagination: {
-      el: '.projects-pagination',
+      el: '.projects__pagination',
       type: 'bullets',
     },
   
@@ -90,19 +90,23 @@ document.addEventListener("DOMContentLoaded", function(event){
       rotate: 50,
       slideShadows: false,
     },
-    autoplay: {
-      delay: 6500,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
+    // autoplay: {
+    //   delay: 6500,
+    //   disableOnInteraction: false,
+    //   pauseOnMouseEnter: true,
+    // },
     // mousewheel: {
     //   invert: true,
     // },
   });
-  mySwiperImage.controller.control = swiper;
-  swiper.controller.control = mySwiperImage;
+  mySwiperImage.controller.control = swiperA;
+  swiperA.controller.control = mySwiperImage;
 
   var swiperTarget = new Swiper(".swiper-c-steps", {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    grabCursor: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -145,16 +149,17 @@ $(document).ready(function () {
     return false;
   });
 
-  var next = $(".projects-button-next, .own-button-next");
-  var prev = $(".projects-button-prev, .own-button-prev");
-  var bullets = $(".projects-pagination, .own-padination");
-
-  // var prevB = $(".own-button-prev");
-  // var bulletsB = $(".own-padination");
-  
+  var next = $(".projects__button-next.swiper-button-next");
+  var prev = $(".projects__button-prev.swiper-button-prev");
+  var bullets = $(".projects__pagination.swiper-pagination");
   next.css("margin-left", prev.width() + bullets.width() + 58);
-  bullets.css("margin-left", prev.width() + 29);
+  bullets.css("margin-left", prev.width() + 29); 
 
-  // bulletsB.css("margin-left", prevB.width() + 29);
+  var nextB = $(".steps__button-next.swiper-button-next");
+  var prevB = $(".steps__button-prev.swiper-button-prev");
+  var bulletsB = $(".steps__pagination.swiper-pagination");
+  nextB.css("margin-left", prevB.width() + bulletsB.width() + 58);
+  bulletsB.css("margin-left", prevB.width() + 29); 
+
 });
 

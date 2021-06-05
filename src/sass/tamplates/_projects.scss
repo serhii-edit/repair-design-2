@@ -94,26 +94,9 @@
 }
 
 .projects {
-  &-pagination {
-    width: auto !important;
-    left: auto;
-    bottom: -2px !important;
-    // bottom: auto !important;
-    &-bullet {
-      background: rgba($white, 0.3);
-      width: 10px;
-      height: 10px;
-      &-active {
-        background-color: $white;
-      }
-    }
-  }
-}
-
-.projects {
   &__nav {
     display: block;
-    // position: absolute;
+    // position: absolute; -turn- bullets (vertical)
     left: 0;
     // bottom: -60px;
     bottom: 0;
@@ -121,55 +104,33 @@
     width: auto;
     height: auto;
   }
-}
-
-.projects-pagination {
-  position: absolute;
-  // bottom: 0;
-  vertical-align: middle;
-  display: inline-block;
-  width: auto;
-  .swiper-pagination-bullet {
-    background: rgba($white, 0.3);
-    width: 10px;
-    height: 10px; 
-    vertical-align: middle;
-    display: inline-block !important;
-  }
-  .swiper-pagination-bullet + .swiper-pagination-bullet {
-    margin-left: 17px;
-  }
-  .swiper-pagination-bullet-active {
-    background: $white;
+  &__pagination {
+    position: absolute;
+    bottom: 0;
   }
 }
+//   .swiper-pagination-bullet + .swiper-pagination-bullet {
+//     margin-left: 17px;
+//   }
+//   .swiper-pagination-bullet-active {
+//     background: $white;
+//   }
+// }
 
-.projects-button-prev, .projects-button-next {
-  display: inline-block;
-  vertical-align: middle;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 42px;
-  height: 14px;
-  top: auto !important;
-  bottom: 0 !important;
-  &::after {
-    display: none;
-  } 
-}
-
-.projects-button-prev {
-    background-image: url("../img/arrow-prev.svg");
-    left: 0 !important;
-    right: auto !important;
-  }
-
-  .projects-button-next {
-    background-image: url("../img/arrow-next.svg");
-    left: 0 !important;
-    right: auto !important;
-  }
+// .projects-button-prev, .projects-button-next {
+//   display: inline-block;
+//   vertical-align: middle;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   width: 42px;
+//   height: 14px;
+//   top: auto !important;
+//   bottom: 0 !important;
+//   &::after {
+//     display: none;
+//   } 
+// }
 
 
 .swiper-projects-image {
@@ -251,6 +212,16 @@
       // width: none;
       max-width: 679px !important;
     }
+  }
+}
+
+.projects {
+  &__pagination {
+    position: absolute;
+  }
+  &__button-prev, &__button-next {
+    top: auto !important;
+    bottom: 0 !important;
   }
 }
 

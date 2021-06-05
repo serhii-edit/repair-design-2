@@ -267,14 +267,15 @@
 }
 // Modal Window (END)
 
-// Swiper setting nav (START)
-.projects-pagination, .own-padination {
-  position: absolute;
+
+// Swiper setting navigation (START)
+.own-pagination {
+  // position: absolute;
   // bottom: 0;
   vertical-align: middle;
   display: inline-block;
   width: auto;
-  .swiper-pagination-bullet, .own-padination {
+  .swiper-pagination-bullet {
     background: rgba($white, 0.3);
     width: 10px;
     height: 10px; 
@@ -289,11 +290,7 @@
   }
 }
 
-.own-padination {
-  position: relative;
-}
-
-.projects-button-prev, .projects-button-next, .own-button-prev, .own-button-next {
+.own-button-prev, .own-button-next {
   display: inline-block;
   vertical-align: middle;
   background-position: center center;
@@ -301,23 +298,22 @@
   background-size: contain;
   width: 42px;
   height: 14px;
-  top: auto !important;
-  bottom: 0 !important;
+  // top: auto !important;
+  // bottom: 0 !important;
   &::after {
     display: none;
   } 
 }
 
-.projects-button-prev, .own-button-prev {
-    background-image: url("../img/arrow-prev.svg");
-    left: 0 !important;
-    right: auto !important;
+.own-button-prev {
+  background-image: url("../img/arrow-prev.svg");
+  left: 0 !important;
+  right: auto !important;
   }
 
-  .projects-button-next, .own-button-next {
-    background-image: url("../img/arrow-next.svg");
-    left: 0 !important;
-    right: auto !important;
+.own-button-next {
+  background-image: url("../img/arrow-next.svg");
+  left: 0 !important;
+  right: auto !important;
   }
-
 // Setting swiper nav (END)

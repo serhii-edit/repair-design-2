@@ -23,6 +23,7 @@
     font-weight: normal;
     font-size: 27px;
     line-height: 37px;
+    margin-bottom: 92px;
   }
   &__text--line {
     &::after {
@@ -31,4 +32,50 @@
       margin-left: 85px;
     }
   }
+  &__slide {
+    width: 100% !important;
+    &-pre-title {
+      display: block;
+      margin-bottom: 22px;
+    }
+    &-title {
+      font-family: "Yeseva One", cursive;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 23px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+    &-text {
+      max-width: 337px;
+      font-family: "Futura Book";
+      font-style: normal;
+      font-weight: 400;
+      font-style: 15px;
+      line-height: 25px;
+      color: $white;
+      &-1 {
+        margin-bottom: 14px;
+      }
+    }
+  }
+  &__nav {
+    position: relative;
+  }
+  &__padination {
+    position: initial;
+  }
 }
+
+.steps__nav .own-button-prev {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+}
+.steps__nav .own-button-next {
+  // position: absolute;
+  top: auto;
+  bottom: 0;
+}
+
