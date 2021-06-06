@@ -122,6 +122,16 @@ document.addEventListener("DOMContentLoaded", function(event){
     slidesPerView: 1,
     slidesPerGroup: 1,
     grabCursor: true,
+    // allowTouchMove: false,
+
+    pagination: {
+      el: '.steps__image-pagination',
+      type: 'bullets',
+      bulletClass: "steps__image-bullet",
+      bulletActiveClass: "steps__image-bullet-active",
+      bulletElement: "div",
+      clickable: true,
+    },
   });
 
 });
