@@ -117,6 +117,13 @@ document.addEventListener("DOMContentLoaded", function(event){
     },
   });
 
+  var swiperTargetImage = new Swiper(".swiper-c-steps-image", {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    grabCursor: true,
+  });
+
 });
 
 
