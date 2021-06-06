@@ -10,6 +10,9 @@
   &__col {
     position: relative;
     // padding-top: 50px;
+    &-2 {
+      max-width: 765px;
+    }
   }
   &__pre-title {
     display: inline-block;
@@ -38,7 +41,7 @@
   }
   &__slide {
     width: 100% !important;
-    border: 1px solid pink;
+    // border: 1px solid pink;
     &-pre-title {
       display: block;
       margin-bottom: 22px;
@@ -68,11 +71,7 @@
   &__nav {
     position: relative;
     margin-top: 65px;
-    // position: absolute;
-    // left: 0;
-    // bottom: -65px;
-    // top: 65px;
-    border: 1px solid green;
+    // border: 1px solid green;
   }
   &__pagination {
     position: initial;
@@ -100,34 +99,28 @@
   // width: 100%;
   max-width: 766px;
   position: relative;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .steps {
   &__image {
     &-pagination {
-      left: 0;
-      top: -50px;
-      position: absolute;
-      // display: block;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: -117px;
+      margin-bottom: 45px;
     }
     &-bullet {
       // display: flex box
-      width: 50px;
-      height: 50px;
-      background-color: red;
-      // opacity: 1; // 0.3 real
-      // &:ntn-child(1)::before {
-      //   content: "01";
-      //   display: block;
-      //   color: #fff;
-      //   border-bottom: 1px solid $primary;
-      //   padding-bottom: 5px;
-      //   z-index: 999;
-      // }
-      // &::after {
-
-      // }
+      opacity: 0.3;
+      // border: 1px solid $primary;
+      cursor: pointer;
+      width: 30%;
+      &-active {
+        opacity: 1;
+      }
     }
   }
   &__slide {
@@ -143,13 +136,101 @@
   }
 }
 
+.steps__image-bullet::before {
+  // content: "01";
+  display: inline-block;
+  font-family: "Yeseva One", cursive;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  color: $white;
+  text-transform: uppercase;
+  border-bottom: 1px solid $primary;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  // z-index: 999;
+  // position: relative;
+  // display: flex;
+}
+
+.steps__image-bullet::after {
+  display: block;
+  max-width: 135px;
+  font-family: "Futura Book";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: $white;
+  line-height: 18px;
+  // z-index: 999;
+  // position: relative;
+  // display: flex;
+}
+
 .steps__image-bullet:nth-child(1)::before {
   content: "01";
-  display: inline-block;
-  color: #fff;
-  border-bottom: 1px solid $primary;
-  padding-bottom: 5px;
-  z-index: 999;
-  position: relative;
-  // display: flex;
+}
+
+.steps__image-bullet:nth-child(1)::after {
+  content: "Выезд на замер помещения";
+}
+
+.steps__image-bullet:nth-child(2)::before {
+  content: "02";
+}
+
+.steps__image-bullet:nth-child(2)::after {
+  content: "Составление сметы";
+  max-width: 85px;
+}
+
+.steps__image-bullet:nth-child(3)::before {
+  content: "03";
+}
+
+.steps__image-bullet:nth-child(3)::after {
+  content: "Разработка  дизайн проекта";
+}
+
+.steps__image-bullet:nth-child(4)::before {
+  content: "04";
+}
+
+.steps__image-bullet:nth-child(4)::after {
+  content: "Закупка расходных материалов";
+}
+
+.steps__image-bullet:nth-child(5)::before {
+  content: "05";
+}
+
+.steps__image-bullet:nth-child(5)::after {
+  content: "Ремонтно-отделочные работы";
+}
+
+.steps__image-bullet:nth-child(6)::before {
+  content: "06";
+}
+
+.steps__image-bullet:nth-child(6)::after {
+  content: "Приемка-сдача работ";
+}
+
+.steps__image-bullet:nth-child(1) {
+  margin-bottom: 35px;
+}
+
+.steps__image-bullet:nth-child(2) {
+  margin-bottom: 35px;
+}
+
+.steps__image-bullet:nth-child(3) {
+  margin-bottom: 35px;
+  width: auto;
+  justify-self: flex-end;
+}
+
+.steps__image-bullet:nth-child(6) {
+  width: auto;
+  justify-self: flex-end;
 }
