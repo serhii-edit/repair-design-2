@@ -1301,6 +1301,9 @@ button {
   background-color: #131313;
   z-index: 1;
 }
+.steps__col {
+  position: relative;
+}
 .steps__pre-title {
   display: inline-block;
   margin-bottom: 17px;
@@ -1352,10 +1355,15 @@ button {
   margin-bottom: 14px;
 }
 .steps__nav {
-  position: relative;
+  margin-top: 65px;
 }
-.steps__padination {
+.steps__pagination {
   position: initial;
+}
+
+.swiper-c-steps {
+  max-width: 339px;
+  position: relative;
 }
 
 .steps__nav .own-button-prev {
@@ -1365,6 +1373,7 @@ button {
 }
 
 .steps__nav .own-button-next {
+  position: absolute;
   top: auto;
   bottom: 0;
 }

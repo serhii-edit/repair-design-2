@@ -7,6 +7,9 @@
   background-color: $dark;
   // border: 2px solid red;
   z-index: 1;
+  &__col {
+    position: relative;
+  }
   &__pre-title {
     display: inline-block;
     // margin-top: 17-;
@@ -61,11 +64,20 @@
     }
   }
   &__nav {
-    position: relative;
+    margin-top: 65px;
+    // position: absolute;
+    // left: 0;
+    // bottom: -65px;
+    // top: 65px;
   }
-  &__padination {
+  &__pagination {
     position: initial;
   }
+}
+
+.swiper-c-steps {
+  max-width: 339px;
+  position: relative;
 }
 
 .steps__nav .own-button-prev {
@@ -74,8 +86,7 @@
   bottom: 0;
 }
 .steps__nav .own-button-next {
-  // position: absolute;
+  position: absolute;
   top: auto;
   bottom: 0;
 }
-

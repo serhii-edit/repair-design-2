@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function(event){
       prevEl: '.swiper-button-prev',
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.steps__pagination',
       type: 'bullets',
     },
   });
@@ -155,7 +155,7 @@ $(document).ready(function () {
   next.css("margin-left", prev.width() + bullets.width() + 58);
   bullets.css("margin-left", prev.width() + 29); 
 
-  var nextB = $(".steps__button-next.swiper-button-next");
+  var nextB = $(".swiper-button-next.steps__button-next");
   var prevB = $(".steps__button-prev.swiper-button-prev");
   var bulletsB = $(".steps__pagination.swiper-pagination");
   nextB.css("margin-left", prevB.width() + bulletsB.width() + 58);
