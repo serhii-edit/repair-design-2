@@ -121,8 +121,8 @@ document.addEventListener("DOMContentLoaded", function(event){
     direction: 'horizontal',
     slidesPerView: 1,
     slidesPerGroup: 1,
-    grabCursor: true,
-    // allowTouchMove: false,
+    // grabCursor: true,
+    allowTouchMove: false,
 
     pagination: {
       el: '.steps__image-pagination',
@@ -133,6 +133,9 @@ document.addEventListener("DOMContentLoaded", function(event){
       clickable: true,
     },
   });
+
+  swiperTargetImage.controller.control = swiperTarget;
+  swiperTarget.controller.control = swiperTargetImage;
 
 });
 
