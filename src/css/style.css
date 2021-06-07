@@ -1328,7 +1328,7 @@ button {
 .steps__text--line::after {
   width: 92px;
   height: 1.5px;
-  margin-left: 85px;
+  margin-left: 80px;
 }
 .steps__slide {
   width: 100% !important;
@@ -1360,7 +1360,7 @@ button {
 }
 .steps__nav {
   position: relative;
-  margin-top: 65px;
+  margin-top: 73px;
 }
 .steps__pagination {
   position: initial;
@@ -1424,7 +1424,7 @@ button {
   text-transform: uppercase;
   border-bottom: 1px solid #E3B873;
   margin-bottom: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 
 .steps__image-bullet::after {
@@ -1488,15 +1488,15 @@ button {
 }
 
 .steps__image-bullet:nth-child(1) {
-  margin-bottom: 35px;
+  margin-bottom: 42px;
 }
 
 .steps__image-bullet:nth-child(2) {
-  margin-bottom: 35px;
+  margin-bottom: 42px;
 }
 
 .steps__image-bullet:nth-child(3) {
-  margin-bottom: 35px;
+  margin-bottom: 42px;
   width: auto;
   justify-self: flex-end;
 }
