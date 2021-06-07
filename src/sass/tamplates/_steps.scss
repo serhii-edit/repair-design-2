@@ -44,7 +44,7 @@
     // border: 1px solid pink;
     &-pre-title {
       display: block;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
     &-title {
       font-family: "Yeseva One", cursive;
@@ -53,7 +53,7 @@
       font-weight: normal;
       line-height: 23px;
       text-transform: uppercase;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
     &-text {
       max-width: 337px;
@@ -61,10 +61,10 @@
       font-style: normal;
       font-weight: 400;
       font-style: 15px;
-      line-height: 25px;
+      line-height: 26px;
       color: $white;
       &-1 {
-        margin-bottom: 14px;
+        margin-bottom: 10px;
       }
     }
   }

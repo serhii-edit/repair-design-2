@@ -107,10 +107,15 @@ document.addEventListener("DOMContentLoaded", function(event){
     slidesPerView: 1,
     slidesPerGroup: 1,
     grabCursor: true,
+    spaceBetween: 2,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    // pagination: {
+    //   totalClass: 'steps__slide-pre-pag',
+    //   type: "fraction",
+    // },
     pagination: {
       el: '.steps__pagination',
       type: 'bullets',
@@ -123,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     slidesPerGroup: 1,
     // grabCursor: true,
     allowTouchMove: false,
+    spaceBetween: 2,
 
     pagination: {
       el: '.steps__image-pagination',
