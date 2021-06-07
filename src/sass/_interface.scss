@@ -316,6 +316,7 @@
   background-size: contain;
   width: 42px;
   height: 14px;
+  cursor: pointer;
   // top: auto !important;
   // bottom: 0 !important;
   &::after {
@@ -339,5 +340,7 @@
 // Swiper lazy loader (START)
 .swiper-lazy-preloader {
   vertical-align: middle !important;
+  // align-self: center !important;
+  // margin-top: 30%;
 }
 // Swiper lazy loader (END)

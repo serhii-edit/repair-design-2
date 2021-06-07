@@ -163,8 +163,12 @@
   &-p {
     &-img {
       position: initial;
+      // position: relative;
       // max-width: 679px !important;
       width: 100% !important;
+      .swiper-lazy-preloader {
+        margin-top: 30%;
+      }
        img {
       // max-width: 679px !important;
       width: 100%;

@@ -709,6 +709,7 @@ button {
   background-size: contain;
   width: 42px;
   height: 14px;
+  cursor: pointer;
 }
 .own-button-prev::after, .own-button-next::after {
   display: none;
@@ -1150,6 +1151,9 @@ button {
   position: initial;
   width: 100% !important;
 }
+.swiper-p-img .swiper-lazy-preloader {
+  margin-top: 30%;
+}
 .swiper-p-img img {
   width: 100%;
 }
@@ -1442,7 +1446,6 @@ button {
 }
 .steps__slide-image img {
   width: 100%;
-  min-height: 377px;
   text-align: center;
   vertical-align: bottom;
 }

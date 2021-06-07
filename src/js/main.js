@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", function(event){
   var swiperA = new Swiper('.swiper-p-container', {
     // Optional parameters
     direction: 'horizontal',
+    allowTouchMove: false,
     // loop: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
     // cssMode: true,
-    grabCursor: true,
     effect: "coverflow",
     coverflowEffect: {
       rotate: 50,
@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     slidesPerView: 1,
     slidesPerGroup: 1,
     grabCursor: true,
+    allowTouchMove: true,
     // effect: "cube",
     // cubeEffect: {
     //   slideShadows: false,
@@ -90,16 +91,17 @@ document.addEventListener("DOMContentLoaded", function(event){
       rotate: 50,
       slideShadows: false,
     },
-    // autoplay: {
-    //   delay: 6500,
-    //   disableOnInteraction: false,
-    //   pauseOnMouseEnter: true,
-    // },
+    autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
     mousewheel: {
       invert: true,
     },
-    // watchSlidesVisibility: true,
-    // preloadImages: false,
+
+    watchSlidesVisibility: true,
+    preloadImages: false,
     lazy: true,
   });
   swiperA.controller.control = mySwiperImage;
@@ -109,22 +111,23 @@ document.addEventListener("DOMContentLoaded", function(event){
     direction: 'horizontal',
     slidesPerView: 1,
     slidesPerGroup: 1,
-    grabCursor: true,
+    allowTouchMove: false,
     spaceBetween: 2,
     navigation: {
       nextEl: '.steps__button-next',
       prevEl: '.steps__button-prev',
     },
-    // pagination: {
-    //   totalClass: 'steps__slide-pre-pag',
-    //   type: "fraction",
-    // },
     pagination: {
       el: '.steps__pagination',
       type: 'bullets',
-
       bulletClass: "steps__pagination-bullet",
       bulletActiveClass: "steps__pagination-bullet-active",
+    },
+    effect: "coverflow",
+    coverflowEffect: {
+      slideShadows: false,
+      depth: 120,
+      rotate: 50,
     },
   });
 
@@ -132,9 +135,12 @@ document.addEventListener("DOMContentLoaded", function(event){
     direction: 'horizontal',
     slidesPerView: 1,
     slidesPerGroup: 1,
-    // grabCursor: true,
     allowTouchMove: false,
+    grabCursor: false,
     spaceBetween: 2,
+    watchSlidesVisibility: true,
+    preloadImages: false,
+    lazy: true,
 
     pagination: {
       el: '.steps__image-pagination',
@@ -143,6 +149,11 @@ document.addEventListener("DOMContentLoaded", function(event){
       bulletActiveClass: "steps__image-bullet-active",
       bulletElement: "div",
       clickable: true,
+    },
+    effect: "coverflow",
+    coverflowEffect: {
+      slideShadows: false,
+      depth: 100,
     },
   });
 
