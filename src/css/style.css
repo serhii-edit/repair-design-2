@@ -726,6 +726,10 @@ button {
   right: auto !important;
 }
 
+.swiper-lazy-preloader {
+  vertical-align: middle !important;
+}
+
 .modal {
   visibility: hidden;
   position: fixed;
