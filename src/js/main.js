@@ -181,8 +181,8 @@ $(document).ready(function () {
   next.css("margin-left", prev.width() + bullets.width() + 58);
   bullets.css("margin-left", prev.width() + 29); 
 
-  var nextB = $(".swiper-button-next.steps__button-next");
-  var prevB = $(".steps__button-prev.swiper-button-prev");
+  var nextB = $(".steps__button-next");
+  var prevB = $(".steps__button-prev");
   var bulletsB = $(".steps__pagination.swiper-pagination");
   nextB.css("margin-left", prevB.width() + bulletsB.width() + 58);
   bulletsB.css("margin-left", prevB.width() + 29); 
