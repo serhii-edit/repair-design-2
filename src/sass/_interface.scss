@@ -282,12 +282,30 @@
     vertical-align: middle;
     display: inline-block !important;
   }
-  .swiper-pagination-bullet + .swiper-pagination-bullet {
+  .swiper-pagination-bullet + .swiper-pagination-bullet{
     margin-left: 17px;
   }
   .swiper-pagination-bullet-active {
     background: $white;
   }
+}
+
+.steps__pagination-bullet + .steps__pagination-bullet{
+  margin-left: 17px;
+}
+.steps__pagination-bullet {
+  // opacity: 0.3;
+  background: rgba($white, 0.3);
+  width: 10px;
+  height: 10px; 
+  vertical-align: middle;
+  border-radius: 50%;
+  display: inline-block !important;
+}
+
+.steps__pagination-bullet-active {
+  // opacity: 1 !important;
+  background: rgba($white);
 }
 
 .own-button-prev, .own-button-next {

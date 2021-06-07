@@ -119,6 +119,9 @@ document.addEventListener("DOMContentLoaded", function(event){
     pagination: {
       el: '.steps__pagination',
       type: 'bullets',
+
+      bulletClass: "steps__pagination-bullet",
+      bulletActiveClass: "steps__pagination-bullet-active",
     },
   });
 
@@ -183,7 +186,7 @@ $(document).ready(function () {
 
   var nextB = $(".steps__button-next");
   var prevB = $(".steps__button-prev");
-  var bulletsB = $(".steps__pagination.swiper-pagination");
+  var bulletsB = $(".steps__pagination");
   nextB.css("margin-left", prevB.width() + bulletsB.width() + 58);
   bulletsB.css("margin-left", prevB.width() + 29); 
 
