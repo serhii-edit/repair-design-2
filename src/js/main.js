@@ -109,8 +109,8 @@ document.addEventListener("DOMContentLoaded", function(event){
     grabCursor: true,
     spaceBetween: 2,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.steps__button-next',
+      prevEl: '.steps__button-prev',
     },
     // pagination: {
     //   totalClass: 'steps__slide-pre-pag',
