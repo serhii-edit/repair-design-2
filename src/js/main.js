@@ -90,14 +90,17 @@ document.addEventListener("DOMContentLoaded", function(event){
       rotate: 50,
       slideShadows: false,
     },
-    // autoplay: {
-    //   delay: 6500,
-    //   disableOnInteraction: false,
-    //   pauseOnMouseEnter: true,
-    // },
-    // mousewheel: {
-    //   invert: true,
-    // },
+    watchSlidesVisibility: true,
+    preloadImages: false,
+    lazy: true,
+    autoplay: {
+      delay: 6500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    mousewheel: {
+      invert: true,
+    },
   });
   swiperA.controller.control = mySwiperImage;
   mySwiperImage.controller.control = swiperA;

@@ -689,7 +689,6 @@ button {
 }
 
 .steps__pagination-bullet {
-  opacity: 0.3;
   background: rgba(255, 255, 255, 0.3);
   width: 10px;
   height: 10px;
@@ -699,8 +698,7 @@ button {
 }
 
 .steps__pagination-bullet-active {
-  opacity: 1 !important;
-  background: white;
+  background-color: #ffffff;
 }
 
 .own-button-prev, .own-button-next {
