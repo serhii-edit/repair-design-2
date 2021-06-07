@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   }
 
   // Swiper START
-  const swiperA = new Swiper('.swiper-p-container', {
+  var swiperA = new Swiper('.swiper-p-container', {
     // Optional parameters
     direction: 'horizontal',
     // loop: true,
@@ -99,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function(event){
     //   invert: true,
     // },
   });
-  mySwiperImage.controller.control = swiperA;
   swiperA.controller.control = mySwiperImage;
+  mySwiperImage.controller.control = swiperA;
 
   var swiperTarget = new Swiper(".swiper-c-steps", {
     direction: 'horizontal',
@@ -140,8 +140,8 @@ document.addEventListener("DOMContentLoaded", function(event){
     },
   });
 
-  swiperTargetImage.controller.control = swiperTarget;
   swiperTarget.controller.control = swiperTargetImage;
+  swiperTargetImage.controller.control = swiperTarget;
 
 });
 
