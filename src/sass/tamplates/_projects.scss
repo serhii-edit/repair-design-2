@@ -148,8 +148,18 @@
   // width: 100%;
   height: auto;
   overflow: hidden;
+
+  // Setting from .swiper-container (Swiperjs)
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
 
+
+// Relocate media @request to _media.scss
 .swiper {
   &-p {
     &-img {
