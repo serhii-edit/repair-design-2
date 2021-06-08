@@ -129,6 +129,14 @@ document.addEventListener("DOMContentLoaded", function(event){
       depth: 120,
       rotate: 50,
     },
+
+    // breakpoints: {
+    //   100: {
+    //     pagination: {
+    //       dynamicBullets: true,
+    //     },
+    //   },
+    // },
   });
 
   var swiperTargetImage = new Swiper(".swiper-c-steps-image", {
@@ -154,6 +162,14 @@ document.addEventListener("DOMContentLoaded", function(event){
     coverflowEffect: {
       slideShadows: false,
       depth: 100,
+    },
+    breakpoints: {
+      880: {
+        allowTouchMove: false,
+      },
+      100: {
+        allowTouchMove: true,
+      },
     },
   });
 

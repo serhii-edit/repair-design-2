@@ -1,11 +1,11 @@
 .steps {
   margin-top: -428px;
   padding-top: 428px;
-  padding-bottom: 576px;
+  // padding-bottom: 576px;
   width: 100%;
   color: $white;
   background-color: $dark;
-  // border: 2px solid red;
+  border: 2px solid red;
   z-index: 1;
   &__col {
     position: relative;
@@ -238,9 +238,10 @@
   justify-self: flex-end;
 }
 
-.steps__slide-image .swiper-lazy-preloader {
+.steps__slide-image.swiper-lazy-preloader {
+  position: absolute;
   vertical-align: middle !important;
-  margin-top: 30%;
+  top: 30%;
 }
 
 @media screen and (max-width: 880px) {
@@ -248,10 +249,25 @@
     &__row {
       flex-direction: column;
     }
+    &__col:first-child {
+      margin-right: 0;
+    }
+    &__slide-image {
+      height: auto !important;
+      & img {
+        vertical-align: baseline;
+      }
+    }
     &__image {
       &-pagination {
+        visibility: hidden;
+        display: none;
         margin-top: 0;
       }
+    }
+    &__nav {
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
   .swiper {
@@ -259,5 +275,11 @@
       margin-left: 0;
       margin-right: 0;
     }
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .steps {
+    display: none;
   }
 }
