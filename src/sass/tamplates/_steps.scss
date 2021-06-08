@@ -10,6 +10,9 @@
   &__col {
     position: relative;
     // padding-top: 50px;
+    &:first-child {
+      margin-right: 20px;
+    }
     &-2 {
       max-width: 765px;
     }
@@ -233,4 +236,28 @@
 .steps__image-bullet:nth-child(6) {
   width: auto;
   justify-self: flex-end;
+}
+
+.steps__slide-image .swiper-lazy-preloader {
+  vertical-align: middle !important;
+  margin-top: 30%;
+}
+
+@media screen and (max-width: 880px) {
+  .steps {
+    &__row {
+      flex-direction: column;
+    }
+    &__image {
+      &-pagination {
+        margin-top: 0;
+      }
+    }
+  }
+  .swiper {
+    &-c-steps {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }

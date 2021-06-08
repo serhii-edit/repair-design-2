@@ -159,7 +159,6 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   swiperTarget.controller.control = swiperTargetImage;
   swiperTargetImage.controller.control = swiperTarget;
-
 });
 
 
