@@ -1333,10 +1333,11 @@ button {
 .steps {
   margin-top: -428px;
   padding-top: 428px;
+  padding-bottom: 0;
   width: 100%;
   color: #ffffff;
+  overflow: hidden;
   background-color: #131313;
-  border: 2px solid red;
   z-index: 1;
 }
 .steps__col {
@@ -1426,8 +1427,18 @@ button {
 .swiper-c-steps-image {
   max-width: 766px;
   position: relative;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
 
+.steps__image.swiper-lazy {
+  border: 2px solid red !important;
+}
 .steps__image-pagination {
   display: flex;
   justify-content: space-between;
@@ -1545,12 +1556,6 @@ button {
   justify-self: flex-end;
 }
 
-.steps__slide-image.swiper-lazy-preloader {
-  position: absolute;
-  vertical-align: middle !important;
-  top: 30%;
-}
-
 @media screen and (max-width: 880px) {
   .steps__row {
     flex-direction: column;
@@ -1559,7 +1564,8 @@ button {
     margin-right: 0;
   }
   .steps__slide-image {
-    height: auto !important;
+    height: auto;
+    overflow: hidden;
   }
   .steps__slide-image img {
     vertical-align: baseline;

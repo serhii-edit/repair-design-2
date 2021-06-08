@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function(event){
       pauseOnMouseEnter: true,
     },
     mousewheel: {
-      invert: true,
+      invert: false,
     },
 
     watchSlidesVisibility: true,
@@ -146,6 +146,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     allowTouchMove: false,
     grabCursor: false,
     spaceBetween: 2,
+
     watchSlidesVisibility: true,
     preloadImages: false,
     lazy: true,

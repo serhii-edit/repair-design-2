@@ -2,10 +2,11 @@
   margin-top: -428px;
   padding-top: 428px;
   // padding-bottom: 576px;
+  padding-bottom: 0;
   width: 100%;
   color: $white;
+  overflow: hidden;
   background-color: $dark;
-  border: 2px solid red;
   z-index: 1;
   &__col {
     position: relative;
@@ -99,14 +100,23 @@
 
 // Image side
 .swiper-c-steps-image {
-  // width: 100%;
   max-width: 766px;
   position: relative;
-  // border: 1px solid red;
+  border: 1px solid red;
+
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
 
 .steps {
   &__image {
+    &.swiper-lazy {
+      border: 2px solid red !important;
+    }
     &-pagination {
       display: flex;
       justify-content: space-between;
@@ -239,10 +249,21 @@
 }
 
 .steps__slide-image.swiper-lazy-preloader {
-  position: absolute;
-  vertical-align: middle !important;
-  top: 30%;
+  // position: absolute;
+  // vertical-align: middle !important;
+  // top: 30%;
 }
+
+// .steps__slide-image.swiper-lazy, .steps__slide-image img {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   overflow: hidden;
+//   &-preloader, &-preloader-white {
+//   // height: auto !important;
+//   padding: 0;
+//   }
+// }
 
 @media screen and (max-width: 880px) {
   .steps {
@@ -253,7 +274,8 @@
       margin-right: 0;
     }
     &__slide-image {
-      height: auto !important;
+      height: auto;
+      overflow: hidden;
       & img {
         vertical-align: baseline;
       }
