@@ -146,6 +146,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     allowTouchMove: false,
     grabCursor: false,
     spaceBetween: 2,
+    // autoHeight: true,
 
     watchSlidesVisibility: true,
     preloadImages: false,

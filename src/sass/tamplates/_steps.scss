@@ -102,7 +102,7 @@
 .swiper-c-steps-image {
   max-width: 766px;
   position: relative;
-  border: 1px solid red;
+  // border: 1px solid red;
 
   margin-left: auto;
   margin-right: auto;
@@ -114,9 +114,9 @@
 
 .steps {
   &__image {
-    &.swiper-lazy {
-      border: 2px solid red !important;
-    }
+    // &.swiper-lazy {
+    //   border: 2px solid red !important;
+    // }
     &-pagination {
       display: flex;
       justify-content: space-between;

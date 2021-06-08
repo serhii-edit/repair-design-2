@@ -1427,7 +1427,6 @@ button {
 .swiper-c-steps-image {
   max-width: 766px;
   position: relative;
-  border: 1px solid red;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -1436,9 +1435,6 @@ button {
   z-index: 1;
 }
 
-.steps__image.swiper-lazy {
-  border: 2px solid red !important;
-}
 .steps__image-pagination {
   display: flex;
   justify-content: space-between;
