@@ -1143,12 +1143,14 @@ button {
 .projects__build-row {
   opacity: 0.1;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 .projects__build-col {
   margin-bottom: -5px;
 }
 .projects__build-col img {
-  width: 100%;
+  width: 637px;
 }
 .projects__build-col:first-child {
   margin-left: -5px;

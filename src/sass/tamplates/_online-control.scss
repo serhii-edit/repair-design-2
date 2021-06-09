@@ -1,9 +1,11 @@
 .control {
+  // position: relative;
   margin-top: -48.5px;
   &__content {
     position: relative;
     z-index: 1;
     margin-top: -371px;
+    // top: -371px;
   }
   &__heading {
     margin-bottom: 30px;
