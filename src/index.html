@@ -156,9 +156,8 @@
 
     <section class="section projects section--dark">
       <div class="container">
-        
-        <div class="row projects--column">
-          <div class="col-50 projects--relatieve projects__col-1">
+        <div class="row projects--column projects--margin--b">
+          <div class="col-50 projects--relatieve projects__col-1" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
             <div class="section-heading projects__heading">
               <h2 class="section-heading-title section-heading--left color--primary projects__title">
                 Завершенные <span class="projects__title--line">
@@ -328,7 +327,7 @@
           
           <div class="col-50 projects__col-2">
             <!-- Slider main container -->
-            <div class="swiper-projects-image">
+            <div class="swiper-projects-image" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-p-img">
@@ -352,17 +351,29 @@
             <!-- /.swiper-container -->
           </div>
           <!-- /.col-50 -->
-
+        </div>
         <!-- /.row -->
       </div>
       <!-- /.container -->
+
+      <div class="row projects__build-row">
+        <div class="projects__build-col">
+          <img src="./img/projects/projects-left-builds.svg" alt="">
+        </div>
+        <!-- /.projects__build-col -->
+        <div class="projects__build-col">
+          <img src="./img/projects/projects-right-builds.svg" alt="">
+        </div>
+        <!-- /.projects__build-col -->
+      </div>
+      <!-- /.row projects__row -->
     </section>
 
 
     <section class="control section">
       <div class="container">
 
-        <!-- <div class="section-content control__content"> -->
+        <div class="control__content">
           <div class="section-heading control__heading">
             <h2 class="section-heading-title section-heading-title--margin--bottom control__heading-title">
               Online Control
@@ -373,8 +384,14 @@
             <!-- /.section-heading__img -->
           </div>
           <!-- /.section-heading control__heading -->
-        <!-- </div> -->
-        <!-- /.section-content control__content -->
+
+          <div class="control__video">
+            <img class="control__video-play" src="./img/online-control-play.svg" />
+            <!-- /.control__video-play -->
+          </div>
+          <!-- /.control__video -->
+        </div>
+        <!-- /.control__content -->
 
       </div>
       <!-- /.container -->
@@ -397,7 +414,7 @@
 
         <div class="section-row">
           <div class="section-col">
-            <div class="card types__card">
+            <div class="card types__card" data-aos="fade-right" data-aos-delay="200">
               <img src="./img/types/card-1.jpg" alt="Space Repair" class="card__img">
               <div class="card__text">
                 <h3 class="card__title">
@@ -446,7 +463,7 @@
           </div>
           <!-- /.section-col -->
           <div class="section-col">
-            <div class="card types__card">
+            <div class="card types__card" data-aos="zoom-in" data-aos-delay="600">
               <img src="./img/types/card-2.jpg" alt="Capital Repair" class="card__img">
               <div class="card__text">
                 <h3 class="card__title">
@@ -494,7 +511,7 @@
           </div>
           <!-- /.section-col -->
           <div class="section-col">
-            <div class="card types__card">
+            <div class="card types__card" data-aos="fade-left" data-aos-delay="1000">
               <img src="./img/types/card-3.jpg" alt="Designer Repair" class="card__img">
               <div class="card__text">
                 <h3 class="card__title">

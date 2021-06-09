@@ -396,6 +396,10 @@ button {
   outline: none;
 }
 
+.main {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1256px;
   width: 90%;
@@ -1046,7 +1050,6 @@ button {
   position: relative;
   top: -48.5px;
   padding-top: 175px;
-  padding-bottom: 60px;
   z-index: 1;
   color: #ffffff;
   width: 100%;
@@ -1123,6 +1126,9 @@ button {
   min-width: auto;
 }
 
+.projects--margin--b {
+  margin-bottom: 105px !important;
+}
 .projects__nav {
   display: block;
   left: 0;
@@ -1133,6 +1139,22 @@ button {
 .projects__pagination {
   position: absolute;
   bottom: 0;
+}
+.projects__build-row {
+  opacity: 0.1;
+  overflow: hidden;
+}
+.projects__build-col {
+  margin-bottom: -5px;
+}
+.projects__build-col img {
+  width: 100%;
+}
+.projects__build-col:first-child {
+  margin-left: -5px;
+}
+.projects__build-col:last-child {
+  margin-right: -5px;
 }
 
 .swiper-projects-image {
@@ -1255,11 +1277,56 @@ button {
     min-width: 130px;
   }
 }
+.control {
+  margin-top: -48.5px;
+}
+.control__content {
+  position: relative;
+  z-index: 1;
+  margin-top: -371px;
+}
+.control__heading {
+  margin-bottom: 30px;
+}
 .control__heading-title {
   margin-bottom: 15px;
+  color: #ffffff;
 }
 .control__heading-img {
   width: 33px;
+}
+.control__video {
+  position: relative;
+  margin: 0 auto 0 auto;
+  max-width: 817px;
+  min-height: 434px;
+  background-image: url("../img/online-control-bg-video.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.control__video::before {
+  display: inline-block;
+  content: "";
+  background: rgba(19, 19, 19, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.control__video-play {
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 85px;
+  height: 85px;
 }
 
 .types {

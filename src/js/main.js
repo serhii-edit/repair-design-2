@@ -96,9 +96,6 @@ document.addEventListener("DOMContentLoaded", function(event){
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
-    mousewheel: {
-      invert: false,
-    },
 
     watchSlidesVisibility: true,
     preloadImages: false,

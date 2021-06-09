@@ -1,10 +1,54 @@
 .control {
+  margin-top: -48.5px;
+  &__content {
+    position: relative;
+    z-index: 1;
+    margin-top: -371px;
+  }
   &__heading {
+    margin-bottom: 30px;
     &-title {
       margin-bottom: 15px;
+      color: $white;
     }
     &-img {
       width: 33px;
+    }
+  }
+  &__video {
+    position: relative;
+    margin: 0 auto 0 auto;
+    max-width: 817px;
+    min-height: 434px;
+
+
+    background-image: url("../img/online-control-bg-video.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before {
+      display: inline-block;
+      content: "";
+      background: rgba($dark, 0.8);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &-play {
+      display: inline-block;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      // top: 50%;
+      width: 85px;
+      height: 85px;
     }
   }
 }
