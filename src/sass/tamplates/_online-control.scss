@@ -21,7 +21,8 @@
     position: relative;
     margin: 0 auto 0 auto;
     max-width: 817px;
-    min-height: 434px;
+    height: 95vh;
+    max-height: 434px;
 
 
     background-image: url("../img/online-control-bg-video.jpg");
@@ -48,9 +49,9 @@
       right: 0;
       top: 0;
       bottom: 0;
-      // top: 50%;
-      width: 85px;
-      height: 85px;
+      width: 143px;
+      // width: 85px; native
+      // height: 85px;
     }
   }
 }
