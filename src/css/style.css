@@ -658,13 +658,13 @@ button {
   padding: 0;
   padding: 8px 0;
 }
-.input::-moz-placeholder {
+.input--light::-moz-placeholder {
   color: #ffffff;
 }
-.input:-ms-input-placeholder {
+.input--light:-ms-input-placeholder {
   color: #ffffff;
 }
-.input::placeholder {
+.input--light::placeholder {
   color: #ffffff;
 }
 
@@ -1336,7 +1336,7 @@ button {
   width: 143px;
 }
 .control__wrap-text {
-  max-width: 570px;
+  max-width: 556px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -1346,7 +1346,8 @@ button {
   font-style: normal;
   line-height: 34px;
   font-size: 1.42rem;
-  margin-bottom: 4.28rem;
+  margin-bottom: 4.48rem;
+  text-align: center;
 }
 .control__text::before {
   content: "";
@@ -1355,7 +1356,7 @@ button {
   height: 2px;
   background-color: #E3B873;
   border-radius: 30px;
-  margin: 0 auto 2.83rem auto;
+  margin: 0 auto 1.93rem auto;
 }
 .control__form {
   display: flex;
@@ -1376,6 +1377,7 @@ button {
   color: #131313;
   width: 100%;
   font-size: 18px;
+  padding: 1px 0 8px 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 .control__input::-moz-placeholder {
@@ -1405,6 +1407,8 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
+  font-size: 15px;
 }
 .control__policy {
   margin-top: 2.35rem;
@@ -1414,6 +1418,9 @@ button {
 .control__policy-label {
   margin: auto;
   text-align: center;
+}
+.control__policy-label::before {
+  margin-right: 4px;
 }
 
 .types {

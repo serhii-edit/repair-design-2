@@ -56,7 +56,7 @@
     }
   }
   &__wrap-text {
-    max-width: 570px;
+    max-width: 556px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -67,7 +67,8 @@
     font-style: normal;
     line-height: 34px;
     font-size: 1.42rem;
-    margin-bottom: 4.28rem;
+    margin-bottom: 4.48rem;
+    text-align: center;
     &::before {
       content: "";
       display: block;
@@ -75,7 +76,7 @@
       height: 2px;
       background-color: $primary;
       border-radius: 30px;
-      margin: 0 auto 2.83rem auto;
+      margin: 0 auto 1.93rem auto;
     }
   }
   // Control form (START)
@@ -99,6 +100,7 @@
     color: $dark;
     width: 100%;
     font-size: 18px;
+    padding: 1px 0 8px 0;
     border-bottom: 1px solid rgba(#363636, 0.3);
     &::placeholder {
       color: $dark;
@@ -116,6 +118,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    text-align: center;
+    font-size: 15px;
   }
   &__policy {
     margin-top: 2.35rem;
@@ -124,6 +128,9 @@
     &-label {
       margin: auto;
       text-align: center;
+      &::before {
+        margin-right: 4px;
+      }
     }
   }
 

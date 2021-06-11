@@ -260,7 +260,7 @@
   font-size: 1.285rem;
   padding: 0;
   padding: 8px 0;
-  &::placeholder {
+  &--light::placeholder {
     color: $white;
   }
 }
