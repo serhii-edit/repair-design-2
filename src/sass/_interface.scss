@@ -235,7 +235,7 @@
 
 // Modal Window
 .label {
-  font-family: "FuturaBook", sans-serif;
+  font-family: "Futura Book", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.071rem;
@@ -244,12 +244,16 @@
   } 
 }
 
+.label--light-silver {
+  color: $lightSilver;
+}
+
 // Modal
 .input {
   border: none;
   background: transparent;
   color: $white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   // font-family: FuturaMediumC;
   font-style: normal;
   font-weight: 500;

@@ -23,7 +23,8 @@
     max-width: 817px;
     height: 95vh;
     max-height: 434px;
-
+    // margin-bottom: 62px;
+    margin-bottom: 4.42rem;
 
     background-image: url("../img/online-control-bg-video.jpg");
     background-position: center center;
@@ -54,4 +55,85 @@
       // height: 85px;
     }
   }
+  &__wrap-text {
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+  }
+  &__text {
+    font-family: "Futura Book";
+    font-style: normal;
+    line-height: 34px;
+    font-size: 1.42rem;
+    margin-bottom: 4.28rem;
+    &::before {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 2px;
+      background-color: $primary;
+      border-radius: 30px;
+      margin: 0 auto 2.83rem auto;
+    }
+  }
+  // Control form (START)
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 770px;
+    margin: auto;
+    margin-bottom: 10.14rem;
+  }
+  &__label {
+    display: block;
+  }
+  &__block-input {
+   flex-basis: 231px;
+  }
+  &__input {
+    color: $dark;
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(#363636, 0.3);
+    &::placeholder {
+      color: $dark;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
+  &__button {
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 51px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__policy {
+    margin-top: 2.35rem;
+    width: 100%;
+    text-align: center;
+    &-label {
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  // COntrol form (END)
 }
+
+// .input {
+
+//   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 1.285rem;
+// }
