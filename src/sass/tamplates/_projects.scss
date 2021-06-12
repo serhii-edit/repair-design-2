@@ -21,7 +21,7 @@
 }
 .projects {
   position: relative;
-  top: -48.5px;
+  margin-top: -48.5px;
   padding-top: 175px;
   z-index: 1;
   color: $white;
@@ -102,7 +102,7 @@
 
 .projects {
   &--margin {
-    &--b {
+    &-b {
       margin-bottom: 105px !important;
     }
   }

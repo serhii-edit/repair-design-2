@@ -239,14 +239,17 @@
   font-style: normal;
   font-weight: normal;
   font-size: 1.071rem;
-  &--primary {
+  &--silver {
     color: rgba($white, 0.5);
   } 
+  &--light-silver {
+    color: $lightSilver;
+  }
 }
 
-.label--light-silver {
-  color: $lightSilver;
-}
+// .label--light-silver {
+//   color: $lightSilver;
+// }
 
 // Modal
 .input {
