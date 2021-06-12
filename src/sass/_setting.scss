@@ -21,10 +21,32 @@ body {
   font-size: 1rem;
 }
 button {
+  outline: unset;
+  border: unset;
   border: none;
+  outline: none;
   text-decoration: none;
   cursor: pointer;
-  outline: none;
+}
+
+input {
+  -webkit-outline: none;
+    -moz-outline: none;
+    outline: none;
+  -webkit-cursor: none;
+    -moz-cursor: none;
+    cursor: text;
+
+  -webkit-cursor: none;
+    -moz-border: none;
+    border: none;
+
+  -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  &:focus, &:active {
+    outline: none;
+  }
 }
 
 .main {

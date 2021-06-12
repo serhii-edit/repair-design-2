@@ -390,9 +390,27 @@ body {
 }
 
 button {
+  outline: unset;
+  border: unset;
   border: none;
+  outline: none;
   text-decoration: none;
   cursor: pointer;
+}
+
+input {
+  -webkit-outline: none;
+  -moz-outline: none;
+  outline: none;
+  -webkit-cursor: none;
+  -moz-cursor: none;
+  cursor: text;
+  -webkit-cursor: none;
+  -moz-border: none;
+  border: none;
+  box-shadow: none;
+}
+input:focus, input:active {
   outline: none;
 }
 
@@ -1467,7 +1485,7 @@ button {
     max-width: 425px;
   }
   .control__block-input + .control__block-input {
-    margin-top: 62px;
+    margin-top: 61px;
   }
   .control__block-input:nth-child(1) {
     order: -3;
@@ -1497,15 +1515,18 @@ button {
     text-align: left;
     margin-bottom: 37px;
   }
+  .control__policy-label {
+    font-size: 1.33rem;
+  }
   .control__button {
     position: relative;
-    bottom: -25.5px;
+    bottom: -23.5px;
     order: 1;
   }
 }
 @media screen and (max-width: 450px) {
   .control__wrap-text {
-    margin-bottom: 2.58rem;
+    margin-bottom: 2.48rem;
   }
   .control__wrap-text::before {
     margin-bottom: 1.23rem;
@@ -1513,6 +1534,13 @@ button {
   .control__text {
     font-size: 1.16rem;
     line-height: 2rem;
+  }
+  .control__label {
+    font-size: 1.25rem;
+  }
+  .control__button {
+    width: 100%;
+    max-width: 100%;
   }
 }
 .types {
