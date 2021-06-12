@@ -396,16 +396,16 @@ button {
   outline: none;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 0;
 }
 
 input {
+  border-radius: 0;
+  cursor: text;
   -webkit-outline: none;
   -moz-outline: none;
   outline: none;
-  -webkit-cursor: none;
-  -moz-cursor: none;
-  cursor: text;
-  -webkit-cursor: none;
+  -webkit-border: none;
   -moz-border: none;
   border: none;
   box-shadow: none;
@@ -1541,6 +1541,8 @@ input:focus, input:active {
   .control__button {
     width: 100%;
     max-width: 100%;
+    min-width: 0;
+    border-radius: 0;
   }
 }
 .types {

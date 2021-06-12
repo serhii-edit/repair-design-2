@@ -110,6 +110,7 @@
     font-size: 18px;
     padding: 1px 0 8px 0;
     border-bottom: 1px solid rgba(#363636, 0.3);
+    // border-radius: 0 !important;
     &::placeholder {
       color: $dark;
       font-style: normal;
@@ -238,7 +239,9 @@
   &__button {
     width: 100%;
     max-width: 100%;
+    min-width: 0;
+    border-radius: 0;
   }
-}
+} // .control
 
-} // Media
+} // Media (max-w: 450px)
