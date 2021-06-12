@@ -1339,16 +1339,9 @@ button {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-.control__text {
-  font-family: "Futura Book";
-  font-style: normal;
-  line-height: 34px;
-  font-size: 1.42rem;
   margin-bottom: 4.48rem;
-  text-align: center;
 }
-.control__text::before {
+.control__wrap-text::before {
   content: "";
   display: block;
   width: 55px;
@@ -1356,6 +1349,22 @@ button {
   background-color: #E3B873;
   border-radius: 30px;
   margin: 0 auto 1.93rem auto;
+}
+.control__text {
+  font-family: "Futura Book";
+  font-style: normal;
+  line-height: 2.428rem;
+  font-size: 1.42rem;
+  text-align: center;
+  /* &::before {
+     content: "";
+     display: block;
+     width: 55px;
+     height: 2px;
+     background-color: $primary;
+     border-radius: 30px;
+    margin: 0 auto 1.93rem auto;
+   } */
 }
 .control__form {
   display: flex;
@@ -1446,7 +1455,7 @@ button {
   .control__form {
     justify-content: unset;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: normal;
     flex-wrap: nowrap;
   }
   .control__label {
@@ -1454,13 +1463,18 @@ button {
   }
   .control__block-input {
     flex-basis: unset;
-    width: 100%;
+    min-width: 0;
+    max-width: 425px;
+  }
+  .control__block-input + .control__block-input {
+    margin-top: 62px;
   }
   .control__block-input:nth-child(1) {
     order: -3;
   }
   .control__block-input:nth-child(2) {
     order: -2;
+    margin-bottom: 26px;
   }
   .control__input {
     color: #ffffff;
@@ -1476,12 +1490,29 @@ button {
     color: #ffffff;
   }
   .control__policy {
-    color: #ffffff;
-    width: auto;
     order: -1;
+    width: auto;
+    color: #ffffff;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 37px;
   }
   .control__button {
+    position: relative;
+    bottom: -25.5px;
     order: 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .control__wrap-text {
+    margin-bottom: 2.58rem;
+  }
+  .control__wrap-text::before {
+    margin-bottom: 1.23rem;
+  }
+  .control__text {
+    font-size: 1.16rem;
+    line-height: 2rem;
   }
 }
 .types {
