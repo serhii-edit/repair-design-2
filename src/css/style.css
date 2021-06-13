@@ -450,7 +450,11 @@ input:focus, input:active {
 }
 
 .span--block {
-  display: block;
+  display: block !important;
+}
+
+.inline--block {
+  display: inline-block;
 }
 
 .arrow-top {
