@@ -1873,6 +1873,88 @@ input:focus, input:active {
     display: none;
   }
 }
+@-webkit-keyframes pulseScroll {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@keyframes pulseScroll {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.scroll-down {
+  -webkit-animation: pulseScroll 1000ms ease-out 5000ms alternate 5;
+  animation: pulseScroll 1000ms ease-out 5000ms alternate 5;
+}
+
+.scroll-down:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.contacts__button {
+  transform: translateY(-67px);
+}
+
+@-webkit-keyframes fadeDown {
+  0% {
+    transform: translateY(-67px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-67px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.contacts__button {
+  -webkit-animation: fadeDown 1200ms ease-out 600ms normal 1;
+  animation: fadeDown 1200ms ease-out 600ms normal 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes changeColorLogo {
+  0% {
+    color: #E3B873;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: #E3B873;
+  }
+}
+
+@keyframes changeColorLogo {
+  0% {
+    color: #E3B873;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: #E3B873;
+  }
+}
+.menu__logo {
+  -webkit-animation: changeColorLogo 2500ms linear 300ms 6 alternate none;
+  animation: changeColorLogo 2500ms linear 300ms 6 alternate none;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px;

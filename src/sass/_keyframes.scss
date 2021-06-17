@@ -1,0 +1,52 @@
+@keyframes pulseScroll {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2)
+  }
+}
+
+.scroll-down {
+  animation: pulseScroll 1000ms ease-out 5000ms alternate 5;
+}
+
+.scroll-down:hover {
+  animation-play-state: paused;
+}
+
+
+.contacts__button {
+  transform: translateY(-67px);
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-67px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.contacts__button {
+  animation: fadeDown 1200ms ease-out 600ms normal 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes changeColorLogo {
+  0% {
+    color: $primary;
+  }
+  50% {
+    color: $white;
+  }
+  100% {
+    color: $primary;
+  }
+}
+
+.menu__logo {
+  animation: changeColorLogo 2500ms linear 300ms 6 alternate none;
+}
