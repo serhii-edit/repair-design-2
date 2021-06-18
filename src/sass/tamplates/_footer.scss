@@ -1,0 +1,66 @@
+.questions {
+  position: relative;
+  top: -222px;
+
+  background-color: $dark18;
+  max-width: 883px;
+  margin: 0 auto;
+  padding: 34px;
+  &__title {
+    font-size: 1.46rem;
+    font-family: "Yeseva One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 46px;
+  }
+  &__form {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  &__block-input:nth-child(1) {
+    display: inline-block;
+    width: 44%;
+    margin-bottom: 46px;
+  }
+  &__block-input:nth-child(2) {
+    display: inline-block;
+    float: right;
+    width: 44%;
+  }
+  &__block-input:nth-child(3) {
+    display: block;
+    width: 100%;
+    margin-bottom: 46px;
+  }
+  &__label {
+    display: block;
+  }
+  &__input {
+    width: 100%;
+    margin-top: -5px;
+  }
+  &__policy {
+    text-align: center;
+    margin-bottom: 47px;
+  }
+  &__policy-label {
+    color: $white;
+  }
+  &__block-button {
+    text-align: center;
+  }
+  &__button {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 200px;
+    // min-width: 150px;
+    padding: 18px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
