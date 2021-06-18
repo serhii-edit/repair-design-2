@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     slidesPerView: 1,
     slidesPerGroup: 1,
     allowTouchMove: false,
-    grabCursor: false,
+    // grabCursor: false,
     spaceBetween: 2,
     // autoHeight: true,
 
@@ -158,10 +158,10 @@ document.addEventListener("DOMContentLoaded", function(event){
       clickable: true,
     },
     effect: "coverflow",
-    coverflowEffect: {
-      slideShadows: false,
-      depth: 100,
-    },
+    // coverflowEffect: {
+      // slideShadows: false,
+      // depth: 100,
+    // },
     breakpoints: {
       880: {
         allowTouchMove: false,
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function(event){
       100: {
         allowTouchMove: true,
       },
-    },
+    }
   });
 
   swiperTarget.controller.control = swiperTargetImage;
