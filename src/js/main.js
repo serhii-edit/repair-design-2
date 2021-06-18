@@ -157,11 +157,10 @@ document.addEventListener("DOMContentLoaded", function(event){
       bulletElement: "div",
       clickable: true,
     },
-    effect: "coverflow",
-    // coverflowEffect: {
-      // slideShadows: false,
-      // depth: 100,
-    // },
+    effect: "flip",
+    flipEffect: {
+      slideShadows: false,
+    },
     breakpoints: {
       880: {
         allowTouchMove: false,
