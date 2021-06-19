@@ -247,7 +247,8 @@ $(document).ready(function () {
       },
       userEmail: {
         required: true,
-        email: true
+        email: true,
+        maxlength: 90,
       },
     },
       messages: {
