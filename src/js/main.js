@@ -29,12 +29,14 @@ document.addEventListener("DOMContentLoaded", function(event){
   window.onclick = function (e) {
     if(e.target == modal) {
       modal.classList.toggle("modal--visible");
+      document.querySelector("body").style.overflow = 'auto';
     };
   };
 
   window.addEventListener("keydown", function (event) {
     if(event.key == 'Escape') {
       modal.classList.remove("modal--visible");
+      document.querySelector("body").style.overflow = 'auto';
     };
   });
 
@@ -185,10 +187,18 @@ $(document).ready(function () {
 
   modalBtn.on("click", function () {
     modal.toggleClass("modal--visible");
+    document.querySelector("body").style.overflow = 'hidden';
   });
   closeBtn.on("click", function () {
     modal.toggleClass("modal--visible");
+    document.querySelector("body").style.overflow = 'auto';
   });
+
+
+  // code
+
+  // code
+
 
 // Check at which height window top, display button
   $(window).scroll(function () {
@@ -217,5 +227,131 @@ $(document).ready(function () {
   nextB.css("margin-left", prevB.width() + bulletsB.width() + 58);
   bulletsB.css("margin-left", prevB.width() + 29); 
 
+// Form Validation
+// Validation of form (modal)
+  $(".modal__form").validate({
+    errorClass: "valid-error",
+    validClass: "valid-valid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 1,
+        maxlength: 35,
+      },
+      // compound rule
+      userPhone: {
+        required: false,
+        minlength: 17,
+        maxlength: 17,
+      },
+      userEmail: {
+        required: true,
+        email: true
+      },
+    },
+      messages: {
+        userName: {
+         required: "Indicate your name!",
+         minlength: "Not less than 1 character!",
+         maxlength: "Indicate you name a little shorter!"
+        },
+        userEmail: {
+          required: "Email address is required as contact info",
+          email: "Example: name@domain.com",
+        },
+      },
+    
+  });
+// Validation of form (modal) - (END)
+
+// Validation of form (control)
+$(".control__form").validate({
+  errorClass: "valid-error",
+  validClass: "valid-valid",
+  rules: {
+    // simple rule, converted to {required:true}
+    userName: {
+      required: true,
+      minlength: 1,
+      maxlength: 35,
+    },
+    // compound rule
+    userPhone: {
+      required: true,
+      minlength: 17,
+      maxlength: 17,
+    },
+  },
+    messages: {
+      userName: {
+       required: "Indicate your name!",
+       minlength: "Not less than 1 character!",
+       maxlength: "Indicate you name a little shorter!"
+      },
+      userPhone: {
+        required: "Telephone number is required here!",
+        minlength: "Indicate full number",
+        maxlength: "Indicate full number",
+      },
+    },
 });
+// Validation of form (control) - (END)
+
+// Validation of form (footer)
+$(".questions__form").validate({
+  errorClass: "valid-error",
+  validClass: "valid-valid",
+  rules: {
+    // simple rule, converted to {required:true}
+    userName: {
+      required: true,
+      minlength: 1,
+      maxlength: 35,
+    },
+    // compound rule
+    userPhone: {
+      required: true,
+      minlength: 17,
+      maxlength: 17,
+    },
+    userQuestion: {
+      required: true,
+      maxlength: 999,
+      minlength: 10,
+    },
+  },
+    messages: {
+      userName: {
+       required: "Indicate your name!",
+       minlength: "Not less than 1 character!",
+       maxlength: "Indicate you name a little shorter!"
+      },
+      userPhone: {
+        required: "Telephone number is required here!",
+        minlength: "Indicate full number",
+        maxlength: "Indicate full number",
+      },
+      userQuestion: {
+        required: "Indicate your question",
+        maxlength: "Type little bit less please!",
+        minlength: "Type little bit more"
+      }
+    },
+  
+});
+// Validation of form (footer) - (END)
+
+
+
+// Mask for form
+$('input[type="tel"]').mask('+1 (000) 000-0000', {placeholder: "+1 (___) ___-____"});
+// Mask for form (END)
+
+// Form Validation (END)
+
+
+
+
+});  // Jquery Load DOM
 

@@ -359,3 +359,18 @@
   // margin-top: 30%;
 }
 // Swiper lazy loader (END)
+
+label {
+  &.valid {
+    &-error {
+      color: $validateError;
+    }
+  }
+  &.valid-valid {
+    color: #04d44b;
+  }
+}
+
+.input.valid-error {
+  border-bottom-color: $validateError;
+}

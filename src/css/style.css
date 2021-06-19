@@ -765,6 +765,17 @@ input:focus, input:active {
   vertical-align: middle !important;
 }
 
+label.valid-error {
+  color: #FF3333;
+}
+label.valid-valid {
+  color: #04d44b;
+}
+
+.input.valid-error {
+  border-bottom-color: #FF3333;
+}
+
 .modal {
   visibility: hidden;
   position: fixed;
@@ -1878,12 +1889,59 @@ input:focus, input:active {
     display: none;
   }
 }
+.footer .footer--bg {
+  background-color: #252525;
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 4.71rem;
+}
+.footer .footer--bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  z-index: 0;
+}
+.footer__text {
+  text-align: center;
+  margin-top: -228px;
+}
+.footer__text p {
+  color: #E3B873;
+  text-align: center;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.footer__text p a {
+  color: #E3B873;
+}
+.footer .footer--bg > .container {
+  position: relative;
+}
+.footer__menu {
+  padding: 48px 0px;
+}
+
 .questions {
   position: relative;
   top: -222px;
   background-color: #181818;
   max-width: 883px;
   margin: 0 auto;
+  margin-bottom: 52px;
   padding: 34px;
 }
 .questions__title {
@@ -1920,7 +1978,7 @@ input:focus, input:active {
 }
 .questions__input {
   width: 100%;
-  margin-top: -5px;
+  padding-top: 2px;
 }
 .questions__policy {
   text-align: center;
