@@ -1677,13 +1677,13 @@ label.valid-valid {
     }
 */
 .steps {
+  overflow: hidden;
+  width: 100%;
   margin-top: -428px;
   padding-top: 428px;
-  padding-bottom: 0;
-  width: 100%;
-  color: #ffffff;
-  overflow: hidden;
+  padding-bottom: 500px;
   background-color: #131313;
+  color: #ffffff;
   z-index: 1;
 }
 .steps__col {
@@ -1933,11 +1933,11 @@ label.valid-valid {
   }
 }
 .team {
-  background-color: #131313;
   padding-bottom: 350px;
 }
 .team__heading {
   color: #ffffff;
+  margin-top: -30%;
   margin-bottom: 75px;
 }
 .team__heading-text {
@@ -1995,11 +1995,12 @@ label.valid-valid {
   word-break: normal;
 }
 .team__footer {
+  position: relative;
+  margin-top: 55px;
   text-align: center;
 }
 .team__footer-text {
   display: inline-block;
-  color: #ffffff;
   max-width: 568px;
 }
 

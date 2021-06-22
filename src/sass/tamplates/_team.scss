@@ -1,11 +1,13 @@
 .team {
-  background-color: $dark;
+  // background-color: $dark;
   // position: relative;
   // z-index: 1;
   padding-bottom: 350px;
 
   &__heading {
     color: $white;
+    // margin-top: -460px;
+    margin-top: -30%;
     margin-bottom: 75px;
     &-text {
       max-width: 448px;
@@ -68,10 +70,12 @@
     }
   }
   &__footer {
+    position: relative;
+    margin-top: 55px;
     text-align: center;
     &-text {
       display: inline-block;
-      color: $white;
+      // color: $white;
       max-width: 568px
     }
   }
