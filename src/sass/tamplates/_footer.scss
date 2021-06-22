@@ -114,3 +114,41 @@
     text-overflow: ellipsis;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .questions {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 46px;
+    &__block {
+      &-input {
+        & + & {
+          margin-top: 63px;
+        }
+        &:nth-child(1) {
+          display: block;
+          width: 100%;
+          margin-bottom: 0;
+        }
+        &:nth-child(2) {
+          display: block;
+          float: left;
+          width: 100%;
+        }
+        &:nth-child(3) {
+          display: block;
+          float: left;
+        }
+      }
+    }
+    &__policy {
+      display: block;
+      float: left;
+    }
+    &__button {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}

@@ -258,7 +258,7 @@ $(document).ready(function () {
          maxlength: "Indicate you name a little shorter!"
         },
         userEmail: {
-          required: "Email address is required as contact info",
+          required: "Indicate correct email!",
           email: "Example: name@domain.com",
         },
       },

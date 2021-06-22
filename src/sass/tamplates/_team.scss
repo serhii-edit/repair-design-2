@@ -1,0 +1,78 @@
+.team {
+  background-color: $dark;
+  // position: relative;
+  // z-index: 1;
+  padding-bottom: 350px;
+
+  &__heading {
+    color: $white;
+    margin-bottom: 75px;
+    &-text {
+      max-width: 448px;
+    }
+  }
+  &__section {
+    &-col {
+      flex-basis: none;
+      max-width: 275px;
+    }
+  }
+  &__card {
+    position: relative;
+    &-photo {
+      width: 100%;
+    }
+    &-svg {
+      position: absolute;
+      top: -35px;
+      left: -35px;
+      width: 77px;
+      height: 77px;
+      padding: 13px;
+      background-color: $primary;
+      visibility: visible;
+    }
+    &-text {
+      margin: 0 auto;
+      margin-top: -90px;
+      max-width: 233px;
+      padding: 0;
+      padding-top: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+    &-job {
+      display: block;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      color: $softSilver;
+      margin-bottom: 24px;
+    }
+    &-price-tag {
+      position: unset;
+      bottom: unset;
+      top: unset;
+      left: unset;
+      display: block;
+      padding: 0;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      width: 100%;
+
+        
+
+      text-overflow: ellipsis;
+      word-wrap: normal;
+      word-break: normal;
+    }
+  }
+  &__footer {
+    text-align: center;
+    &-text {
+      display: inline-block;
+      color: $white;
+      max-width: 568px
+    }
+  }
+}
