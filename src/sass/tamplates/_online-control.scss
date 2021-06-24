@@ -1,13 +1,27 @@
 .control {
-  // position: relative;
-  margin-top: -48.5px;
+  position: relative;
+  // margin-top: -48.5px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../img/primary-bg-lines.svg");
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+  }
   &__content {
     position: relative;
     z-index: 1;
-    margin-top: -371px;
-    // top: -371px;
+    // margin-top: -371px;
   }
   &__heading {
+    margin-top: -371px;
     margin-bottom: 30px;
     &-title {
       margin-bottom: 15px;
