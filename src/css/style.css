@@ -1981,8 +1981,8 @@ label.valid-valid {
     display: none;
   }
 }
-.team {
-  padding-bottom: 350px;
+.team__container {
+  margin-bottom: 88px;
 }
 .team__heading {
   color: #ffffff;
@@ -2051,6 +2051,32 @@ label.valid-valid {
 .team__footer-text {
   display: inline-block;
   max-width: 568px;
+}
+
+.clients {
+  padding-bottom: 355px;
+}
+.clients__heading {
+  margin-bottom: 35px;
+}
+.clients__heading-wrap-img {
+  margin-bottom: 25px;
+}
+.clients__heading-img {
+  width: 33px;
+}
+.clients__heading-text {
+  max-width: 360px;
+}
+.clients__card-face {
+  display: inline-block;
+}
+.clients__card-face img {
+  border-radius: 50%;
+  width: 76px;
+}
+.clients__card-face-name {
+  display: inline-block;
 }
 
 .footer .footer--bg {

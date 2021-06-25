@@ -1,0 +1,30 @@
+.clients {
+  padding-bottom: 355px;
+  &__heading {
+    margin-bottom: 35px;
+    &-wrap-img {
+      margin-bottom: 25px;
+    }
+    &-img {
+      width: 33px;
+    }
+    &-text {
+      max-width: 360px;
+    }
+  }
+  &__card {
+    &-face {
+      display: inline-block;
+      // width: 76px;
+      // overflow: hidden;
+      & img {
+        border-radius: 50%;
+        // width: 100%;
+        width: 76px;
+      }
+      &-name {
+        display: inline-block;
+      }
+    }
+  }
+}
