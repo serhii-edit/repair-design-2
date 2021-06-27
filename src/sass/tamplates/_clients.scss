@@ -13,17 +13,80 @@
     }
   }
   &__card {
+    position: relative;
+    max-width: 376px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+    &-heading {
+      margin-bottom: 30px;
+    }
     &-face {
       display: inline-block;
-      // width: 76px;
-      // overflow: hidden;
-      & img {
-        border-radius: 50%;
-        // width: 100%;
-        width: 76px;
+      vertical-align: middle;
+    }
+    &-face-photo {
+      border-radius: 100%;
+      width: 76px;
       }
       &-name {
         display: inline-block;
+        margin-left: 23px;
+
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    &-text {
+      max-width: 325px;
+      font-family: "Futura Book";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      // line-height: 180%;
+      line-height: 27px;
+      color: $softSilver;
+    }
+    &-tag {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -25.5px;
+
+      box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+      &-a, &-b {
+        background-color: #E3B873;
+        color: $white;
+        font-family: "Yeseva One";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        text-transform: uppercase;
+
+        padding: 10px 10px;
+      }
+      &-a {
+        margin-right: -2.5px;
+        &::after {
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 1px;
+          background-color: $white;
+        }
+      }
+      &-icon {
+        width: 32px;
+        vertical-align: middle;
+      }
+      &-title {
+        display: inline-block;
+        vertical-align: middle;
       }
     }
   }

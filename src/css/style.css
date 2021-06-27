@@ -371,9 +371,11 @@ template {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span {
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, div {
   margin: 0;
   padding: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 a {
@@ -1981,6 +1983,9 @@ label.valid-valid {
     display: none;
   }
 }
+.team-row {
+  justify-content: space-around;
+}
 .team__container {
   margin-bottom: 88px;
 }
@@ -1988,6 +1993,9 @@ label.valid-valid {
   color: #ffffff;
   margin-top: -30%;
   margin-bottom: 75px;
+}
+.team__heading-block-img {
+  margin-bottom: 18px;
 }
 .team__heading-text {
   max-width: 448px;
@@ -1999,22 +2007,27 @@ label.valid-valid {
 .team__card {
   position: relative;
 }
+.team__card-title {
+  font-size: 1.285rem;
+  margin-bottom: 5px;
+}
 .team__card-photo {
   width: 100%;
+  max-height: 357.63px;
 }
 .team__card-svg {
   position: absolute;
   top: -35px;
   left: -35px;
-  width: 77px;
-  height: 77px;
+  width: 71px;
+  height: 71px;
   padding: 13px;
   background-color: #E3B873;
   visibility: visible;
 }
 .team__card-text {
   margin: 0 auto;
-  margin-top: -90px;
+  margin-top: -88px;
   max-width: 233px;
   padding: 0;
   padding-top: 20px;
@@ -2036,9 +2049,11 @@ label.valid-valid {
   left: unset;
   display: block;
   padding: 0;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   width: 100%;
+  font-size: 13px;
+  min-height: unset;
   text-overflow: ellipsis;
   word-wrap: normal;
   word-break: normal;
@@ -2051,6 +2066,9 @@ label.valid-valid {
 .team__footer-text {
   display: inline-block;
   max-width: 568px;
+}
+.team__footer-text::before {
+  margin-bottom: 0.63rem;
 }
 
 .clients {
@@ -2068,15 +2086,79 @@ label.valid-valid {
 .clients__heading-text {
   max-width: 360px;
 }
+.clients__card {
+  position: relative;
+  max-width: 376px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 60px;
+}
+.clients__card-heading {
+  margin-bottom: 30px;
+}
 .clients__card-face {
   display: inline-block;
+  vertical-align: middle;
 }
-.clients__card-face img {
-  border-radius: 50%;
+.clients__card-face-photo {
+  border-radius: 100%;
   width: 76px;
 }
-.clients__card-face-name {
+.clients__card-name {
   display: inline-block;
+  margin-left: 23px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.clients__card-text {
+  max-width: 325px;
+  font-family: "Futura Book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #959595;
+}
+.clients__card-tag {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -25.5px;
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+.clients__card-tag-a, .clients__card-tag-b {
+  background-color: #E3B873;
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+.clients__card-tag-a {
+  margin-right: -2.5px;
+}
+.clients__card-tag-a::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  background-color: #ffffff;
+}
+.clients__card-tag-icon {
+  width: 32px;
+  vertical-align: middle;
+}
+.clients__card-tag-title {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .footer .footer--bg {
