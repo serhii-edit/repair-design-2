@@ -1949,6 +1949,11 @@ label.valid-valid {
   justify-self: flex-end;
 }
 
+@media screen and (max-width: 1010px) {
+  .steps {
+    padding-bottom: 30px;
+  }
+}
 @media screen and (max-width: 880px) {
   .steps__row {
     flex-direction: column;
@@ -2071,6 +2076,25 @@ label.valid-valid {
   margin-bottom: 0.63rem;
 }
 
+@media screen and (max-width: 1075px) {
+  .team-row {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .team__heading {
+    margin-top: 95px;
+    color: #131313;
+  }
+  .team-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .team__section-col + .team__section-col {
+    margin-top: 90px;
+  }
+}
 .clients__heading {
   margin-bottom: 46px;
 }

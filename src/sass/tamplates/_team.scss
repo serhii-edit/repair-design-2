@@ -99,3 +99,26 @@
     }
   }
 }
+
+@media screen and (max-width: 1075px) {
+  .team-row {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .team { 
+    &__heading {
+      margin-top: 95px;
+      color: $dark;
+    }
+    &-row {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    &__section-col + &__section-col {
+      margin-top: 90px;
+    }
+  }
+}

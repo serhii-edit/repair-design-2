@@ -257,6 +257,12 @@
 //   }
 // }
 
+@media screen and (max-width: 1010px) {
+  .steps {
+    padding-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 880px) {
   .steps {
     &__row {
