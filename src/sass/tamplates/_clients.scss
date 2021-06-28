@@ -1,9 +1,9 @@
 .clients {
-  padding-bottom: 355px;
+  // padding-bottom: 355px;
   &__heading {
-    margin-bottom: 35px;
+    margin-bottom: 46px;
     &-wrap-img {
-      margin-bottom: 25px;
+      margin-bottom: 17px;
     }
     &-img {
       width: 33px;
@@ -18,9 +18,9 @@
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
     padding-top: 24px;
     padding-left: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 68px;
     &-heading {
-      margin-bottom: 30px;
+      margin-bottom: 12px;
     }
     &-face {
       display: inline-block;
@@ -32,14 +32,16 @@
       }
       &-name {
         display: inline-block;
-        margin-left: 23px;
+        margin-left: 21px;
 
         font-family: "Yeseva One";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         vertical-align: middle;
-    }
+
+        line-height: 23px;
+      }
     &-text {
       max-width: 325px;
       font-family: "Futura Book";
@@ -47,7 +49,7 @@
       font-weight: 400;
       font-size: 15px;
       // line-height: 180%;
-      line-height: 27px;
+      line-height: 27.5px;
       color: $softSilver;
     }
     &-tag {
@@ -68,7 +70,10 @@
         text-align: center;
         text-transform: uppercase;
 
-        padding: 10px 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+        padding-right: 13px;
       }
       &-a {
         margin-right: -2.5px;
@@ -80,14 +85,29 @@
           background-color: $white;
         }
       }
+      &-b {
+        text-transform: unset;
+        padding-right: 25px;
+      }
       &-icon {
         width: 32px;
         vertical-align: middle;
+        margin-right: 11px;
       }
       &-title {
         display: inline-block;
         vertical-align: middle;
       }
     }
+  }
+  &__footer {
+    margin-bottom: -5px;
+  }
+  &__bg-left img, &__bg-right img {
+    opacity: 0.1;
+    width: 100%;
+  }
+  &__bg-left, &__bg-right {
+    width: 50%;
   }
 }
