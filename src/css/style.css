@@ -2425,6 +2425,7 @@ label.valid-valid {
   font-size: 20px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-bottom: 26px;
 }
 .footer__text p a {
   color: #E3B873;
@@ -2500,6 +2501,27 @@ label.valid-valid {
   padding: 18px 10px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.footer__social {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 26px;
+}
+.footer__social-s {
+  display: inline-block;
+  background-color: #E3B873;
+  padding: 8px;
+  border-radius: 100%;
+  line-height: unset;
+  font-size: 0;
+}
+.footer__social-s img {
+  width: 12px;
+  height: 12px;
+}
+.footer__social-s + .footer__social-s {
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 1010px) {
