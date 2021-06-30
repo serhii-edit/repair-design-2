@@ -14,12 +14,18 @@
     color: $white;
     // margin-top: -460px;
     margin-top: -30%;
-    margin-bottom: 75px;
+    // margin-bottom: 75px; // mobile
+    margin-bottom: 83px;
+    &-title {
+      margin-bottom: 16px;
+    }
     &-block-img  {
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
     &-text {
       max-width: 448px;
+      line-height: 26px;
+      // line-height: 20.5px; // mobile
     }
   }
   &__section {
@@ -32,7 +38,7 @@
     position: relative;
     &-title {
       font-size: 1.285rem;
-      margin-bottom: 5px;
+      margin-bottom: 9px;
     }
     &-photo {
       width: 100%;
@@ -49,13 +55,15 @@
       visibility: visible;
     }
     &-text {
+      position: relative;
       margin: 0 auto;
-      margin-top: -88px;
+      margin-top: -84px;
       max-width: 233px;
       padding: 0;
       padding-top: 20px;
       text-align: center;
       overflow: hidden;
+      background-color: $white;
     }
     &-job {
       display: block;
@@ -100,6 +108,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 1075px) {
   .team-row {
     justify-content: space-between;
@@ -108,9 +118,23 @@
 
 @media screen and (max-width: 1010px) {
   .team { 
+    background-color: $dark18;
+    // margin-bottom: 75px;
+    padding-bottom: 75px;
+    &__container {
+      margin-bottom: 0;
+    }
     &__heading {
-      margin-top: 95px;
-      color: $dark;
+      margin-top: 0px;
+      // color: $dark;
+      padding-top: 95px;
+    }
+    &__footer {
+      display: none;
+      visibility: hidden;
+      &-text {
+        color: $white;
+      }
     }
     &-row {
       flex-direction: column;
@@ -122,3 +146,160 @@
     }
   }
 }
+
+@media screen and (max-width: 975px) {
+  .team {
+    &__container {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .team {
+    &__card {
+      &-text {
+        margin-top: -82px;
+      }
+      &-title {
+        font-size: 18px !important;
+      }
+      &-price-tag {
+        font-size: 13px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .team {
+    &__heading {
+      &-title {
+        font-size: 22px;
+        margin-bottom: 13px;
+      }
+      &-text {
+        font-size: 1.25rem;
+        max-width: 325px;
+        line-height: 20.5px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+// CSS settings after I did mobile layout to desktop
+/* 
+.team {
+  // background-color: $dark;
+  // position: relative;
+  // z-index: 1;
+  // padding-bottom: 350px;
+  &-row {
+    justify-content: space-around;
+  }
+  &__container {
+    margin-bottom: 99px;
+  }
+
+  &__heading {
+    color: $white;
+    // margin-top: -460px;
+    margin-top: -30%;
+    margin-bottom: 75px;
+    &-title {
+      margin-bottom: 13px;
+    }
+    &-block-img  {
+      margin-bottom: 20px;
+    }
+    &-text {
+      max-width: 448px;
+      line-height: 20.5px;
+    }
+  }
+  &__section {
+    &-col {
+      flex-basis: none;
+      max-width: 275px;
+    }
+  }
+  &__card {
+    position: relative;
+    &-title {
+      font-size: 1.285rem;
+      margin-bottom: 5px;
+    }
+    &-photo {
+      width: 100%;
+      max-height: 357.63px;
+    }
+    &-svg {
+      position: absolute;
+      top: -35px;
+      left: -35px;
+      width: 71px;
+      height: 71px;
+      padding: 13px;
+      background-color: $primary;
+      visibility: visible;
+    }
+    &-text {
+      position: relative;
+      margin: 0 auto;
+      margin-top: -88px;
+      max-width: 233px;
+      padding: 0;
+      padding-top: 20px;
+      text-align: center;
+      overflow: hidden;
+      background-color: $white;
+    }
+    &-job {
+      display: block;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      color: $softSilver;
+      margin-bottom: 24px;
+    }
+    &-price-tag {
+      position: unset;
+      bottom: unset;
+      top: unset;
+      left: unset;
+      display: block;
+      padding: 0;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      width: 100%;
+      font-size: 13px;
+      min-height: unset;
+
+        
+
+      text-overflow: ellipsis;
+      word-wrap: normal;
+      word-break: normal;
+    }
+  }
+  &__footer {
+    position: relative;
+    margin-top: 54px;
+    text-align: center;
+    &-text {
+      display: inline-block;
+      // color: $white;
+      max-width: 568px;
+      &::before {
+        margin-bottom: 0.63rem;
+      }
+    }
+  }
+}
+*/

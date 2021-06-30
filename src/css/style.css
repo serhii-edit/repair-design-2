@@ -1997,13 +1997,17 @@ label.valid-valid {
 .team__heading {
   color: #ffffff;
   margin-top: -30%;
-  margin-bottom: 75px;
+  margin-bottom: 83px;
+}
+.team__heading-title {
+  margin-bottom: 16px;
 }
 .team__heading-block-img {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .team__heading-text {
   max-width: 448px;
+  line-height: 26px;
 }
 .team__section-col {
   flex-basis: none;
@@ -2014,7 +2018,7 @@ label.valid-valid {
 }
 .team__card-title {
   font-size: 1.285rem;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 .team__card-photo {
   width: 100%;
@@ -2031,13 +2035,15 @@ label.valid-valid {
   visibility: visible;
 }
 .team__card-text {
+  position: relative;
   margin: 0 auto;
-  margin-top: -88px;
+  margin-top: -84px;
   max-width: 233px;
   padding: 0;
   padding-top: 20px;
   text-align: center;
   overflow: hidden;
+  background-color: #ffffff;
 }
 .team__card-job {
   display: block;
@@ -2082,9 +2088,23 @@ label.valid-valid {
   }
 }
 @media screen and (max-width: 1010px) {
+  .team {
+    background-color: #181818;
+    padding-bottom: 75px;
+  }
+  .team__container {
+    margin-bottom: 0;
+  }
   .team__heading {
-    margin-top: 95px;
-    color: #131313;
+    margin-top: 0px;
+    padding-top: 95px;
+  }
+  .team__footer {
+    display: none;
+    visibility: hidden;
+  }
+  .team__footer-text {
+    color: #ffffff;
   }
   .team-row {
     flex-direction: column;
@@ -2095,6 +2115,142 @@ label.valid-valid {
     margin-top: 90px;
   }
 }
+@media screen and (max-width: 975px) {
+  .team__container {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .team__card-text {
+    margin-top: -82px;
+  }
+  .team__card-title {
+    font-size: 18px !important;
+  }
+  .team__card-price-tag {
+    font-size: 13px !important;
+  }
+}
+@media screen and (max-width: 404px) {
+  .team__heading-title {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .team__heading-text {
+    font-size: 1.25rem;
+    max-width: 325px;
+    line-height: 20.5px;
+  }
+}
+/* 
+.team {
+  // background-color: $dark;
+  // position: relative;
+  // z-index: 1;
+  // padding-bottom: 350px;
+  &-row {
+    justify-content: space-around;
+  }
+  &__container {
+    margin-bottom: 99px;
+  }
+
+  &__heading {
+    color: $white;
+    // margin-top: -460px;
+    margin-top: -30%;
+    margin-bottom: 75px;
+    &-title {
+      margin-bottom: 13px;
+    }
+    &-block-img  {
+      margin-bottom: 20px;
+    }
+    &-text {
+      max-width: 448px;
+      line-height: 20.5px;
+    }
+  }
+  &__section {
+    &-col {
+      flex-basis: none;
+      max-width: 275px;
+    }
+  }
+  &__card {
+    position: relative;
+    &-title {
+      font-size: 1.285rem;
+      margin-bottom: 5px;
+    }
+    &-photo {
+      width: 100%;
+      max-height: 357.63px;
+    }
+    &-svg {
+      position: absolute;
+      top: -35px;
+      left: -35px;
+      width: 71px;
+      height: 71px;
+      padding: 13px;
+      background-color: $primary;
+      visibility: visible;
+    }
+    &-text {
+      position: relative;
+      margin: 0 auto;
+      margin-top: -88px;
+      max-width: 233px;
+      padding: 0;
+      padding-top: 20px;
+      text-align: center;
+      overflow: hidden;
+      background-color: $white;
+    }
+    &-job {
+      display: block;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      color: $softSilver;
+      margin-bottom: 24px;
+    }
+    &-price-tag {
+      position: unset;
+      bottom: unset;
+      top: unset;
+      left: unset;
+      display: block;
+      padding: 0;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      width: 100%;
+      font-size: 13px;
+      min-height: unset;
+
+
+
+      text-overflow: ellipsis;
+      word-wrap: normal;
+      word-break: normal;
+    }
+  }
+  &__footer {
+    position: relative;
+    margin-top: 54px;
+    text-align: center;
+    &-text {
+      display: inline-block;
+      // color: $white;
+      max-width: 568px;
+      &::before {
+        margin-bottom: 0.63rem;
+      }
+    }
+  }
+}
+*/
 .clients__heading {
   margin-bottom: 46px;
 }
@@ -2113,6 +2269,7 @@ label.valid-valid {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
   padding-top: 24px;
   padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 68px;
 }
 .clients__card-heading {
@@ -2201,6 +2358,38 @@ label.valid-valid {
   width: 50%;
 }
 
+@media screen and (max-width: 1201px) {
+  .clients__card-tag-a {
+    margin-right: -2px;
+  }
+}
+@media screen and (max-width: 1127px) {
+  .clients__card-name {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+  .clients__card-tag-a {
+    margin-right: -1.5px;
+  }
+}
+@media screen and (max-width: 1026px) {
+  .clients__card-tag-a, .clients__card-tag-b {
+    font-size: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .clients__heading-title {
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .clients {
+    display: none;
+    visibility: hidden;
+  }
+}
 .footer .footer--bg {
   background-color: #252525;
   background-image: url("../img/footer-bg.jpg");
@@ -2313,6 +2502,24 @@ label.valid-valid {
   text-overflow: ellipsis;
 }
 
+@media screen and (max-width: 1010px) {
+  .footer--bg, .footer .footer {
+    background-color: unset !important;
+    background-image: unset !important;
+  }
+}
+@media screen and (max-width: 975px) {
+  .questions {
+    position: unset;
+    top: unset;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer__text {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 550px) {
   .questions {
     padding-left: 0;
@@ -2320,8 +2527,23 @@ label.valid-valid {
     padding-bottom: 0;
     margin-bottom: 46px;
   }
+  .questions__title {
+    font-size: 1.67rem;
+    margin-bottom: 53px;
+  }
+  .questions__label {
+    font-size: 14px;
+  }
+  .questions__input {
+    padding-top: 2px;
+    font-size: 1.385rem;
+    letter-spacing: 0.5px;
+  }
   .questions__block-input + .questions__block-input {
     margin-top: 63px;
+  }
+  .questions__block-input + .questions__block-input:nth-child(3) {
+    margin-bottom: 21px;
   }
   .questions__block-input:nth-child(1) {
     display: block;
@@ -2340,6 +2562,7 @@ label.valid-valid {
   .questions__policy {
     display: block;
     float: left;
+    margin-bottom: 67px;
   }
   .questions__button {
     width: 100%;
