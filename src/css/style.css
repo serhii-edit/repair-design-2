@@ -1674,6 +1674,7 @@ label.valid-valid {
 .d-project {
   position: relative;
   z-index: 2;
+  padding-top: 173px;
 }
 .d-project__heading-block-img {
   margin-bottom: 20px;
@@ -2348,6 +2349,7 @@ label.valid-valid {
   vertical-align: middle;
 }
 .clients__footer {
+  margin-top: -87px;
   margin-bottom: -5px;
 }
 .clients__bg-left img, .clients__bg-right img {
@@ -2398,7 +2400,7 @@ label.valid-valid {
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  padding-bottom: 4.71rem;
+  padding-bottom: 4.41rem;
 }
 .footer .footer--bg::before {
   content: "";
@@ -2425,7 +2427,7 @@ label.valid-valid {
   font-size: 20px;
   line-height: 28px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 .footer__text p a {
   color: #E3B873;
@@ -2443,7 +2445,7 @@ label.valid-valid {
   background-color: #181818;
   max-width: 883px;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 58px;
   padding: 34px;
 }
 .questions__title {
@@ -2506,7 +2508,7 @@ label.valid-valid {
 .footer__social {
   display: block;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 43px;
 }
 .footer__social-s {
   display: inline-block;
@@ -2521,13 +2523,25 @@ label.valid-valid {
   height: 12px;
 }
 .footer__social-s + .footer__social-s {
-  margin-left: 15px;
+  margin-left: 12px;
+}
+.footer__map {
+  max-width: 925px;
+  margin: 0 auto;
+  height: 465px;
 }
 
 @media screen and (max-width: 1010px) {
   .footer--bg, .footer .footer {
     background-color: unset !important;
     background-image: unset !important;
+  }
+}
+@media screen and (max-width: 993px) {
+  .footer__container-menu {
+    position: none;
+    display: none;
+    visibility: hidden;
   }
 }
 @media screen and (max-width: 975px) {
@@ -2538,8 +2552,30 @@ label.valid-valid {
     margin-bottom: 0;
   }
 
+  .footer {
+    padding-bottom: 0;
+    padding-bottom: 38px;
+  }
+  .footer--bg {
+    padding-bottom: 0 !important;
+  }
   .footer__text {
     margin-top: 0;
+  }
+  .footer__switch {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer__map {
+    width: 99%;
+  }
+  .footer__social {
+    margin-bottom: 0;
+  }
+  .footer__container-menu {
+    position: none;
+    display: none;
+    visibility: hidden;
   }
 }
 @media screen and (max-width: 550px) {
@@ -2589,6 +2625,11 @@ label.valid-valid {
   .questions__button {
     width: 100%;
     max-width: none;
+  }
+}
+@media screen and (max-height: 555px) {
+  .footer__map {
+    height: 255px;
   }
 }
 @-webkit-keyframes pulseScroll {
