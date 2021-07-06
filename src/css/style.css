@@ -1575,6 +1575,9 @@ label.valid-valid {
   .control {
     margin-top: 0;
   }
+  .control__heading {
+    margin-top: 0;
+  }
   .control--bgc-dark {
     background-color: #131313;
   }
@@ -2554,13 +2557,13 @@ label.valid-valid {
 
   .footer {
     padding-bottom: 0;
-    padding-bottom: 38px;
   }
   .footer--bg {
     padding-bottom: 0 !important;
   }
   .footer__text {
     margin-top: 0;
+    padding-bottom: 38px;
   }
   .footer__switch {
     display: flex;
@@ -2568,6 +2571,7 @@ label.valid-valid {
   }
   .footer__map {
     width: 99%;
+    margin-bottom: 37px;
   }
   .footer__social {
     margin-bottom: 0;
@@ -2626,10 +2630,23 @@ label.valid-valid {
     width: 100%;
     max-width: none;
   }
-}
-@media screen and (max-height: 555px) {
+
   .footer__map {
     height: 255px;
+  }
+
+  .footer__text p {
+    font-size: 18px;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 26px;
+  }
+  .footer__text p a {
+    display: block;
+  }
+  .footer__text .span--block {
+    display: inline !important;
   }
 }
 @-webkit-keyframes pulseScroll {
