@@ -1210,6 +1210,9 @@ label.valid-valid {
   line-height: 2.071rem;
   max-width: 442px;
   margin-bottom: 49px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
 }
 .projects__slide {
   width: 100% !important;
