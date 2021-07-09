@@ -48,10 +48,13 @@ try {
     ";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    $mail->send();
-    echo 'Message has been sent';
+    if ( $mail->send() ) {
+      echo "Submited";
+    } else {
+      echo "Not submited, error exist. Erorr code: $mail->ErrorInfo";
+    }
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Not submited, error exist. Erorr code: $mail->ErrorInfo";
 }
 
 ?>

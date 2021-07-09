@@ -262,7 +262,20 @@ $(document).ready(function () {
           email: "Example: name@domain.com",
         },
       },
-    
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "mailSender.php",
+          data: $(form).serialize(),
+          dataType: "html",
+          success: function (response) {
+            console.log("AjaxPHP Code: " + response);
+            $(form)[0].reset();
+            modal.classList.remove("modal--visible"); 
+            alert("Information sent!");
+          }
+        });
+      }
   });
 // Validation of form (modal) - (END)
 
@@ -296,6 +309,9 @@ $(".control__form").validate({
         maxlength: "Indicate full number",
       },
     },
+    submitHandler: function(form) {
+      $(form).ajaxSubmit();
+    }
 });
 // Validation of form (control) - (END)
 
@@ -339,7 +355,9 @@ $(".questions__form").validate({
         minlength: "Type little bit more"
       }
     },
-  
+    submitHandler: function(form) {
+      $(form).ajaxSubmit();
+    }
 });
 // Validation of form (footer) - (END)
 
