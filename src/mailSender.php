@@ -4,6 +4,7 @@ $userName = $_POST['userName'];
 $userEmail = $_POST['userEmail'];
 $userPhone = $_POST['userPhone'];
 $userQuestion = $_POST['userQuestion'];
+$policyAgree = $_POST['policyAgree'];
   
   require "PHPMailer/Exception.php";
   require "PHPMailer/PHPMailer.php";
@@ -34,19 +35,21 @@ try {
     <span style='display: block; max-width: 600px; margin: 0 auto;'>
     <h3 style='color: #000;'>Data of Requester</h3>
     <br />
-    Name: <b>$userName</b>
+    <span style='font-size: 14px;'>Personal data policy<b>: $policyAgree.</b></span>
     <br />
-    Telephone-number: <b>$userPhone</b>
+    Name<b>: $userName</b>
     <br />
-    Email: <b>$userEmail</b>
+    Telephone-number<b>: <a href='tel:$userPhone'>$userPhone</a></b>
     <br />
-    Question: $userQuestion
+    Email<b>: <a href='mailto:$userEmail'>$userEmail</a></b>
+    <br />
+    Question<b>: $userQuestion</b>
     <br />
     <br />
-    <a style='color: #000; text-decoration: none; cursor: pointer;' href='serhii-yakymenko.zzz.com.ua/webs/repair-design-2'>Sent from: <b>serhii-yakymenko.zzz.com.ua/webs/repair-design-2</b></a>
+    <a style='color: #000; text-decoration: none; cursor: pointer;' href='serhii-yakymenko.zzz.com.ua/repair-design-2'>Sent from: <b>serhii-yakymenko.zzz.com.ua/repair-design-2</b></a>
     </span>
     ";
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->AltBody = 'Received';
 
     if ( $mail->send() ) {
       echo "Submited";

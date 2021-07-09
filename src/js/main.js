@@ -1,29 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event){
+
+
   const modal = document.querySelector(".modal");
-  // const modalBtn = document.querySelectorAll("[data-toggle=modal]");
-  // const closeBtn = document.querySelector(".modal__close");
-
-//   var switchModal = () => {
-//     modal.classList.toggle("modal--visible");
-//   };
-
-//   modalBtn.forEach(element => {
-//     element.addEventListener("click", switchModal);
-//   });
-
-//   closeBtn.addEventListener("click", switchModal);
-//   window.onclick = function (e) {
-//     if(e.target == modal) {
-//       modal.classList.toggle("modal--visible");
-//     };
-//   };
-
-//   window.addEventListener("keydown", function (event) {
-//     if(event.key == 'Escape') {
-//       modal.classList.remove("modal--visible");
-//     };
-//   });
-
 
   // ES5 > ES6, use of babel
   window.onclick = function (e) {
@@ -47,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
   }
+
 
   // Swiper START
   var swiperA = new Swiper('.swiper-p-container', {
@@ -229,6 +208,7 @@ $(document).ready(function () {
 
 // Form Validation
 // Validation of form (modal)
+var modalSubmit = $(".modal-submit");
   $(".modal__form").validate({
     errorClass: "valid-error",
     validClass: "valid-valid",
@@ -270,9 +250,10 @@ $(document).ready(function () {
           dataType: "html",
           success: function (response) {
             console.log("AjaxPHP Code: " + response);
+            // alert("Information sent!");\
             $(form)[0].reset();
-            modal.classList.remove("modal--visible"); 
-            alert("Information sent!");
+            modal.removeClass("modal--visible"); 
+            modalSubmit.toggleClass("modal-submit-visible");
           }
         });
       }
