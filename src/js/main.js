@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 
   const modal = document.querySelector(".modal");
+  var modalSubmit = document.querySelector(".modal-submit");
 
   // ES5 > ES6, use of babel
-  window.onclick = function (e) {
+  modal.onclick = function (e) {
     if(e.target == modal) {
       modal.classList.toggle("modal--visible");
       document.querySelector("body").style.overflow = 'auto';
@@ -17,6 +18,23 @@ document.addEventListener("DOMContentLoaded", function(event){
       document.querySelector("body").style.overflow = 'auto';
     };
   });
+
+  // console.log(modalSubmit);
+
+  window.addEventListener("keydown", function (eventS) {
+    if(eventS.key == 'Escape') {
+      modalSubmit.classList.remove("modal-submit-visible");
+      document.querySelector("body").style.overflow = 'auto';
+    };
+  });
+
+  modalSubmit.onclick = function (eS) {
+    if(eS.target == modalSubmit) {
+      modalSubmit.classList.remove("modal-submit-visible");
+      document.querySelector("body").style.overflow = 'auto';
+    };
+  };
+
 
   window.onscroll = function() {myFunction()};
   function myFunction() {
@@ -164,6 +182,9 @@ $(document).ready(function () {
   var modalBtn = $("[data-toggle=modal]");
   var closeBtn = $(".modal__close");
 
+  var modalSubmit = $(".modal-submit");
+  var modalSubmitClose = $(".modal-submit__close");
+
   modalBtn.on("click", function () {
     modal.toggleClass("modal--visible");
     document.querySelector("body").style.overflow = 'hidden';
@@ -173,6 +194,10 @@ $(document).ready(function () {
     document.querySelector("body").style.overflow = 'auto';
   });
 
+  modalSubmitClose.on("click", function () {
+    modalSubmit.removeClass("modal-submit-visible");
+    document.querySelector("body").style.overflow = "auto";
+  })
 
   // code
 
@@ -252,8 +277,9 @@ var modalSubmit = $(".modal-submit");
             console.log("AjaxPHP Code: " + response);
             // alert("Information sent!");\
             $(form)[0].reset();
-            modal.removeClass("modal--visible"); 
             modalSubmit.toggleClass("modal-submit-visible");
+            document.querySelector("body").style.overflow = "hidden";
+            modal.removeClass("modal--visible");
           }
         });
       }
@@ -291,7 +317,19 @@ $(".control__form").validate({
       },
     },
     submitHandler: function(form) {
-      $(form).ajaxSubmit();
+      $.ajax({
+        type: "POST",
+        url: "mailSender.php",
+        data: $(form).serialize(),
+        dataType: "html",
+        success: function (response) {
+          console.log("AjaxPHP Code: " + response);
+          // alert("Information sent!");\
+          $(form)[0].reset();
+          modalSubmit.toggleClass("modal-submit-visible");
+          document.querySelector("body").style.overflow = "hidden";
+        }
+      });
     }
 });
 // Validation of form (control) - (END)
@@ -337,7 +375,19 @@ $(".questions__form").validate({
       }
     },
     submitHandler: function(form) {
-      $(form).ajaxSubmit();
+      $.ajax({
+        type: "POST",
+        url: "mailSender.php",
+        data: $(form).serialize(),
+        dataType: "html",
+        success: function (response) {
+          console.log("AjaxPHP Code: " + response);
+          // alert("Information sent!");\
+          $(form)[0].reset();
+          modalSubmit.toggleClass("modal-submit-visible");
+          document.querySelector("body").style.overflow = "hidden";
+        }
+      });
     }
 });
 // Validation of form (footer) - (END)

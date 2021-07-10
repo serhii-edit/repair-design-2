@@ -967,9 +967,7 @@ label.valid-valid {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 950;
 }
 .modal-submit-visible {
@@ -980,15 +978,87 @@ label.valid-valid {
 }
 .modal-submit__dialog {
   display: block;
+  max-width: 400px;
   position: fixed;
-  top: 35%;
+  top: 50%;
   left: 0;
   right: 0;
+  transform: translateY(-50%);
   margin-right: auto;
   margin-left: auto;
-  max-width: 500px;
-  background-color: #fff;
-  padding: 100px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.modal-submit__header {
+  background-color: #E3B873;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.modal-submit__success {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  margin-right: 13px;
+  padding: 8px;
+  background: rgba(37, 37, 37, 0.8);
+  border-radius: 100%;
+}
+.modal-submit__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 19px;
+  font-weight: 400;
+}
+.modal-submit__contact {
+  margin-bottom: 20px;
+}
+.modal-submit__wait {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+  max-width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.modal-submit__line {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(54, 54, 54, 0.5);
+}
+.modal-submit__info {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.modal-submit__phone, .modal-submit__email {
+  display: inline-block;
+  font-size: 17px;
+  color: #131313;
+  width: auto;
+  margin-top: 10px;
+  -moz-text-align-last: left;
+  text-align-last: left;
+}
+.modal-submit__phone span, .modal-submit__email span {
+  text-decoration: underline;
+}
+.modal-submit__close {
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(54, 54, 54, 0.5);
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 300ms;
+}
+.modal-submit__close:hover {
+  background-color: #f20d0d;
 }
 
 .header {
