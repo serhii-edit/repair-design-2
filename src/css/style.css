@@ -1061,6 +1061,38 @@ label.valid-valid {
   background-color: #f20d0d;
 }
 
+@media screen and (max-width: 500px) {
+  .modal-submit__dialog {
+    max-width: 300px;
+  }
+  .modal-submit__header {
+    text-align: center;
+  }
+  .modal-submit__success {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: unset;
+    margin-bottom: 5px;
+  }
+  .modal-submit__title {
+    text-align: center;
+    font-size: 16px;
+    vertical-align: unset;
+  }
+  .modal-submit__wait {
+    font-size: 15px;
+    text-align: center;
+  }
+  .modal-submit__phone, .modal-submit__email {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .modal-submit__dialog {
+    max-width: 255px;
+  }
+}
 .header {
   position: fixed;
   top: 0;
