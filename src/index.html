@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Repair Design Project</title>
 
-  <link rel="stylesheet" href="./css/aos.min.css">
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="./css/aos.min.css"> -->
+  <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -17,16 +19,16 @@
     <div class="container header__container">
       <div class="menu header__menu ">
         <div class="logo menu__logo">
-          Repair Design Project
+          <a href="#main" class="logo">Repair Design Project</a>
         </div>
         <!-- /.logo -->
         <nav class="nav menu__nav">
-          <a href="#" class="nav__link">Primary</a>
-          <a href="#" class="nav__link">Projects</a>
-          <a href="#" class="nav__link">Measure</a>
-          <a href="#" class="nav__link">Team</a>
-          <a href="#" class="nav__link">Feedback</a>
-          <a href="#" class="nav__link">Contacts</a>
+          <a href="#finishedProjects" class="nav__link">Primary</a>
+          <a href="#designProjects" class="nav__link">Projects</a>
+          <a href="#steps" class="nav__link">Measure</a>
+          <a href="#team" class="nav__link">Team</a>
+          <a href="#feedback" class="nav__link">Feedback</a>
+          <a href="#contact" class="nav__link">Contacts</a>
         </nav>
         <!-- /.nav -->
         <div class="contacts menu__contacts">
@@ -52,7 +54,7 @@
   </header>
   <!-- /.header -->
 
-    <div class="modal-submit">
+    <div class="modal-submit modal-submit-visible">
       <div class="modal-submit__dialog">
         <div class="modal-submit__header">
           <img src="./img/success-icon.svg" alt="" class="modal-submit__success">
@@ -97,7 +99,7 @@
     </div>
     <!-- /.arrow-top -->
 
-    <section class="hero">
+    <section class="hero" id="main">
       <div class="instagram-block hero__instagram-block">
         <a href="https://www.instagram.com/earth/" target="_blank" class="hero__instagram-link">Instagram</a>
       </div>
@@ -127,7 +129,7 @@
         </div>
         <!-- /.hero__content -->
         <div class="hero__scroll-btn">
-          <a href="#" class="scroll-down">
+          <a href="#finishedProjects" class="scroll-down">
             Scroll Down
           </a>
         </div>
@@ -135,7 +137,7 @@
     </section>
     <!-- /.hero -->
 
-    <section class="section projects section--dark">
+    <section class="section projects section--dark" id="finishedProjects">
       <div class="container">
         <div class="row projects--column projects--margin-b">
           <div class="col-50 projects--relatieve projects__col-1" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
@@ -584,7 +586,7 @@
     </section>
     <!-- /.types -->
 
-    <section class="d-project section">
+    <section class="d-project section" id="designProjects">
       <div class="d-project__container container">
         <div class="section-heading d-project__heading">
           <h2 class="section-heading-title d-project__heading-title" data-aos="fade-up" data-aos-duration="1000">
@@ -778,11 +780,11 @@
   <!-- /.bg-lines -->
 
    <span class="bg-lines">
-    <section class="section steps section--dark">
+    <section class="section steps section--dark" id="steps">
       <div class="container">
         
-        <div class="steps__heading ">
-          <span class="steps__pre-title span--block" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+        <div class="steps__heading">
+          <span class="steps__pre-title span--block" data-aos="fade-right" data-aos-duration="800">
             Как Мы Работаем
           </span>
           <!-- /.steps__pre-title -->
@@ -957,34 +959,34 @@
             </div>
             <!-- /.steps__image-pagination -->
             <div class="swiper-c-steps-image">
-              <div class="swiper-wrapper" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1200">
+              <div class="swiper-wrapper" data-aos="fade-left" data-aos-duration="850">
                 <div class="swiper-slide steps__slide-image">
                   <img src="./img/steps-1-human.jpg" class="steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img src="./img/steps-2-budget.jpg" class="steps__image" loading="lazy" alt="#">
+                  <img data-src="./img/steps-2-budget.jpg" class="steps__image swiper-lazy swiper-lazy-loaded" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img src="./img/steps-3-design.jpg" class="steps__image" loading="lazy" alt="#">
+                  <img data-src="./img/steps-3-design.jpg" class="steps__image swiper-lazy" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img src="./img/steps-4-materials.jpg" class="steps__image" loading="lazy" alt="#">
+                  <img data-src="./img/steps-4-materials.jpg" class="steps__image swiper-lazy" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img src="./img/steps-5.jpg" class="steps__image" loading="lazy" alt="#">
+                  <img data-src="./img/steps-5.jpg" class="steps__image swiper-lazy" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img src="./img/steps-6-give.jpg" class="steps__image" loading="lazy" alt="#">
+                  <img data-src="./img/steps-6-give.jpg" class="steps__image swiper-lazy" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
@@ -1005,7 +1007,7 @@
     
   <span class="bg-lines-silver">
     <section class="section team">
-      <div class="container team__container">
+      <div class="container team__container" id="team">
         <div class="section-heading team__heading">
           <h2 class="section-heading-title section-heading-title--margin--bottom team__heading-title" data-aos="fade-up" data-aos-duration="1000">
             Наша команда
@@ -1102,7 +1104,7 @@
     </section>
     <!-- /.section team -->
 
-    <section class="clients section">
+    <section class="clients section" id="feedback">
       <div class="clients__container container">
         <div class="section-heading clients__heading">
           <h2 class="section-heading-title section-heading-title--margin--bottom    clients__heading-title" data-aos="fade-up" data-aos-duration="1000">
@@ -1248,7 +1250,7 @@
       </div>
       <!-- /.container -->
 
-      <div class="clients__footer row">
+      <div class="clients__footer row" id="contact">
         <div class="clients__bg-left">
           <img src="img/clients/bg-left.svg" alt="">
         </div>
@@ -1410,12 +1412,12 @@
           </div>
           <!-- /.logo -->
           <nav class="nav menu__nav">
-            <a href="#" class="nav__link">Primary</a>
-            <a href="#" class="nav__link">Projects</a>
-            <a href="#" class="nav__link">Measure</a>
-            <a href="#" class="nav__link">Team</a>
-            <a href="#" class="nav__link">Feedback</a>
-            <a href="#" class="nav__link">Contacts</a>
+            <a href="#finishedProjects" class="nav__link">Primary</a>
+            <a href="#designProjects" class="nav__link">Projects</a>
+            <a href="#steps" class="nav__link">Measure</a>
+            <a href="#team" class="nav__link">Team</a>
+            <a href="#feedback" class="nav__link">Feedback</a>
+            <a href="#contact" class="nav__link">Contacts</a>
           </nav>
           <!-- /.nav -->
           <div class="contacts menu__contacts">
@@ -1433,13 +1435,22 @@
       <!-- /.footer__container-menu -->
   </footer>
   
-  <script src="./js/jquery-3.6.0.min.js"></script>
-  <script src="./js/aos.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script src="./js/swiper-bundle.min.js"></script>
-  <script src="./js/jquery.validate.min.js"></script>
+  <!-- <script src="./js/aos.min.js"></script> -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="./js/swiper-bundle.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <!-- <script src="./js/jquery.validate.min.js"></script> -->
+
   <script src="./js/jquery.mask.min.js"></script>
 
   <script src="./js/main.js"></script>

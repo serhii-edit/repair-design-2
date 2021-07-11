@@ -22,17 +22,23 @@
   }
   &__dialog {
     display: block;
-    max-width: 400px;
-    position: fixed;
+    position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    margin-right: auto;
-    margin-left: auto;
+
+    // transform: translateY(-50%); Native
+    // left: 0; Native
+    // right: 0; Native
+    // margin-right: auto; Native
+    // margin-left: auto; Native
+
+    right: 0; 
+    left: 50%; // For Internet Explover (old)
+    transform: translate(-50%, -50%); // For Internet Explover (old)
+
+    max-width: 400px;
     padding-bottom: 20px;
     border-radius: 15px;
-    background: rgba($white, 0.7);
+    background: rgba($white, 0.8);
   }
   &__header {
     background-color: $primary;
@@ -109,40 +115,3 @@
 }
 
 
-@media screen and (max-width: 500px) {
-  .modal-submit {
-    &__dialog {
-      max-width: 300px;
-    }
-    &__header {
-      text-align: center;
-    }
-    &__success {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      vertical-align: unset;
-      margin-bottom: 5px;
-    }
-    &__title {
-      text-align: center;
-      font-size: 16px;
-      vertical-align:unset;
-    }
-    &__wait {
-      font-size: 15px;
-      text-align: center;
-    }
-    &__phone, &__email {
-      font-size: 15px;
-    }
-  }
-}
-
-@media screen and (max-width: 335px) {
-  .modal-submit {
-    &__dialog {
-      max-width: 255px;
-    }
-  }
-}
