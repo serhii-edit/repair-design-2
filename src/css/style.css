@@ -869,7 +869,7 @@ label.valid-valid {
   position: relative;
   color: #ffffff;
   background-color: #131313;
-  padding: 33px 50px 27px 50px;
+  padding: 28px 50px 27px 50px;
   max-width: 506px;
   background-image: url("../img/modal-bg.svg");
   background-size: 100%;
@@ -897,6 +897,7 @@ label.valid-valid {
   font-size: 1.357rem;
   line-height: 1.857rem;
   text-align: center;
+  margin-bottom: 31px;
 }
 .modal__form {
   position: relative;
@@ -905,6 +906,9 @@ label.valid-valid {
 }
 .modal__block-input, .modal__input {
   width: 100%;
+}
+.modal__input {
+  margin-top: -2px;
 }
 .modal__block-input + .modal__block-input {
   margin-top: 48px;
@@ -920,9 +924,11 @@ label.valid-valid {
 }
 .modal__block-button {
   align-self: flex-end;
+  margin-top: -7px;
 }
 .modal__button {
-  padding: 19px 21px;
+  padding: 19px 45px;
+  border-radius: unset;
 }
 
 .policy__label {
@@ -956,6 +962,24 @@ label.valid-valid {
   cursor: pointer;
 }
 
+@media screen and (max-width: 570px) {
+  .modal__dialog {
+    max-width: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .modal__title {
+    max-width: 240px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 335px) {
+  .modal__dialog {
+    max-width: 252px;
+  }
+}
 .modal-submit {
   position: none;
   visibility: hidden;

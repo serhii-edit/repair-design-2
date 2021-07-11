@@ -19,7 +19,7 @@
     position: relative;
     color: $white;
     background-color: $dark;
-    padding: 33px 50px 27px 50px;
+    padding: 28px 50px 27px 50px;
     max-width: 506px;
 
     background-image: url("../img/modal-bg.svg");
@@ -49,6 +49,7 @@
     font-size: 1.357rem;
     line-height: 1.857rem;
     text-align: center;
+    margin-bottom: 31px;
   }
   &__form {
     position: relative;
@@ -58,6 +59,9 @@
   }
   &__block-input, &__input {
     width: 100%;
+  }
+  &__input {
+    margin-top: -2px;
   }
   &__block-input + &__block-input {
     margin-top: 48px;
@@ -73,9 +77,11 @@
   }
   &__block-button {
     align-self: flex-end;
+    margin-top: -7px;
   }
   &__button {
-    padding: 19px 21px;
+    padding: 19px 45px;
+    border-radius: unset;
   }
 }
 .policy {
@@ -131,4 +137,26 @@
   // }
 }
 
+@media screen and (max-width: 570px) {
+  .modal {
+    &__dialog {
+      max-width: 350px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    &__title {
+      max-width: 240px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
 
+@media screen and (max-width: 335px) {
+  .modal {
+    &__dialog {
+      max-width: 252px;
+    }
+  }
+}

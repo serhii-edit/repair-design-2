@@ -31,8 +31,8 @@ function serveSass() {
       .pipe(sass())
 
       .pipe(autoprefixer({
-        cascade: false
-    }))
+			  cascade: false
+		  }))
 
       .pipe(dest("./css/"))
       .pipe(browserSync.stream())
