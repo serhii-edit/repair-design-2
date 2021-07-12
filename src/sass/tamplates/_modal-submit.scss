@@ -19,21 +19,26 @@
     display: block;
     visibility: visible;
     opacity: 1; 
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   &__dialog {
     display: block;
     position: absolute;
     top: 50%;
 
-    // transform: translateY(-50%); Native
-    // left: 0; Native
-    // right: 0; Native
-    // margin-right: auto; Native
-    // margin-left: auto; Native
+    transform: translateY(-50%); // Native
+    left: 0; // Native
+    right: 0; // Native
+    margin-right: auto; // Native
+    margin-left: auto; // Native
 
-    right: 0; 
-    left: 50%; // For Internet Explover (old)
-    transform: translate(-50%, -50%); // For Internet Explover (old)
+    // right: 0; 
+    // left: 50%; // For Internet Explover (old)
+    // transform: translate(-50%, -50%); // For Internet Explover (old)
 
     max-width: 400px;
     padding-bottom: 20px;

@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "gulp-dart-sass": "^1.0.2",
-    "gulp-html-minifier-terser": "^6.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-scss": "^1.4.0",
     "gulp-tinypng-compress": "^1.2.5",
     "node-gyp": "^8.0.0",
@@ -20,8 +20,10 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-minify": "^3.1.0",
-    "gulp-minify-inline": "^1.1.0"
+    "gulp-minify-inline": "^1.1.0",
+    "gulp-rename": "^1.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,11 +4,13 @@ var browserSync = require("browser-sync").create();
 
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+var cssmin = require("gulp-cssmin");
+var rename = require('gulp-rename');
 var minify = require('gulp-minify');
-const htmlmin = require('gulp-html-minifier-terser');
+const htmlmin = require('gulp-htmlmin');
+const imagemin = require('gulp-imagemin');
 var tinypng = require('gulp-tinypng-compress');
-// var cssmin = require("gulp-cssmin");
-// var rename = require('gulp-rename');
+
 
 // Static server
 function bs() {
@@ -46,15 +48,13 @@ function minCSS(done) {
   src("./css/**/*.css")
   .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(dest('../dest/css/'))
+
+  src("./css/**/style.css")
+  // .pipe(cssmin())
+  .pipe(rename({suffix: "-clean"}))
+  .pipe(dest('../dest/css/'))
   done();
 }
-
-// function prefixCSS(done) {
-//   src("./css/**/*.css")
-//   .pipe(autoprefixer({cascade: false}))
-//   .pipe(dest('../dest/css/'))
-//   done();
-// }
 
 function minJS(done) {
   src(["./js/**/*.js", "!./js/**/*.min.js"])
@@ -86,6 +86,12 @@ function destPHP(done) {
   done();
 }
 
+function destFonts(done) {
+  src("./fonts/**/**")
+  .pipe(dest('../dest/fonts/'))
+  done();
+}
+
 function tinyImg(done) {
   src(["./img/**/*.jpg", "./img/**/*.jpeg", "./img/**/*.png"])
   .pipe(tinypng({
@@ -97,8 +103,25 @@ function tinyImg(done) {
   done();
 }
 
+function svgIMG(done) {
+  src("./img/**/*.svg")
+  .pipe(imagemin([
+    // imagemin.gifsicle({interlaced: true}),
+    // imagemin.mozjpeg({quality: 70, progressive: true}),
+    // imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({
+        plugins: [
+            {removeViewBox: true},
+            {cleanupIDs: false}
+        ]
+    })
+]))
+  .pipe(dest("../dest/img/"))
+  done();
+}
+
+exports.buildFiles = series(minCSS, minJS, minHTML, destPHP, destFonts, svgIMG, tinyImg);
 exports.serve = bs;
-exports.buildFiles = series(minCSS, minJS, minHTML, destPHP, tinyImg);
 
 // gulp.task("min-css", function(done){
 //   gulp.src("./css/*.css")

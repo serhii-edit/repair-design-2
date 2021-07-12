@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function(event){
     document.getElementById("myBar").style.width = scrolled + "%";
   }
 
-
   // Swiper START
   var swiperA = new Swiper('.swiper-p-container', {
     // Optional parameters

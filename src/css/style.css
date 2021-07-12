@@ -982,14 +982,19 @@ label.valid-valid {
   display: block;
   visibility: visible;
   opacity: 1;
+  display: flex;
+  align-items: center;
+  align-items: center;
 }
 .modal-submit__dialog {
   display: block;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
+  left: 0;
   right: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-right: auto;
+  margin-left: auto;
   max-width: 400px;
   padding-bottom: 20px;
   border-radius: 15px;
@@ -2959,11 +2964,6 @@ label.valid-valid {
     margin-right: auto;
   }
 }
-@media screen and (max-width: 335px) {
-  .modal__dialog {
-    max-width: 252px;
-  }
-}
 @media screen and (max-width: 500px) {
   .modal-submit__dialog {
     max-width: 300px;
@@ -2993,7 +2993,7 @@ label.valid-valid {
 }
 @media screen and (max-width: 335px) {
   .modal-submit__dialog {
-    max-width: 255px;
+    max-width: 260px;
   }
 }
 @media screen and (max-width: 1010px) {

@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
+
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="only-ie.css" />
+  <![endif]-->
+
 </head>
 <body>
 
@@ -352,7 +357,7 @@
       <!-- /.row projects__row -->
     </section>
 
-  <span class="bg-lines-silver">
+  <div class="bg-lines-silver">
     <section class="section control control--bgc-dark">
       <div class="container">
 
@@ -776,10 +781,10 @@
       <!-- /.container -->
     </section>
     <!-- /.d-project section -->
-  </span>
+  </div>
   <!-- /.bg-lines -->
 
-   <span class="bg-lines">
+   <div class="bg-lines">
     <section class="section steps section--dark" id="steps">
       <div class="container">
         
@@ -966,7 +971,7 @@
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-2-budget.jpg" class="steps__image swiper-lazy swiper-lazy-loaded" alt="#">
+                  <img data-src="./img/steps-2-budget.jpg" class="swiper-lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
@@ -1002,10 +1007,10 @@
       </div>
       <!-- /.container -->
     </section>
-  </span>
+  </div>
   <!-- /.bg-lines --> 
     
-  <span class="bg-lines-silver">
+  <div class="bg-lines-silver">
     <section class="section team">
       <div class="container team__container" id="team">
         <div class="section-heading team__heading">
@@ -1122,7 +1127,6 @@
 
         <div class="section-row">
 
-
           <div class="section-col">
             <div class="card clients__card" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000">
               <div class="clients__card-heading">
@@ -1142,20 +1146,20 @@
                 Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.
               </p>
               <!-- /.card__text -->
-                <strong class="clients__card-tag">
+                <div class="clients__card-tag">
                   <div class="clients__card-tag-a inline--block">
                     <img src="./img/clients/cardTagLeft.svg" alt="" class="clients__card-tag-icon">
-                    <span class="clients__card-tag-title">
+                    <strong class="clients__card-tag-title">
                       40 m<sup>2</sup>
-                    </span>
+                    </strong>
                   </div>
                   <div class="clients__card-tag-b inline--block">
                     <img src="./img/clients/cardTagRight.svg" alt="" class="clients__card-tag-icon">
-                    <span class="clients__card-tag-title">
+                    <strong class="clients__card-tag-title">
                       48 дней
-                    </span>
+                    </strong>
                   </div>
-                </strong>
+                </div>
                 <!-- /.card__price-tag -->
             </div>
             <!-- /.card -->
@@ -1182,20 +1186,20 @@
                 Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.
               </p>
               <!-- /.card__text -->
-                <strong class="clients__card-tag">
+                <div class="clients__card-tag">
                   <div class="clients__card-tag-a inline--block">
                     <img src="./img/clients/cardTagLeft.svg" alt="" class="clients__card-tag-icon">
-                    <span class="clients__card-tag-title">
+                    <strong class="clients__card-tag-title">
                       40 m<sup>2</sup>
-                    </span>
+                    </strong>
                   </div>
                   <div class="clients__card-tag-b inline--block">
                     <img src="./img/clients/cardTagRight.svg" alt="" class="clients__card-tag-icon">
-                    <span class="clients__card-tag-title">
+                    <strong class="clients__card-tag-title">
                       48 дней
-                    </span>
+                    </strong>
                   </div>
-                </strong>
+                </div>
                 <!-- /.card__price-tag -->
             </div>
             <!-- /.card -->
@@ -1214,29 +1218,30 @@
                   <span class="span--block">
                     Муратович
                   </span>
-                  </span>
                 </span>
                 <!-- /.span--block client__card-name -->
               </div>
               <!-- /.clients__card-heading -->
+
               <p class="clients__card-text">
                 Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.
               </p>
               <!-- /.card__text -->
-                <strong class="clients__card-tag">
+
+                <div class="clients__card-tag">
                   <div class="clients__card-tag-a inline--block">
                     <img src="./img/clients/cardTagLeft.svg" alt="" class="clients__card-tag-icon">
-                    <span class="clients__card-tag-title">
+                    <strong class="clients__card-tag-title">
                       40 m<sup>2</sup>
-                    </span>
+                    </strong>
                   </div>
                   <div class="clients__card-tag-b inline--block">
                     <img src="./img/clients/cardTagRight.svg" alt="" class="clients__card-tag-icon">
-                    <span class="clients__card-tag-title">
+                    <strong class="clients__card-tag-title">
                       48 дней
-                    </span>
+                    </strong>
                   </div>
-                </strong>
+                </div>
                 <!-- /.card__price-tag -->
             </div>
             <!-- /.card -->
@@ -1265,7 +1270,7 @@
     <!-- /.clients -->
 
 
-  </span>
+  </div>
   <!-- /.bg-lines-silver -->
 
     <div class="modal">
@@ -1441,7 +1446,11 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    // AOS.init();
+    AOS.init({
+      // Global settings:
+      disable: "mobile",
+    });
   </script>
   <!-- <script src="./js/aos.min.js"></script> -->
 

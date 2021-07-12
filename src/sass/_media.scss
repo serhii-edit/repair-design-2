@@ -631,14 +631,6 @@
   }
 }
 
-@media screen and (max-width: 335px) {
-  .modal {
-    &__dialog {
-      max-width: 252px;
-    }
-  }
-}
-
 @media screen and (max-width: 500px) {
   .modal-submit {
     &__dialog {
@@ -672,7 +664,7 @@
 @media screen and (max-width: 335px) {
   .modal-submit {
     &__dialog {
-      max-width: 255px;
+      max-width: 260px;
     }
   }
 }
