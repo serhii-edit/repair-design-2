@@ -223,6 +223,32 @@
   } // Control
 } // Media
 
+@media screen and (max-width: 450px) {
+.control {
+  &__wrap-text {
+    margin-bottom: 2.48rem;
+    &::before {
+      margin-bottom: 1.23rem;
+    }
+  }
+  &__text {
+    font-size: 1.16rem;
+    line-height: 2rem;
+  }
+  &__label {
+    font-size: 1.250rem;
+  }
+  &__button {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    border-radius: 0;
+  }
+} // .control
+
+} // Media (max-w: 450px)
+
+
 @media screen and (max-width: 1250px) {
   .swiper-p-container {
     margin: 0 !important;
@@ -437,6 +463,7 @@
 // Section Design Project (START)
 @media screen and (max-width: 880px) {
   .d-project {
+    padding-top: 60px;
     background-color: $dark;
     &__container {
       color: $white;
@@ -713,6 +740,61 @@
 @media screen and (max-width: 315px) {
   .steps {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .footer {
+    &--bg, .footer {
+      background-color: unset !important;
+      background-image: unset !important;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .footer {
+    &__container-menu {
+      position: none;
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .questions {
+    position: unset;
+    top: unset;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .footer {
+    padding-bottom: 0;
+    // padding-bottom: 38px;
+    &--bg {
+      padding-bottom: 0 !important;
+    }
+    &__text {
+      margin-top: 0;
+      padding-bottom: 38px;
+    }
+    &__switch {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__map {
+      width: 99%;
+      margin-bottom: 37px;
+    }
+    &__social {
+      margin-bottom: 0;
+    }
+    &__container-menu {
+      position: none;
+      display: none;
+      visibility: hidden;
+    }
   }
 }
 

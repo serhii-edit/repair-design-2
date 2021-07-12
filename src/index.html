@@ -5,12 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Repair Design Project</title>
+  
+  <link rel="preload" as="image" href="./img/hero-bg.jpg" />
 
   <!-- <link rel="stylesheet" href="./css/aos.min.css"> -->
   <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="preload" as="style" href="./css/style.css" />
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
 
   <!--[if IE]>
   <link rel="stylesheet" type="text/css" href="only-ie.css" />
@@ -59,10 +63,10 @@
   </header>
   <!-- /.header -->
 
-    <div class="modal-submit modal-submit-visible">
+    <div class="modal-submit">
       <div class="modal-submit__dialog">
         <div class="modal-submit__header">
-          <img src="./img/success-icon.svg" alt="" class="modal-submit__success">
+          <img data-src="./img/success-icon.svg" alt="" class="lazy modal-submit__success">
       <p class="modal-submit__title">
         Information sent! your data are recorded.
       </p>
@@ -319,9 +323,7 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-p-img">
-                  <img src="./img/projects-1.jpg"
-                  class="swiper-lazy" alt="">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                  <img src="./img/projects-1.jpg" alt="">
                 </div>
                 <div class="swiper-slide swiper-p-img">
                   <img data-src="./img/projects-2.jpg"
@@ -373,8 +375,8 @@
           </div>
           <!-- /.section-heading control__heading -->
 
-          <div class="control__video">
-            <img class="control__video-play" src="./img/online-control-play.svg" />
+          <div id="controlVideo" class="lazy control__video">
+            <img class="lazy control__video-play" data-src="./img/online-control-play.svg" />
             <!-- /.control__video-play -->
           </div>
           <!-- /.control__video -->
@@ -431,7 +433,7 @@
             View of Repair
           </h2>
           <div class="section-heading-block-img" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <img class="section-heading-img" src="./img/types/types-repair.svg" alt="">
+            <img class="section-heading-img types__heading-img" src="./img/types/types-repair.svg" alt="">
           </div>
           <!-- /.section-heading__img -->
         </div>
@@ -440,7 +442,7 @@
         <div class="section-row">
           <div class="section-col">
             <div class="card types__card" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000">
-              <img src="./img/types/card-1.jpg" alt="Space Repair" class="card__img">
+              <img data-src="./img/types/card-1.jpg" alt="Space Repair" class="lazy card__img">
               <div class="card__text">
                 <h3 class="card__title">
                   Space Repair
@@ -489,7 +491,7 @@
           <!-- /.section-col -->
           <div class="section-col">
             <div class="card types__card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
-              <img src="./img/types/card-2.jpg" alt="Capital Repair" class="card__img">
+              <img data-src="./img/types/card-2.jpg" alt="Capital Repair" class="lazy card__img">
               <div class="card__text">
                 <h3 class="card__title">
                   Capital Repair
@@ -537,7 +539,7 @@
           <!-- /.section-col -->
           <div class="section-col">
             <div class="card types__card" data-aos="fade-right" data-aos-delay="750" data-aos-duration="1000">
-              <img src="./img/types/card-3.jpg" alt="Designer Repair" class="card__img">
+              <img data-src="./img/types/card-3.jpg" alt="Designer Repair" class="lazy card__img">
               <div class="card__text">
                 <h3 class="card__title">
                   Designer Repair
@@ -615,7 +617,7 @@
 
             <div class="card d-project__card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="850">
               <div class="d-project__block-img d-project__card-block-img">
-                <img src="./img/types/card-1.jpg" alt="Minimum" class="d-project__img card__img">
+                <img data-src="./img/types/card-1.jpg" alt="Minimum" class="lazy d-project__img card__img">
               </div>
               <!-- /.d-project__block-img -->
               <div class="card__text d-project__card-text">
@@ -655,7 +657,7 @@
           <div class="section-col">
             <div class="card d-project__card" data-aos="fade-down" data-aos-delay="700" data-aos-duration="850">
               <div class="d-project__card-block-img">
-                <img src="./img/types/card-3.jpg" alt="Standard" class="card__img">
+                <img data-src="./img/types/card-3.jpg" alt="Standard" class="lazy card__img">
               </div>
               <!-- /.d-project__card-block-img -->
               <div class="card__text d-project__card-text">
@@ -706,7 +708,7 @@
           <div class="section-col">
             <div class="card d-project__card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="850">
               <div class="d-project__card-block-img">
-                <img src="./img/d-project-col-3.jpg" alt="Designer Repair" class="card__img">
+                <img data-src="./img/d-project-col-3.jpg" alt="Designer Repair" class="lazy card__img">
               </div>
               <!-- /.d-project__card-block-img -->
               <div class="card__text d-project__card-text">
@@ -971,27 +973,27 @@
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-2-budget.jpg" class="swiper-lazy steps__image" alt="#">
+                  <img data-src="./img/steps-2-budget.jpg" class="lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-3-design.jpg" class="steps__image swiper-lazy" alt="#">
+                  <img data-src="./img/steps-3-design.jpg" class="lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-4-materials.jpg" class="steps__image swiper-lazy" alt="#">
+                  <img data-src="./img/steps-4-materials.jpg" class="lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-5.jpg" class="steps__image swiper-lazy" alt="#">
+                  <img data-src="./img/steps-5.jpg" class="lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-6-give.jpg" class="steps__image swiper-lazy" alt="#">
+                  <img data-src="./img/steps-6-give.jpg" class="lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
@@ -1018,7 +1020,7 @@
             Наша команда
           </h2>
           <div class="section-heading-block-img team__heading-block-img" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <img class="section-heading-img" src="./img/our-team.svg" alt="">
+            <img class="lazy section-heading-img" data-src="./img/our-team.svg" alt="">
           </div>
           <!-- /.section-heading__img -->
           <p class="section-heading-text team__heading-text" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000">
@@ -1030,8 +1032,8 @@
         <div class="section-row team-row">
           <div class="section-col team__section-col">
             <div class="card team__card" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000">
-              <img src="./img/ourTeam/icon-manager.svg" alt="" class="team__card-svg">
-              <img src="./img/ourTeam/manager.jpg" alt="Space Repair" class="team__card-photo">
+              <img data-src="./img/ourTeam/icon-manager.svg" alt="" class="lazy team__card-svg">
+              <img data-src="./img/ourTeam/manager.jpg" alt="Space Repair" class="lazy team__card-photo">
               <div class="team__card-text">
                 
                 <h3 class="card__title team__card-title">
@@ -1053,8 +1055,8 @@
           <!-- /.section-col team__section-col -->
           <div class="section-col team__section-col">
             <div class="card team__card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
-              <img src="./img/ourTeam/icon-designer.svg" alt="" class="team__card-svg">
-              <img src="./img/ourTeam/designer.jpg" alt="Capital Repair" class="team__card-photo">
+              <img data-src="./img/ourTeam/icon-designer.svg" alt="" class="lazy team__card-svg">
+              <img data-src="./img/ourTeam/designer.jpg" alt="Capital Repair" class="lazy team__card-photo">
               <div class="team__card-text">
                 
                 <h3 class="card__title team__card-title">
@@ -1075,8 +1077,8 @@
           <!-- /.section-col team__section-col -->
           <div class="section-col team__section-col">
             <div class="card team__card" data-aos="fade-right" data-aos-delay="750" data-aos-duration="1000">
-              <img src="./img/ourTeam/icon-foreman.svg" alt="" class="team__card-svg">
-              <img src="./img/ourTeam/foreman.jpg" alt="Designer Repair" class="team__card-photo">
+              <img data-src="./img/ourTeam/icon-foreman.svg" alt="" class="lazy team__card-svg">
+              <img data-src="./img/ourTeam/foreman.jpg" alt="Designer Repair" class="lazy team__card-photo">
               <div class="team__card-text">
   
                 <h3 class="card__title team__card-title">
@@ -1131,7 +1133,7 @@
             <div class="card clients__card" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000">
               <div class="clients__card-heading">
                 <div class="clients__card-face">
-                  <img src="./img/clients/clientOne.jpg" class="clients__card-face-photo" alt="">
+                  <img data-src="./img/clients/clientOne.jpg" class="lazy clients__card-face-photo" alt="">
                 </div>
                 <!-- /.clients__card-face -->
                 <span class="clients__card-name">
@@ -1148,13 +1150,13 @@
               <!-- /.card__text -->
                 <div class="clients__card-tag">
                   <div class="clients__card-tag-a inline--block">
-                    <img src="./img/clients/cardTagLeft.svg" alt="" class="clients__card-tag-icon">
+                    <img data-src="./img/clients/cardTagLeft.svg" alt="" class="lazy clients__card-tag-icon">
                     <strong class="clients__card-tag-title">
                       40 m<sup>2</sup>
                     </strong>
                   </div>
                   <div class="clients__card-tag-b inline--block">
-                    <img src="./img/clients/cardTagRight.svg" alt="" class="clients__card-tag-icon">
+                    <img data-src="./img/clients/cardTagRight.svg" alt="" class="lazy clients__card-tag-icon">
                     <strong class="clients__card-tag-title">
                       48 дней
                     </strong>
@@ -1170,7 +1172,7 @@
             <div class="card clients__card" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000">
               <div class="clients__card-heading">
                 <div class="clients__card-face">
-                  <img src="./img/clients/clientTwo.jpg" class="clients__card-face-photo" alt="">
+                  <img data-src="./img/clients/clientTwo.jpg" class="lazy clients__card-face-photo" alt="">
                 </div>
                 <!-- /.clients__card-face -->
                 <span class="clients__card-name">
@@ -1188,13 +1190,13 @@
               <!-- /.card__text -->
                 <div class="clients__card-tag">
                   <div class="clients__card-tag-a inline--block">
-                    <img src="./img/clients/cardTagLeft.svg" alt="" class="clients__card-tag-icon">
+                    <img data-src="./img/clients/cardTagLeft.svg" alt="" class="lazy clients__card-tag-icon">
                     <strong class="clients__card-tag-title">
                       40 m<sup>2</sup>
                     </strong>
                   </div>
                   <div class="clients__card-tag-b inline--block">
-                    <img src="./img/clients/cardTagRight.svg" alt="" class="clients__card-tag-icon">
+                    <img data-src="./img/clients/cardTagRight.svg" alt="" class="lazy clients__card-tag-icon">
                     <strong class="clients__card-tag-title">
                       48 дней
                     </strong>
@@ -1210,7 +1212,7 @@
             <div class="card clients__card" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000">
               <div class="clients__card-heading">
                 <div class="clients__card-face">
-                  <img src="./img/clients/clientThree.jpg" class="clients__card-face-photo" alt="">
+                  <img data-src="./img/clients/clientThree.jpg" class="lazy clients__card-face-photo" alt="">
                 </div>
                 <!-- /.clients__card-face -->
                 <span class="clients__card-name">
@@ -1230,13 +1232,13 @@
 
                 <div class="clients__card-tag">
                   <div class="clients__card-tag-a inline--block">
-                    <img src="./img/clients/cardTagLeft.svg" alt="" class="clients__card-tag-icon">
+                    <img data-src="./img/clients/cardTagLeft.svg" alt="" class="lazy clients__card-tag-icon">
                     <strong class="clients__card-tag-title">
                       40 m<sup>2</sup>
                     </strong>
                   </div>
                   <div class="clients__card-tag-b inline--block">
-                    <img src="./img/clients/cardTagRight.svg" alt="" class="clients__card-tag-icon">
+                    <img data-src="./img/clients/cardTagRight.svg" alt="" class="lazy clients__card-tag-icon">
                     <strong class="clients__card-tag-title">
                       48 дней
                     </strong>
@@ -1257,11 +1259,11 @@
 
       <div class="clients__footer row" id="contact">
         <div class="clients__bg-left">
-          <img src="img/clients/bg-left.svg" alt="">
+          <img data-src="img/clients/bg-left.svg" class="lazy" alt="">
         </div>
         <!-- /.clients__bg-left -->
         <div class="clients__bg-right">
-          <img src="img/clients/bg-right.svg" alt="">
+          <img data-src="img/clients/bg-right.svg" class="lazy" alt="">
         </div>
         <!-- /.clients__bg-right -->
       </div>
@@ -1329,7 +1331,7 @@
 
 
   <footer class="section footer section--dark">
-    <div class="footer--bg">
+    <div class="lazy footer--bg" id="footerBg">
       <div class="container">
         <div class="questions">
           <h4 class="questions__title">Остались Вопросы?</h4>
@@ -1385,11 +1387,11 @@
           </p>
           <div class="footer__social">
             <a class="footer__social-s">
-              <img src="./img/footer-mail-icon.svg" alt="">
+              <img data-src="./img/footer-mail-icon.svg" class="lazy" alt="">
             </a>
             <!-- /.footer__social-s -->
             <a class="footer__social-s">
-              <img src="./img/footer-insta-icon.svg" alt="">
+              <img data-src="./img/footer-insta-icon.svg" class="lazy" alt="">
             </a>
             <!-- /.footer__social-s -->
           </div>

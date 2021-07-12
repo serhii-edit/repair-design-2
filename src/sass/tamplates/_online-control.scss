@@ -40,7 +40,7 @@
     // margin-bottom: 62px;
     margin-bottom: 4.42rem;
 
-    background-image: url("../img/online-control-bg-video.jpg");
+    // background-image: url("../img/online-control-bg-video.jpg"); // Use id for lazy
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,106 +159,10 @@
   // Control form (END)
 }
 
-@media screen and (max-width: 880px) {
-  .projects {
-    &__build-row {
-      display: none;
-    }
-    &--margin-b {
-      margin-bottom: 0px !important;
-      padding-bottom: 50px;
-    }
-  }
-  .control {
-      margin-top: 0;
-      &__heading {
-        margin-top: 0;
-      }
-    &--bgc-dark {
-      background-color: $dark;
-      // border: 2px solid red;
-    }
-    &__content {
-      margin-top: 0;
-    }
-    &__text {
-      color: $white;
-    }
-    &__form {
-      justify-content: unset;
-      flex-direction: column;
-      align-items: normal;
-      flex-wrap: nowrap;
-    }
-    &__label {
-      color: rgba($white, 0.5);
-    }
-    &__block-input {
-      flex-basis: unset;
-      min-width: 0;
-      max-width: 425px;
-      & + & {
-        margin-top: 61px;
-      }
-      // width: 100%;
-      // flex-basis: 425px;
-      &:nth-child(1) {
-        order: -3;
-      }
-      &:nth-child(2) {
-        order: -2;
-        margin-bottom: 26px;
-      }
-    }
-    &__input {
-      color: $white;
-      border-bottom: 1px solid $white;
-      &::placeholder {
-        color: $white;
-      }
-    }
-    &__policy {
-      order: -1;
-      width: auto;
-      color: $white;
-      margin-top: 0;
-      text-align: left;
-      margin-bottom: 37px;
-      &-label {
-        font-size: 1.33rem;
-      }
-    }
+#controlVideo.lazy {
+  background-image: none;
+}
 
-    &__button {
-      position: relative;
-      bottom: -23.5px;
-      order: 1;
-    }
-
-  } // Control
-} // Media
-
-@media screen and (max-width: 450px) {
-.control {
-  &__wrap-text {
-    margin-bottom: 2.48rem;
-    &::before {
-      margin-bottom: 1.23rem;
-    }
-  }
-  &__text {
-    font-size: 1.16rem;
-    line-height: 2rem;
-  }
-  &__label {
-    font-size: 1.250rem;
-  }
-  &__button {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    border-radius: 0;
-  }
-} // .control
-
-} // Media (max-w: 450px)
+#controlVideo {
+  background-image: url("../img/online-control-bg-video.jpg");
+}

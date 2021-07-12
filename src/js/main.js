@@ -38,11 +38,68 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   window.onscroll = function() {myFunction()};
   function myFunction() {
+    passive: true;
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
   }
+
+
+  var lazyloadImages;    
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      console.log(observer);
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.src = image.dataset.src;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    }, {
+      root: document.querySelector("#container"),
+      rootMargin: "0px 0px 400px 0px"
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {  
+    var lazyloadThrottleTimeout;
+    lazyloadImages = $(".lazy");
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+
+      lazyloadThrottleTimeout = setTimeout(function() {
+          var scrollTop = $(window).scrollTop();
+          lazyloadImages.each(function() {
+              var el = $(this);
+              if(el.offset().top < window.innerHeight + scrollTop + 500) {
+                var url = el.attr("data-src");
+                el.attr("src", url);
+                el.removeClass("lazy");
+                lazyloadImages = $(".lazy");
+              }
+          });
+          if(lazyloadImages.length == 0) { 
+            $(document).off("scroll");
+            $(window).off("resize");
+          }
+      }, 20);
+    }
+
+    $(document).on("scroll", lazyload);
+    $(window).on("resize", lazyload);
+  }
+
+  // lazy load (END)
+
 
   // Swiper START
   var swiperA = new Swiper('.swiper-p-container', {
@@ -214,6 +271,7 @@ $(document).ready(function () {
 
   // Click event to scroll top
   $(".arrow-top").click(function () {
+    passive: true;
     $("html, body").animate ({scrollTop: 0}, 1250);
     return false;
   });
