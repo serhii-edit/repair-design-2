@@ -1,5 +1,5 @@
 // var urix = require("urix");
-var {src, dest, watch, series} = require("gulp");
+var {series, src, dest, watch} = require("gulp");
 var sass = require('gulp-dart-sass');
 var browserSync = require("browser-sync").create();
 
@@ -119,7 +119,7 @@ function svgIMG(done) {
   done();
 }
 
-exports.buildFiles = (minCSS, minJS, minHTML, destPHP, destFonts, svgIMG, tinyImg);
+exports.buildFiles = series(minCSS, minJS, minHTML, destPHP, destFonts, svgIMG, tinyImg);
 exports.serve = bs;
 
 // gulp.task("min-css", function(done){
