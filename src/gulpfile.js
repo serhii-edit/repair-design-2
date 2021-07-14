@@ -1,8 +1,10 @@
-// var urix = require("urix");
-var {series, src, dest, watch} = require("gulp");
-var sass = require('gulp-dart-sass');
+var resolveUrl = require("resolve-url");
+var urix = require("urix");
+
+const {src, dest, watch, series} = require("gulp");
 var browserSync = require("browser-sync").create();
 
+var sass = require('gulp-dart-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 var cssmin = require("gulp-cssmin");
@@ -64,8 +66,8 @@ function minJS(done) {
   }
   }))
   .pipe(dest('../dest/js/'))
-
-  src(["./js/**/*.min.js"]).pipe(dest('../dest/js/'))
+  // []
+  src("./js/**/*.min.js").pipe(dest('../dest/js/'))
   done();
 }
 
@@ -121,11 +123,3 @@ function svgIMG(done) {
 
 exports.buildFiles = series(minCSS, minJS, minHTML, destPHP, destFonts, svgIMG, tinyImg);
 exports.serve = bs;
-
-// gulp.task("min-css", function(done){
-//   gulp.src("./css/*.css")
-//   .pipe(cssmin())
-//   .pipe(rename({suffix: ".min"}))
-//   .pipe(gulp.dest("./../dist/css/"));
-//   done();
-// });
