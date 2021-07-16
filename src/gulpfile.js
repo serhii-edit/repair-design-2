@@ -106,6 +106,7 @@ function tinyImg(done) {
     log: true
 }))
   .pipe(dest('../dest/img/'))
+  .pipe(dest('./img/'))
   done();
 }
 
@@ -123,13 +124,15 @@ function svgIMG(done) {
     })
 ]))
   .pipe(dest("../dest/img/"))
+  .pipe(dest("./img/"))
   done();
 }
 
 function cWebp(done) {
-  src(["../dest/img/**/*.jpg", "../dest/img/**/*.jpeg", "../dest/img/**/*.png", "!../dest/img/**/*.svg"])
+  src(["./img/**/*.jpg", "./img/**/*.jpeg", "./img/**/*.png", "!./img/**/*.svg"])
   .pipe(cwebp())
-  .pipe(dest('../dest/img/Webp/'))
+  .pipe(dest('../dest/img/'))
+  .pipe(dest('./img/'))
   done();
 }
 

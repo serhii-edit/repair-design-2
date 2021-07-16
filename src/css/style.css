@@ -1133,6 +1133,14 @@ label.valid-valid {
   margin-left: 45px;
 }
 
+.webp .hero__content {
+  background-image: url("../img/hero-bg.webp");
+}
+
+.no-webp .hero__content {
+  background-image: url("../img/hero-bg.jpg");
+}
+
 .hero {
   display: flex;
   flex-flow: row nowrap;
@@ -1148,7 +1156,6 @@ label.valid-valid {
   width: 100%;
   height: 100%;
   background-color: #131313;
-  background-image: url("../img/hero-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1402,7 +1409,7 @@ label.valid-valid {
 .projects__build-col img, .projects__build-col source {
   width: 637px;
   height: auto;
-  padding-top: 1px;
+  width: 100%;
   height: 311px;
 }
 .projects__build-col:first-child {
