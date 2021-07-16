@@ -5,7 +5,7 @@ const {src, dest, watch, series} = require("gulp");
 var browserSync = require("browser-sync").create();
 
 var sass = require('gulp-dart-sass');
-const autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 var cssmin = require("gulp-cssmin");
 var rename = require('gulp-rename');
@@ -13,6 +13,10 @@ var minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 var tinypng = require('gulp-tinypng-compress');
+const cwebp = require('gulp-cwebp');
+
+var gutil = require( 'gulp-util' );
+var ftp = require( 'vinyl-ftp' );
 
 
 // Static server
@@ -39,7 +43,7 @@ function serveSass() {
   return src("./sass/**/*.scss")
       .pipe(sass())
 
-      .pipe(autoprefixer())
+      // .pipe(autoprefixer())
 
       .pipe(dest("./css/"))
       .pipe(browserSync.stream())
@@ -47,6 +51,7 @@ function serveSass() {
 
 function minCSS(done) {
   src("./css/**/*.css")
+  .pipe(autoprefixer())
   .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(dest('../dest/css/'))
 
@@ -121,5 +126,62 @@ function svgIMG(done) {
   done();
 }
 
-exports.buildFiles = series(minCSS, minJS, minHTML, destPHP, destFonts, svgIMG, tinyImg);
+function cWebp(done) {
+  src(["../dest/img/**/*.jpg", "../dest/img/**/*.jpeg", "../dest/img/**/*.png", "!../dest/img/**/*.svg"])
+  .pipe(cwebp())
+  .pipe(dest('../dest/img/Webp/'))
+  done();
+}
+
+
+function deployFTP(done) {
+  var conn = ftp.create( {
+    host:     'serhii-yakymenko.zzz.com.ua',
+    user:     'serhii-yak',
+    password: 'Web96541423#',
+    parallel: 10,
+    log:      gutil.log
+  })
+
+  var globs = [
+          '../dest/**/**',
+      ];
+
+  src( globs, { base: '/serhii-yakymenko.zzz.com.ua/webs/repair-design-2/', buffer: false })
+
+
+  // .pipe(dest('../dest/img/Webp/'))
+  .pipe( conn.dest( '/serhii-yakymenko.zzz.com.ua/webs/repair-design-2/' ) );
+  done();
+}
+
+// gulp.task( 'deploy', function () {
+ 
+//   var conn = ftp.create( {
+//       host:     'mywebsite.tld',
+//       user:     'me',
+//       password: 'mypass',
+//       parallel: 10,
+//       log:      gutil.log
+//   } );
+
+//   var globs = [
+//       'src/**',
+//       'css/**',
+//       'js/**',
+//       'fonts/**',
+//       'index.html'
+//   ];
+
+//   // using base = '.' will transfer everything to /public_html correctly
+//   // turn off buffering in gulp.src for best performance
+
+//   return gulp.src( globs, { base: '.', buffer: false } )
+//       .pipe( conn.newer( '/public_html' ) ) // only upload newer files
+//       .pipe( conn.dest( '/public_html' ) );
+
+// } );
+
+exports.buildFiles = series(minCSS, minJS, minHTML, destPHP, destFonts, svgIMG, tinyImg, cWebp);
 exports.serve = bs;
+// exports.ftp = deployFTP;

@@ -1,51 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event){
 
-
-  const modal = document.querySelector(".modal");
-  var modalSubmit = document.querySelector(".modal-submit");
-
-  // ES5 > ES6, use of babel
-  modal.onclick = function (e) {
-    if(e.target == modal) {
-      modal.classList.toggle("modal--visible");
-      document.querySelector("body").style.overflow = 'auto';
-    };
-  };
-
-  window.addEventListener("keydown", function (event) {
-    if(event.key == 'Escape') {
-      modal.classList.remove("modal--visible");
-      document.querySelector("body").style.overflow = 'auto';
-    };
-  });
-
-  // console.log(modalSubmit);
-
-  window.addEventListener("keydown", function (eventS) {
-    if(eventS.key == 'Escape') {
-      modalSubmit.classList.remove("modal-submit-visible");
-      document.querySelector("body").style.overflow = 'auto';
-    };
-  });
-
-  modalSubmit.onclick = function (eS) {
-    if(eS.target == modalSubmit) {
-      modalSubmit.classList.remove("modal-submit-visible");
-      document.querySelector("body").style.overflow = 'auto';
-    };
-  };
-
-
-  window.onscroll = function() {myFunction()};
-  function myFunction() {
-    passive: true;
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-  }
-
-
   var lazyloadImages;    
   if ("IntersectionObserver" in window) {
     lazyloadImages = document.querySelectorAll(".lazy");
@@ -99,6 +53,54 @@ document.addEventListener("DOMContentLoaded", function(event){
   }
 
   // lazy load (END)
+  
+
+  const modal = document.querySelector(".modal");
+  var modalSubmit = document.querySelector(".modal-submit");
+
+  // ES5 > ES6, use of babel
+  modal.onclick = function (e) {
+    if(e.target == modal) {
+      modal.classList.toggle("modal--visible");
+      document.querySelector("body").style.overflow = 'auto';
+    };
+  };
+
+  window.addEventListener("keydown", function (event) {
+    if(event.key == 'Escape') {
+      modal.classList.remove("modal--visible");
+      document.querySelector("body").style.overflow = 'auto';
+    };
+  });
+
+  // console.log(modalSubmit);
+
+  window.addEventListener("keydown", function (eventS) {
+    if(eventS.key == 'Escape') {
+      modalSubmit.classList.remove("modal-submit-visible");
+      document.querySelector("body").style.overflow = 'auto';
+    };
+  });
+
+  modalSubmit.onclick = function (eS) {
+    if(eS.target == modalSubmit) {
+      modalSubmit.classList.remove("modal-submit-visible");
+      document.querySelector("body").style.overflow = 'auto';
+    };
+  };
+
+
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+    passive: true;
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+
+
+
 
 
   // Swiper START
