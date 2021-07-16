@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event){
       });
     }, {
       root: document.querySelector("#container"),
-      rootMargin: "0px 0px 400px 0px"
+      rootMargin: "0px 0px 450px 0px"
     });
 
     lazyloadImages.forEach(function(image) {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   }
 
   // lazy load (END)
-  
+
 
   const modal = document.querySelector(".modal");
   var modalSubmit = document.querySelector(".modal-submit");

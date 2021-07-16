@@ -1402,6 +1402,8 @@ label.valid-valid {
 .projects__build-col img, .projects__build-col source {
   width: 637px;
   height: auto;
+  padding-top: 1px;
+  height: 311px;
 }
 .projects__build-col:first-child {
   margin-left: -5px;
@@ -2090,6 +2092,7 @@ label.valid-valid {
 }
 .clients__bg-left, .clients__bg-right {
   width: 50%;
+  padding-bottom: 1px;
 }
 
 #footerBg {

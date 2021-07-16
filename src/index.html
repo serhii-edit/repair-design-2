@@ -8,6 +8,11 @@
 
   <link rel="preload" as="style" href="./css/style.css" />
   <link rel="preload" as="image" href="./img/hero-bg.jpg" />
+  <link rel="preload" href="./fonts/futura/FuturaBookC.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/futura/FuturaDemiC.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/yesevaone/yesevaone.woff" as="font" type="font/woff" crossorigin>
+
+
   <link rel="preload" as="script" href="./js/main.js" />
   <!-- <link rel="stylesheet" href="./css/aos.min.css"> -->
   <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> -->
@@ -322,7 +327,7 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-p-img">
-                  <img src="./img/projects-1.jpg" alt="">
+                  <img loading="lazy" src="./img/projects-1.jpg" alt="">
                 </div>
                 <div class="swiper-slide swiper-p-img">
                   <img data-src="./img/projects-2.jpg"
@@ -347,11 +352,11 @@
 
       <div class="row projects__build-row">
         <div class="projects__build-col">
-          <img src="./img/projects/projects-left-builds.svg" alt="">
+          <img data-src="./img/projects/projects-left-builds.svg" class="lazy" alt="">
         </div>
         <!-- /.projects__build-col -->
         <div class="projects__build-col">
-          <img src="./img/projects/projects-right-builds.svg" alt="">
+          <img data-src="./img/projects/projects-right-builds.svg" class="lazy" alt="">
         </div>
         <!-- /.projects__build-col -->
       </div>
@@ -967,32 +972,32 @@
             <div class="swiper-c-steps-image">
               <div class="swiper-wrapper" data-aos="fade-left" data-aos-duration="850">
                 <div class="swiper-slide steps__slide-image">
-                  <img src="./img/steps-1-human.jpg" class="steps__image" alt="#">
+                  <img loading="lazy" src="./img/steps-1-human.jpg" class="steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-2-budget.jpg" class="lazy steps__image" alt="#">
+                  <img data-src="./img/steps-2-budget.jpg" class="swiper-lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-3-design.jpg" class="lazy steps__image" alt="#">
+                  <img data-src="./img/steps-3-design.jpg" class="swiper-lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-4-materials.jpg" class="lazy steps__image" alt="#">
+                  <img data-src="./img/steps-4-materials.jpg" class="swiper-lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-5.jpg" class="lazy steps__image" alt="#">
+                  <img data-src="./img/steps-5.jpg" class="swiper-lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-6-give.jpg" class="lazy steps__image" alt="#">
+                  <img data-src="./img/steps-6-give.jpg" class="swiper-lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->

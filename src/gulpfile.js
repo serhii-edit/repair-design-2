@@ -134,26 +134,20 @@ function cWebp(done) {
 }
 
 
-function deployFTP(done) {
-  var conn = ftp.create( {
-    host:     'serhii-yakymenko.zzz.com.ua',
-    user:     'serhii-yak',
-    password: 'Web96541423#',
-    parallel: 10,
-    log:      gutil.log
-  })
+// function deployFTP(done) {
+//   var conn = ftp.create( {
+//     host:     'serhii-yakymenko.zzz.com.ua',
+//     user:     'serhii-yak',
+//     password: 'Web96541423#',
+//     parallel: 10,
+//     log:      gutil.log
+//   })
 
-  var globs = [
-          '../dest/**/**',
-      ];
+//   src("../dest/**/**")
 
-  src( globs, { base: '/serhii-yakymenko.zzz.com.ua/webs/repair-design-2/', buffer: false })
-
-
-  // .pipe(dest('../dest/img/Webp/'))
-  .pipe( conn.dest( '/serhii-yakymenko.zzz.com.ua/webs/repair-design-2/' ) );
-  done();
-}
+//   .pipe( conn.dest( '/webs/repair-design-2/' ) );
+//   done();
+// }
 
 // gulp.task( 'deploy', function () {
  
