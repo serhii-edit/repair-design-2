@@ -1,9 +1,17 @@
-#footerBg {
+#footerBg.lazyload {
+  background-image: none;
+}
+
+.webp #footerBg {
+  background-image: url("../img/footer-bg.webp");
+}
+
+.no-webp #footerBg {
   background-image: url("../img/footer-bg.jpg");
 }
 
-#footerBg.lazy {
-  background-image: none;
+#footerBg.lazyload {
+  background-image: unset;
 }
 
 .footer {

@@ -823,16 +823,28 @@ img {
   display: none;
 }
 
+.own-button-prev.lazyload, .own-button-next.lazyload {
+  background-image: inset;
+}
+
 .own-button-prev {
   background-image: url("../img/arrow-prev.svg");
   left: 0 !important;
   right: auto !important;
 }
 
+.own-button-prev.lazyload, .own-button-next.lazyload {
+  background-image: inset;
+}
+
 .own-button-next {
   background-image: url("../img/arrow-next.svg");
   left: 0 !important;
   right: auto !important;
+}
+
+.own-button-prev.lazyload, .own-button-next.lazyload {
+  background-image: inset;
 }
 
 .swiper-lazy-preloader {
@@ -880,6 +892,12 @@ label.valid-valid {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.modal__dialog.lazyload {
+  background-image: unset;
+}
+.modal__dialog.lazyload {
+  background-image: unset;
+}
 .modal__close {
   position: absolute;
   top: 11px;
@@ -893,6 +911,10 @@ label.valid-valid {
   cursor: pointer;
   border: none;
   box-shadow: none;
+}
+.modal__close.lazyload {
+  background-image: unset;
+  background-image: none;
 }
 .modal__title {
   font-family: "Yeseva One", cursive;
@@ -1597,12 +1619,20 @@ label.valid-valid {
   margin-right: 4px;
 }
 
-#controlVideo.lazy {
-  background-image: none;
+#controlVideo.lazyload {
+  background-image: unset;
 }
 
-#controlVideo {
+.webp #controlVideo {
+  background-image: url("../img/online-control-bg-video.webp");
+}
+
+.no-webp #controlVideo {
   background-image: url("../img/online-control-bg-video.jpg");
+}
+
+#controlVideo.lazyload {
+  background-image: none;
 }
 
 .types {
@@ -2021,9 +2051,9 @@ label.valid-valid {
   display: inline-block;
   vertical-align: middle;
 }
-.clients__card-face-photo {
-  border-radius: 100%;
+.clients__card-face source, .clients__card-face img {
   width: 76px;
+  border-radius: 100%;
 }
 .clients__card-name {
   display: inline-block;
@@ -2102,12 +2132,20 @@ label.valid-valid {
   padding-bottom: 1px;
 }
 
-#footerBg {
+#footerBg.lazyload {
+  background-image: none;
+}
+
+.webp #footerBg {
+  background-image: url("../img/footer-bg.webp");
+}
+
+.no-webp #footerBg {
   background-image: url("../img/footer-bg.jpg");
 }
 
-#footerBg.lazy {
-  background-image: none;
+#footerBg.lazyload {
+  background-image: unset;
 }
 
 .footer .footer--bg {

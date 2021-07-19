@@ -27,11 +27,11 @@
     &-face {
       display: inline-block;
       vertical-align: middle;
-    }
-    &-face-photo {
-      border-radius: 100%;
-      width: 76px;
+      & source, img {
+        width: 76px;
+        border-radius: 100%;
       }
+    }
       &-name {
         display: inline-block;
         margin-left: 21px;

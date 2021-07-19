@@ -417,17 +417,28 @@ img {
   } 
 }
 
+.own-button-prev.lazyload, .own-button-next.lazyload {
+  background-image: inset;
+  }
+
 .own-button-prev {
   background-image: url("../img/arrow-prev.svg");
   left: 0 !important;
   right: auto !important;
   }
 
+  .own-button-prev.lazyload, .own-button-next.lazyload {
+    background-image: inset;
+    }
+
 .own-button-next {
   background-image: url("../img/arrow-next.svg");
   left: 0 !important;
   right: auto !important;
   }
+  .own-button-prev.lazyload, .own-button-next.lazyload {
+    background-image: inset;
+    }
 // Setting swiper nav (END)
 
 // Swiper lazy loader (START)

@@ -16,6 +16,9 @@
     visibility: visible;
   }
   &__dialog {
+    &.lazyload {
+      background-image: unset;
+    }
     position: relative;
     color: $white;
     background-color: $dark;
@@ -26,6 +29,9 @@
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
+    &.lazyload {
+      background-image: unset;
+    }
   }
   &__close {
     position: absolute;
@@ -41,6 +47,10 @@
 
     border: none;
     box-shadow: none;
+  }
+  &__close.lazyload {
+    background-image: unset;
+    background-image: none;
   }
   &__title {
     font-family: "Yeseva One", cursive;
@@ -120,20 +130,5 @@
       }
     }
   }
-  // &__label {
-  //   vertical-align: middle;
-  //   cursor: pointer;
-  //   font-size: 1.14rem;
-  //   &::before {
-  //     content: "";
-  //     display: inline-block;
-  //     width: 18px;
-  //     height: 18px;
-  //     border: 1px solid $primary;
-  //     border-radius: 1px;
-  //     vertical-align: middle;
-  //     margin-right: 8px;
-  //   }
-  // }
 }
 
