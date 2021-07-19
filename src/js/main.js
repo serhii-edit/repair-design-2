@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function(event){
   //   $(document).on("scroll", lazyload);
   //   $(window).on("resize", lazyload);
   // }
-
   // lazy load (END)
 
 
