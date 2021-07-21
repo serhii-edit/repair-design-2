@@ -8,18 +8,17 @@
   
   <link rel="preload" as="style" href="./css/style.css" />
   <link rel="preload" as="image" href="./img/hero-bg.webp" />
-  <link rel="preload" as="script" href="./js/lazysizes.min.js" />
-  <link rel="preload" as="script" href="./js/modernizr-custom.min.js" />
-  
 
+  <!-- <link rel="preload" as="script" href="./js/modernizr-custom.min.js" /> -->
 
+  <link rel="preload" as="script" href="./js/main.js">
 
-  <link rel="preload" href="./fonts/futura/FuturaBookC.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="./fonts/futura/FuturaDemiC.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="./fonts/yesevaone/yesevaone.woff" as="font" type="font/woff" crossorigin>
-
-
-  <!-- <link rel="preload" as="script" href="./js/main.js" /> -->
+  <link rel="preload" href="./fonts/futura/FuturaBookC.woff" as="font" type="font/woff" crossorigin>
+  
+  
+  
 
   <!-- <link rel="stylesheet" href="./css/aos.min.css"> -->
   <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> -->
@@ -77,7 +76,7 @@
     <div class="modal-submit">
       <div class="modal-submit__dialog">
         <div class="modal-submit__header">
-          <img src="./img/success-icon.svg" alt="" class="modal-submit__success">
+          <img loading="lazy" src="./img/success-icon.svg" alt="" class="modal-submit__success">
       <p class="modal-submit__title">
         Information sent! your data are recorded.
       </p>
@@ -334,12 +333,12 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-p-img">
-                  <img src="./img/projects-1.jpg" loading="lazy" alt="">
+                  <img loading="lazy" src="./img/projects-1.jpg" style="width: 100%; height: 100%;" alt="">
 
-                  <!-- <picture style="width: 100% !important;">
-                    <source style="width: 100%;" type="image/webp" data-srcset="./img/projects-1.webp" class="lazyload" />
-                    <source style="width: 100%;" type="image/jpeg" data-srcset="./img/projects-1.jpg" class="lazyload" />
-                    <img data-src="./img/projects-1.jpg" alt="" class="lazyloading" />
+                  <!-- <picture style="width: 100% !important;" loading="lazy">
+                    <source loading="lazy" style="width: 100%;" type="image/webp" srcset="./img/projects-1.webp" style="width: 100%; height: 100%;" />
+                    <source loading="lazy" style="width: 100%;" type="image/jpeg" srcset="./img/projects-1.jpg" style="width: 100%; height: 100%;" />
+                    <img loading="lazy" src="./img/projects-1.jpg" alt="" style="width: 100%; height: 100%;" />
                   </picture> -->
 
                 </div>
@@ -377,12 +376,12 @@
       <!-- /.container -->
 
       <div class="row projects__build-row">
-        <div class="projects__build-col">
-          <img data-src="./img/projects/projects-left-builds.svg" class="lazyload" alt="">
+        <div class="projects__build-col" style="width: 50%;">
+          <img loading="lazy" src="./img/projects/projects-left-builds.svg" class="projects__build-col__img" style="width: 637px; height: 311px;" alt="">
         </div>
         <!-- /.projects__build-col -->
-        <div class="projects__build-col">
-          <img data-src="./img/projects/projects-right-builds.svg" class="lazyload" alt="">
+        <div class="projects__build-col" style="width: 50%; height:311px">
+          <img loading="lazy" src="./img/projects/projects-right-builds.svg" class="projects__build-col__img" style="width: 637px; height: 311px;" alt="">
         </div>
         <!-- /.projects__build-col -->
       </div>
@@ -405,7 +404,7 @@
           </div>
           <!-- /.section-heading control__heading -->
 
-          <div id="controlVideo" class="lazyload control__video">
+          <div id="controlVideo" class="lazy control__video">
             <img class="control__video-play" src="./img/online-control-play.svg" />
             <!-- /.control__video-play -->
           </div>
@@ -463,7 +462,7 @@
             View of Repair
           </h2>
           <div class="section-heading-block-img" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <img class="section-heading-img types__heading-img" src="./img/types/types-repair.svg" loading="lazy" alt="">
+            <img loading="lazy" class="section-heading-img types__heading-img" src="./img/types/types-repair.svg" alt="">
           </div>
           <!-- /.section-heading__img -->
         </div>
@@ -474,11 +473,11 @@
             <div class="card types__card" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000">
               <!-- <img data-src="./img/types/card-1.jpg" alt="Space Repair" class="lazy card__img"> -->
 
-              <picture>
-                <source type="image/webp" data-srcset="./img/types/card-1.webp" class="lazlazyloady card__img">
-                <source type="image/jpeg" data-srcset="./img/types/card-1.jpg" class="lazyload card__img">
-                <img data-src="./img/types/card-1.jpg" alt="Space Repair" class="lazyload card__img">
-              </picture>
+              <!-- <picture> -->
+                <!-- <source type="image/webp" data-srcset="./img/types/card-1.webp" class="lazlazyloady card__img"> -->
+                <!-- <source type="image/jpeg" data-srcset="./img/types/card-1.jpg" class="lazyload card__img"> -->
+                <img data-src="./img/types/card-1.jpg" alt="Space Repair" class="lazy card__img">
+              <!-- </picture> -->
 
               <div class="card__text">
                 <h3 class="card__title">
@@ -529,12 +528,12 @@
           <div class="section-col">
             <div class="card types__card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
 
-              <!-- <img data-src="./img/types/card-2.jpg" alt="Capital Repair" class="lazyload card__img"> -->
-              <picture>
-                <source type="image/webp" data-srcset="./img/types/card-2.webp" class="lazyload card__img">
-                <source type="image/jpeg" data-srcset="./img/types/card-2.jpg" class="lazyload card__img">
-                <img data-src="./img/types/card-2.jpg" alt="Space Repair" class="lazyload card__img">
-              </picture>
+              <img data-src="./img/types/card-2.jpg" alt="Capital Repair" class="lazy card__img">
+              <!-- <picture> -->
+                <!-- <source type="image/webp" data-srcset="./img/types/card-2.webp" class="lazyload card__img"> -->
+                <!-- <source type="image/jpeg" data-srcset="./img/types/card-2.jpg" class="lazyload card__img"> -->
+                <!-- <img data-src="./img/types/card-2.jpg" alt="Space Repair" class="lazy card__img"> -->
+              <!-- </picture> -->
 
               <div class="card__text">
                 <h3 class="card__title">
@@ -584,12 +583,12 @@
           <div class="section-col">
             <div class="card types__card" data-aos="fade-right" data-aos-delay="750" data-aos-duration="1000">
 
-              <!-- <img data-src="./img/types/card-3.jpg" alt="Designer Repair" class="lazy card__img"> -->
-              <picture>
-                <source type="image/webp" data-srcset="./img/types/card-3.webp" class="lazlazy card__img">
-                <source type="image/jpeg" data-srcset="./img/types/card-3.jpg" class="lazyload card__img">
-                <img data-src="./img/types/card-3.jpg" alt="Space Repair" class="lazyload card__img">
-              </picture>
+              <img data-src="./img/types/card-3.jpg" alt="Designer Repair" class="lazy card__img">
+              <!-- <picture> -->
+                <!-- <source type="image/webp" data-srcset="./img/types/card-3.webp" class="lazlazy card__img"> -->
+                <!-- <source type="image/jpeg" data-srcset="./img/types/card-3.jpg" class="lazyload card__img"> -->
+                <!-- <img data-src="./img/types/card-3.jpg" alt="Space Repair" class="lazy card__img"> -->
+              <!-- </picture> -->
 
               <div class="card__text">
                 <h3 class="card__title">
@@ -651,7 +650,7 @@
             Design Projects
           </h2>
           <div class="d-project__heading-block-img section-heading-block-img" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <img class="section-heading-img" src="./img/d-project.svg" alt="Pancil and Liner" loading="lazy" />
+            <img loading="lazy" src="./img/d-project.svg" alt="Pancil and Liner" class="section-heading-img" />
           </div>
           <!-- /.section-heading__img -->
           <p class="d-project__heading-text" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000">
@@ -670,11 +669,11 @@
               <div class="d-project__block-img d-project__card-block-img">
 
                 <!-- <img data-src="./img/types/card-1.jpg" alt="Minimum" class="lazy d-project__img card__img"> -->
-                <picture>
-                  <source type="image/webp" data-srcset="./img/types/card-1.webp" class="lazlazy card__img">
-                  <source type="image/jpeg" data-srcset="./img/types/card-1.jpg" class="lazyload card__img">
-                  <img data-src="/img/types/card-1.jpg" alt="Space Repair" class="lazyload card__img">
-                </picture>
+                <!-- <picture> -->
+                  <!-- <source type="image/webp" data-srcset="./img/types/card-1.webp" class="lazlazy card__img"> -->
+                  <!-- <source type="image/jpeg" data-srcset="./img/types/card-1.jpg" class="lazyload card__img"> -->
+                  <img data-src="/img/types/card-1.jpg" alt="Space Repair" class="lazy card__img">
+                <!-- </picture> -->
 
               </div>
               <!-- /.d-project__block-img -->
@@ -717,11 +716,11 @@
               <div class="d-project__card-block-img">
 
                 <!-- <img data-src="./img/types/card-3.jpg" alt="Standard" class="lazy card__img"> -->
-                <picture>
-                  <source type="image/webp" data-srcset="./img/types/card-3.webp" class="lazyload card__img">
-                  <source type="image/jpeg" data-srcset="./img/types/card-3.jpg" class="lazyload card__img">
-                  <img data-src="/img/types/card-3.jpg" alt="Space Repair" class="lazyload card__img">
-                </picture>
+                <!-- <picture> -->
+                  <!-- <source type="image/webp" data-srcset="./img/types/card-3.webp" class="lazyload card__img"> -->
+                  <!-- <source type="image/jpeg" data-srcset="./img/types/card-3.jpg" class="lazyload card__img"> -->
+                  <img data-src="/img/types/card-3.jpg" alt="Space Repair" class="lazy card__img">
+                <!-- </picture> -->
 
               </div>
               <!-- /.d-project__card-block-img -->
@@ -774,12 +773,12 @@
             <div class="card d-project__card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="850">
               <div class="d-project__card-block-img">
 
-                <!-- <img data-src="./img/d-project-col-3.jpg" alt="Designer Repair" class="lazy card__img"> -->
-                <picture>
-                  <source type="image/webp" data-srcset="./img/d-project-col-3.webp" class="lazyload card__img">
-                  <source type="image/jpeg" data-srcset="./img/d-project-col-3.jpg" class="lazyload card__img">
-                  <img data-src="./img/d-project-col-3.jpg" alt="Space Repair" class="lazyload card__img">
-                </picture>
+                <img data-src="./img/d-project-col-3.jpg" alt="Designer Repair" class="lazy card__img">
+                <!-- <picture> -->
+                  <!-- <source type="image/webp" data-srcset="./img/d-project-col-3.webp" class="lazyload card__img"> -->
+                  <!-- <source type="image/jpeg" data-srcset="./img/d-project-col-3.jpg" class="lazyload card__img"> -->
+                  <!-- <img data-src="./img/d-project-col-3.jpg" alt="Space Repair" class="lazyload card__img"> -->
+                <!-- </picture> -->
 
               </div>
               <!-- /.d-project__card-block-img -->
@@ -1040,7 +1039,7 @@
             <div class="swiper-c-steps-image">
               <div class="swiper-wrapper" data-aos="fade-left" data-aos-duration="850">
                 <div class="swiper-slide steps__slide-image">
-                  <img data-src="./img/steps-1-human.jpg" class="lazyload steps__image" alt="#">
+                  <img data-src="./img/steps-1-human.jpg" class="lazy steps__image" alt="#">
                   <!-- /.swiper-lazy-preloader -->
                 </div>
                 <!-- swiper-slide steps__slide-image -->
@@ -1104,14 +1103,14 @@
         <div class="section-row team-row">
           <div class="section-col team__section-col">
             <div class="card team__card" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000">
-              <img data-src="./img/ourTeam/icon-manager.svg" alt="" class="lazyload team__card-svg">
+              <img loading="lazy" src="./img/ourTeam/icon-manager.svg" alt="" class="team__card-svg">
 
-              <!-- <img data-src="./img/ourTeam/manager.jpg" alt="Space Repair" class="lazy team__card-photo"> -->
-              <picture>
-                <source type="image/webp" data-srcset="./img/ourTeam/manager.webp" class="lazyload card__img">
-                <source type="image/jpeg" data-srcset="./img/ourTeam/manager.jpg" class="lazyload card__img">
-                <img data-src="./img/ourTeam/manager.jpg" alt="Space Repair" class="lazyload card__img">
-              </picture>
+              <img data-src="./img/ourTeam/manager.jpg" alt="Space Repair" class="lazy team__card-photo">
+              <!-- <picture> -->
+                <!-- <source type="image/webp" data-srcset="./img/ourTeam/manager.webp" class="lazyload card__img"> -->
+                <!-- <source type="image/jpeg" data-srcset="./img/ourTeam/manager.jpg" class="lazyload card__img"> -->
+                <!-- <img data-src="./img/ourTeam/manager.jpg" alt="Space Repair" class="lazyload card__img"> -->
+              <!-- </picture> -->
 
               <div class="team__card-text">
                 
@@ -1134,14 +1133,14 @@
           <!-- /.section-col team__section-col -->
           <div class="section-col team__section-col">
             <div class="card team__card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
-              <img data-src="./img/ourTeam/icon-designer.svg" alt="" class="lazyload team__card-svg">
+              <img loading="lazy" src="./img/ourTeam/icon-designer.svg" alt="" class="team__card-svg">
 
-              <!-- <img data-src="./img/ourTeam/designer.jpg" alt="Capital Repair" class="lazy team__card-photo"> -->
-              <picture>
-                <source type="image/webp" data-srcset="./img/ourTeam/designer.webp" class="lazyload card__img">
-                <source type="image/jpeg" data-srcset="./img/ourTeam/designer.jpg" class="lazyload card__img">
-                <img data-src="./img/ourTeam/designer.jpg" alt="Space Repair" class="lazyload card__img">
-              </picture>
+              <img data-src="./img/ourTeam/designer.jpg" alt="Capital Repair" class="lazy team__card-photo">
+              <!-- <picture> -->
+                <!-- <source type="image/webp" data-srcset="./img/ourTeam/designer.webp" class="lazyload card__img"> -->
+                <!-- <source type="image/jpeg" data-srcset="./img/ourTeam/designer.jpg" class="lazyload card__img"> -->
+                <!-- <img data-src="./img/ourTeam/designer.jpg" alt="Space Repair" class="lazyload card__img"> -->
+              <!-- </picture> -->
 
               <div class="team__card-text">
                 
@@ -1163,14 +1162,14 @@
           <!-- /.section-col team__section-col -->
           <div class="section-col team__section-col">
             <div class="card team__card" data-aos="fade-right" data-aos-delay="750" data-aos-duration="1000">
-              <img data-src="./img/ourTeam/icon-foreman.svg" alt="" class="lazyload team__card-svg">
+              <img loading="lazy" src="./img/ourTeam/icon-foreman.svg" alt="" class="team__card-svg">
 
-              <!-- <img data-src="./img/ourTeam/foreman.jpg" alt="Designer Repair" class="lazy team__card-photo"> -->
-              <picture>
-                <source type="image/webp" data-srcset="./img/ourTeam/foreman.webp" class="lazyload card__img">
-                <source type="image/jpeg" data-srcset="./img/ourTeam/foreman.jpg" class="lazyload card__img">
-                <img data-src="./img/ourTeam/foreman.jpg" alt="Space Repair" class="lazyload card__img">
-              </picture>
+              <img data-src="./img/ourTeam/foreman.jpg" alt="Designer Repair" class="lazy team__card-photo">
+              <!-- <picture> -->
+                <!-- <source type="image/webp" data-srcset="./img/ourTeam/foreman.webp" class="lazyload card__img"> -->
+                <!-- <source type="image/jpeg" data-srcset="./img/ourTeam/foreman.jpg" class="lazyload card__img"> -->
+                <!-- <img data-src="./img/ourTeam/foreman.jpg" alt="Space Repair" class="lazyload card__img"> -->
+              <!-- </picture> -->
 
               <div class="team__card-text">
   
@@ -1211,7 +1210,7 @@
             Наши клиенты
           </h2>
           <div class="section-heading-block-img clients__heading-wrap-img" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <img class="lazyload section-heading-img clients__heading-img" data-src="./img/clients.svg" alt="">
+            <img loading="lazy" class="section-heading-img clients__heading-img" src="./img/clients.svg" alt="">
           </div>
           <!-- /.section-heading__img -->
           <p class="section-heading-text clients__heading-text aos-init aos-animate" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000">
@@ -1227,12 +1226,12 @@
               <div class="clients__card-heading">
                 <div class="clients__card-face">
 
-                  <!-- <img data-src="./img/clients/clientOne.jpg" class="lazy clients__card-face-photo" alt=""> -->
-                  <picture>
-                    <source type="image/webp" data-srcset="./img/clients/clientOne.webp" class="lazyload card__img">
-                    <source type="image/jpeg" data-srcset="./img/clients/clientOne.jpg" class="lazyload card__img">
-                    <img data-src="./img/clients/clientOne.jpg" alt="Space Repair" class="lazyload card__img">
-                  </picture>
+                  <img data-src="./img/clients/clientOne.jpg" class="lazy clients__card-face-photo" alt="">
+                  <!-- <picture> -->
+                    <!-- <source type="image/webp" data-srcset="./img/clients/clientOne.webp" class="lazyload card__img"> -->
+                    <!-- <source type="image/jpeg" data-srcset="./img/clients/clientOne.jpg" class="lazyload card__img"> -->
+                    <!-- <img data-src="./img/clients/clientOne.jpg" alt="Space Repair" class="lazyload card__img"> -->
+                  <!-- </picture> -->
 
                 </div>
                 <!-- /.clients__card-face -->
@@ -1273,12 +1272,12 @@
               <div class="clients__card-heading">
                 <div class="clients__card-face">
 
-                  <!-- <img data-src="./img/clients/clientTwo.jpg" class="lazy clients__card-face-photo" alt=""> -->
-                  <picture>
-                    <source type="image/webp" data-srcset="./img/clients/clientTwo.webp" class="lazyload card__img">
-                    <source type="image/jpeg" data-srcset="./img/clients/clientTwo.jpg" class="lazyload card__img">
-                    <img data-src="./img/clients/clientTwo.jpg" alt="Space Repair" class="lazyload card__img">
-                  </picture>
+                  <img loading="lazy" src="./img/clients/clientTwo.jpg" class="clients__card-face-photo" alt="">
+                  <!-- <picture> -->
+                    <!-- <source type="image/webp" data-srcset="./img/clients/clientTwo.webp" class="lazyload card__img"> -->
+                    <!-- <source type="image/jpeg" data-srcset="./img/clients/clientTwo.jpg" class="lazyload card__img"> -->
+                    <!-- <img data-src="./img/clients/clientTwo.jpg" alt="Space Repair" class="lazyload card__img"> -->
+                  <!-- </picture> -->
 
 
                 </div>
@@ -1321,12 +1320,12 @@
               <div class="clients__card-heading">
                 <div class="clients__card-face">
 
-                  <!-- <img data-src="./img/clients/clientThree.jpg" class="lazy clients__card-face-photo" alt=""> -->
-                  <picture>
-                    <source type="image/webp" data-srcset="./img/clients/clientThree.webp" class="lazyload card__img">
-                    <source type="image/jpeg" data-srcset="./img/clients/clientThree.jpg" class="lazyload card__img">
-                    <img data-src="./img/clients/clientThree.jpg" alt="Space Repair" class="lazyload card__img">
-                  </picture>
+                  <img data-src="./img/clients/clientThree.jpg" class="lazy clients__card-face-photo" alt="">
+                  <!-- <picture> -->
+                    <!-- <source type="image/webp" data-srcset="./img/clients/clientThree.webp" class="lazyload card__img"> -->
+                    <!-- <source type="image/jpeg" data-srcset="./img/clients/clientThree.jpg" class="lazyload card__img"> -->
+                    <!-- <img data-src="./img/clients/clientThree.jpg" alt="Space Repair" class="lazyload card__img"> -->
+                  <!-- </picture> -->
 
                 </div>
                 <!-- /.clients__card-face -->
@@ -1374,11 +1373,11 @@
 
       <div class="clients__footer row" id="contact">
         <div class="clients__bg-left">
-          <img data-src="img/clients/bg-left.svg" class="lazyload" alt="">
+          <img loading="lazy" src="img/clients/bg-left.svg" alt="">
         </div>
         <!-- /.clients__bg-left -->
         <div class="clients__bg-right">
-          <img data-src="img/clients/bg-right.svg" class="lazyload" alt="">
+          <img loading="lazy" src="img/clients/bg-right.svg" alt="">
         </div>
         <!-- /.clients__bg-right -->
       </div>
@@ -1391,8 +1390,8 @@
   <!-- /.bg-lines-silver -->
 
     <div class="modal">
-      <div class="modal__dialog lazyload">
-        <button class="modal__close lazyload">
+      <div class="modal__dialog lazy">
+        <button class="modal__close lazy">
           <!-- <img src="img/modal-x.svg" alt=""> -->
         </button>
         <h4 class="modal__title">
@@ -1446,7 +1445,7 @@
 
 
   <footer class="section footer section--dark">
-    <div class="lazyload footer--bg" id="footerBg">
+    <div class="lazy footer--bg" id="footerBg">
       <div class="container">
         <div class="questions">
           <h4 class="questions__title">Остались Вопросы?</h4>
@@ -1502,11 +1501,11 @@
           </p>
           <div class="footer__social">
             <a class="footer__social-s">
-              <img data-src="./img/footer-mail-icon.svg" class="lazyload" alt="">
+              <img loading="lazy" src="./img/footer-insta-icon.svg" alt="">
             </a>
             <!-- /.footer__social-s -->
             <a class="footer__social-s">
-              <img data-src="./img/footer-insta-icon.svg" class="lazyload" alt="">
+              <img loading="lazy" src="./img/footer-mail-icon.svg" alt="">
             </a>
             <!-- /.footer__social-s -->
           </div>
@@ -1580,9 +1579,7 @@
   <script src="./js/jquery.mask.min.js"></script>
 
   <script src="./js/modernizr-custom.min.js"></script>
-
-  <script src="./js/lazysizes.min.js" async=""></script>
-
+  
   <script src="./js/main.js"></script>
   <!-- JS Scripts before body -->
 </body>

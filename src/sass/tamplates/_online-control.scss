@@ -159,7 +159,7 @@
   // Control form (END)
 }
 
-#controlVideo.lazyload {
+#controlVideo.lazy {
   background-image: unset;
 }
 
@@ -171,6 +171,6 @@
   background-image: url("../img/online-control-bg-video.jpg");
 }
 
-#controlVideo.lazyload {
+#controlVideo.lazy {
   background-image: none;
 }

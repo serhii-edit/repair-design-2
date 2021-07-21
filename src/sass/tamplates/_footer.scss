@@ -1,4 +1,4 @@
-#footerBg.lazyload {
+#footerBg.lazy {
   background-image: none;
 }
 
@@ -10,7 +10,7 @@
   background-image: url("../img/footer-bg.jpg");
 }
 
-#footerBg.lazyload {
+#footerBg.lazy {
   background-image: unset;
 }
 
