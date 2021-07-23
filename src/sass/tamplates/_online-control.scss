@@ -33,7 +33,7 @@
   }
   &__video {
     position: relative;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     max-width: 817px;
     height: 95vh;
     max-height: 434px;
@@ -65,6 +65,7 @@
       top: 0;
       bottom: 0;
       width: 143px;
+      cursor: pointer;
       // width: 85px; native
       // height: 85px;
     }
@@ -159,18 +160,23 @@
   // Control form (END)
 }
 
-#controlVideo.lazy {
+.control__video.lazy {
   background-image: unset;
 }
 
-.webp #controlVideo {
+.webp .control__video {
   background-image: url("../img/online-control-bg-video.webp");
 };
 
-.no-webp #controlVideo {
+.no-webp .control__video {
   background-image: url("../img/online-control-bg-video.jpg");
 }
 
-#controlVideo.lazy {
+.control__video.lazy {
   background-image: none;
+}
+
+iframe.control__video {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }

@@ -231,6 +231,25 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   swiperTarget.controller.control = swiperTargetImage;
   swiperTargetImage.controller.control = swiperTarget;
+
+  // var buttonPlay = querySelectorAll("#buttonPlay");
+  // console.log("Info: " + buttonPlay);
+
+  // buttonPlay.onclick = function (p) {
+  //   var player;
+  //   function onYouTubeIframeAPIReady() {
+  //     player = new YT.Player('player', {
+  //       height: '100%',
+  //       width: '100%',
+  //       videoId: 'ijXqKtxvm48',
+  //       events: {
+  //         'onReady': onPlayerReady,
+  //         'onStateChange': onPlayerStateChange
+  //       }
+  //     });
+  //   }
+  // };
+
 });
 
 
@@ -460,8 +479,24 @@ $('input[type="tel"]').mask('+1 (000) 000-0000', {placeholder: "+1 (___) ___-___
 
 // Form Validation (END)
 
+// ijXqKtxvm48&t
+var player;
+$(".control__video-play").on("click", function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '100%',
+    width: '100%',
+    videoId: 'jlJE4xwG9vw',
+    events: {
+      'onReady': playVideo,
+      // 'onStateChange': onPlayerStateChange
+    }
+  });
+});
 
+function playVideo(event) {
+  event.target.playVideo();
 
+};
 
 });  // Jquery Load DOM
 
