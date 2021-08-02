@@ -1,4 +1,4 @@
-var resolveUrl = require("resolve-url");
+// var resolveUrl = require("resolve-url");
 var urix = require("urix");
 
 const {src, dest, watch, series} = require("gulp");
@@ -106,7 +106,7 @@ function tinyImg(done) {
     log: true
 }))
   .pipe(dest('../dest/img/'))
-  .pipe(dest('./img/'))
+  // .pipe(dest('./img/'))
   done();
 }
 
@@ -132,7 +132,7 @@ function cWebp(done) {
   src(["./img/**/*.jpg", "./img/**/*.jpeg", "./img/**/*.png", "!./img/**/*.svg"])
   .pipe(cwebp())
   .pipe(dest('../dest/img/'))
-  .pipe(dest('./img/'))
+  // .pipe(dest('./img/'))
   done();
 }
 

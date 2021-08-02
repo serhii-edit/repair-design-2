@@ -11,29 +11,63 @@
 
   <!-- <link rel="preload" as="script" href="./js/modernizr-custom.min.js" /> -->
 
-  <link rel="preload" as="script" href="./js/main.js">
+  <!-- <link rel="preload" as="script" href="./js/main.js"> -->
 
   <link rel="preload" href="./fonts/futura/FuturaDemiC.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="./fonts/yesevaone/yesevaone.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="./fonts/futura/FuturaBookC.woff" as="font" type="font/woff" crossorigin>
+  <!-- <link rel="preload" href="./fonts/futura/FuturaBookC.woff" as="font" type="font/woff" crossorigin> -->
   
   
   
 
-  <!-- <link rel="stylesheet" href="./css/aos.min.css"> -->
-  <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./css/aos.min.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
   <link rel="stylesheet" href="./css/style.css">
-  <!--[if IE]>
+  <!-- [if IE]>
   <link rel="stylesheet" type="text/css" href="only-ie.css" />
-  <![endif]-->
+  <![endif] -->
 
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176417407-2">
+  
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-176417407-2');
+
+    var requestCall = document.getElementsByClassName("contacts__button");
+    ga(function(tracker) {
+      // console.log(tracker); // Logs `undefined`.
+      ga.getByName("T-main");
+      // tracker.get('clientId');
+      ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
+
+      function handleOutboundLinkClicks(event) {
+      ga('send', 'event', {
+        eventCategory: 'Outbound Link',
+        eventAction: 'click',
+        eventLabel: event.target.requestCall,
+        transport: 'beacon'
+      });
+}
+      ga('send', 'pageview');
+      ga('set', 'page', './');
+      // ga('send', 'pageview');
+    }); -->
+  <!-- </script> -->
+  <!-- Optimizing google-speed -->
+
+  <link rel="shortcut icon" type="image/svg" href="./img/tab-interior-design.svg">
 </head>
 <body>
 
-  
   <header class="header">
     <div class="container header__container">
       <div class="menu header__menu ">
@@ -377,11 +411,11 @@
 
       <div class="row projects__build-row">
         <div class="projects__build-col" style="width: 50%;">
-          <img loading="lazy" src="./img/projects/projects-left-builds.svg" class="projects__build-col__img" style="width: 637px; height: 311px;" alt="">
+          <img loading="lazy" src="./img/projects/projects-left-builds.svg" class="projects__build-col__img" style="width: 100%; min-height: 311px; max-height: 100%;" alt=""> <!-- width: 673px; -->
         </div>
         <!-- /.projects__build-col -->
         <div class="projects__build-col" style="width: 50%; height:311px">
-          <img loading="lazy" src="./img/projects/projects-right-builds.svg" class="projects__build-col__img" style="width: 637px; height: 311px;" alt="">
+          <img loading="lazy" src="./img/projects/projects-right-builds.svg" class="projects__build-col__img" style="width: 100%; min-height: 311px; max-height: 100%;" alt="">
         </div>
         <!-- /.projects__build-col -->
       </div>
@@ -1556,10 +1590,10 @@
       </div>
       <!-- /.footer__container-menu -->
   </footer>
-  
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="./js/swiper-bundle.min.js"></script> -->
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -1571,21 +1605,22 @@
   </script>
   <!-- <script src="./js/aos.min.js"></script> -->
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- <script src="./js/swiper-bundle.min.js"></script> -->
+  <script src="./js/modernizr-custom.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
 
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
   <!-- <script src="./js/jquery.validate.min.js"></script> -->
 
   <script src="./js/jquery.mask.min.js"></script>
-
-  <script src="./js/modernizr-custom.min.js"></script>
   
-  <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
-
   <script src="https://www.youtube.com/iframe_api"></script>
+  
+  <script src="./js/modernizr-custom.min.js"></script>
 
   <script src="./js/main.js"></script>
+  
   <!-- JS Scripts before body -->
 </body>
 </html>

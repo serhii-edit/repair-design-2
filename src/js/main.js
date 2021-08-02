@@ -250,12 +250,16 @@ document.addEventListener("DOMContentLoaded", function(event){
   //   }
   // };
 
-});
+  // from jQuery
+  
+// from jQuery
+
+}); // JS Doc load
 
 
 $(document).ready(function () {
 
-// Modal window, close and open
+  // Modal window, close and open
   var modal = $(".modal");
   var modalBtn = $("[data-toggle=modal]");
   var closeBtn = $(".modal__close");
