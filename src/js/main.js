@@ -504,9 +504,3 @@ function playVideo(event) {
 
 });  // Jquery Load DOM
 
-// AOS.init();
-AOS.init({
-  // Global settings:
-  disable: "mobile",
-});
-
